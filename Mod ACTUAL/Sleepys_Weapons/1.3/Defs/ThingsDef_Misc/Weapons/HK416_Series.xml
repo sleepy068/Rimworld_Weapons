@@ -508,7 +508,7 @@
   
    <!-- HK 416 DMR ACOG -->
   <ThingDef ParentName="BaseGunWithQuality">
-    <defName>SLP_Gun_HK416DMR_S</defName>
+    <defName>SLP_Gun_HK416DMR_ACOG</defName>
     <label>HK416 DMR ACOG</label>
     <description>A general-purpose gas-operated assault rifle for field or urban combat. It has very good range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle and has a ACOG sight, giving it higher accuracy and power.</description>
     <graphicData>
@@ -590,7 +590,7 @@
   
   <!-- HK 416 DMR SCOPE -->
   <ThingDef ParentName="BaseGunWithQuality">
-    <defName>SLP_Gun_HK416DMR_S</defName>
+    <defName>SLP_Gun_HK416DMR_SCOPE</defName>
     <label>HK416 DMR SC</label>
     <description>A general-purpose gas-operated assault rifle for field or urban combat. It has excellent range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle with a rifle scope, giving it higher accuracy and power.</description>
     <graphicData>
