@@ -1,20 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_JAVHEAT</defName>
+    <defaultDamage>495</defaultDamage>
+    <defaultStoppingPower>2.0</defaultStoppingPower>
+    <defaultArmorPenetration>1.30</defaultArmorPenetration>
+  </DamageDef>
+  
   <ThingDef ParentName="BaseBullet">
     <defName>SLP_Bullet_JAV_HEAT</defName>
     <label>javelin HEAT rocket</label>
     <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <texPath>Things/Projectile/SLP_PROJ_JAV_MISSILE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <thingClass>Projectile_DoomsdayRocket</thingClass>
     <projectile>
-      <damageDef>Bomb</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>7.8</explosionRadius>
-      <speed>50</speed>
+      <damageDef>SLP_JAVHEAT</damageDef>
+      <explosionRadius>1.5</explosionRadius>
+      <speed>75</speed>
     </projectile>
   </ThingDef>
 
@@ -29,10 +35,11 @@
       <texPath>Things/Item/Equipment/MissileLaunchers/SLP_JAV_HEAT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<equippedAngleOffset>-45</equippedAngleOffset>
     <statBases>
       <MarketValue>850</MarketValue>
       <Mass>22.3</Mass>
-      <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>Gun</li>
@@ -53,13 +60,14 @@
       <li>
         <verbClass>Verb_ShootOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_DoomsdayRocket</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_JAV_HEAT</defaultProjectile>
         <forcedMissRadius>0.1</forcedMissRadius>
         <warmupTime>5.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
         <range>46.9</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCast>SLP_Javshot</soundCast>
+		<soundAiming></soundAiming>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <onlyManualCast>true</onlyManualCast>
         <targetParams>
@@ -80,7 +88,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>7.8</explosiveRadius>
+        <explosiveRadius>1.5</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
