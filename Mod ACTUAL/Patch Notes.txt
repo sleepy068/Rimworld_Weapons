@@ -1,6 +1,9 @@
 Update v1.0.0
+Inital Release
 
 Additions:
+Added 8 New Craftable Firearms
+Added a total of 25 new weapons (variants of the craftable versions)
 
 
 Changes:
@@ -11,3 +14,8 @@ Localisation:
 
 
 Bug Fixes:
+
+
+Notes:
+To prevent bloating the crafting tables, the varients can only be traded for or looted.
+This helps with balancing them too.

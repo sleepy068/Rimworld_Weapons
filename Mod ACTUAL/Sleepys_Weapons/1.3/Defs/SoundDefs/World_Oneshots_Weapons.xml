@@ -141,6 +141,34 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>SLP_M82A1Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_M82A1Inter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>SLP_MP5Shot</defName>
 		<context>MapOnly</context>
 		<eventNames />
@@ -302,6 +330,34 @@
 				<distRange>
 					<min>0</min>
 					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>SLP_M85A1CQShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_M85A1CQShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
 				</distRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
