@@ -5,7 +5,7 @@
     <defName>SLP_GWLaunchers</defName>
     <label>Guided Weapon Systems</label>
     <description>Craft precisely-machined and programmed weapon systems like guided rocket launchers.</description>
-    <baseCost>2200</baseCost>
+    <baseCost>4000</baseCost>
     <techLevel>Industrial</techLevel>
 	<tab>SLP_WEAP</tab>
     <prerequisites>
@@ -14,5 +14,7 @@
     <researchViewX>0.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
+  
+  
 
 </Defs>
