@@ -391,5 +391,37 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<SoundDef>
+		<defName>SLP_Lockon</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>2</maxSimultaneous>
+        <priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_Lockon</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>9</min>        
+					<max>9</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<!--<sustainLoop>False</sustainLoop>-->
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
 
 </Defs>

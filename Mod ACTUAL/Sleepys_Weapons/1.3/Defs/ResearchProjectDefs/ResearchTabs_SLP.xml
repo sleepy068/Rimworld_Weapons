@@ -2,8 +2,8 @@
 <Defs>
 
 	<ResearchTabDef>
-		<defName>SLP_PHARMA</defName>
-		<label>Pharmaceuticals</label>
+		<defName>SLP_WEAP</defName>
+		<label>Weapons</label>
 	</ResearchTabDef>
 
 </Defs>
