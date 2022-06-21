@@ -163,7 +163,7 @@
   </ThingDef>
   
   <!-- Glock 17 Crimson -->
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_GLOCK17_1SP</defName>
     <label>Glock 17 (Crimson)</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat. This weapon has crimson colour themed art piece painted onto it.</description>
@@ -237,7 +237,7 @@
   </ThingDef>
   
   <!-- Glock 17 Ocean -->
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_GLOCK17_2SP</defName>
     <label>Glock 17 (Ocean)</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat. This weapon has blue palette themed art piece painted onto it.</description>
@@ -311,7 +311,7 @@
   </ThingDef>
   
   <!-- Glock 17 Daylight -->
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_GLOCK17_3SP</defName>
     <label>Glock 17 (Daylight)</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat. This weapon has an art piece painted onto it.</description>
@@ -385,7 +385,7 @@
   </ThingDef>
   
   <!-- Glock 17 Liquid -->
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_GLOCK17_4SP</defName>
     <label>Glock 17 (Liquid)</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat. This weapon has a white and tan liquid metal style art piece painted onto it.</description>

@@ -130,7 +130,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5SD_S</defName>
     <label>MP5SD</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. The MP5SD has a integrated suppressor that significantly reduces the volume of the weapon. It also forces supersonic rounds down to subsonic speeds.</description>
@@ -209,7 +209,7 @@
     </tools>
   </ThingDef>
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3_1TG</defName>
     <label>MP5A3 (Tiger Red)</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. This model has red tiger stripes skilfully painted on the weapon.</description>
@@ -288,7 +288,7 @@
     </tools>
   </ThingDef>
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3_2TG</defName>
     <label>MP5A3 (Tiger Blue)</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. This model has blue tiger stripes skilfully painted on the weapon.</description>
@@ -367,7 +367,7 @@
     </tools>
   </ThingDef>
   
-   <ThingDef ParentName="BaseGunWithQuality">
+   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3_1AUS</defName>
     <label>MP5A3 (Auscam)</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. This model has been painted with an ancient military camouflage pattern.</description>
@@ -446,7 +446,7 @@
     </tools>
   </ThingDef>
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3_1MAR</defName>
     <label>MP5A3 (Marine)</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. This model has been painted with an ancient military camouflage pattern.</description>
@@ -597,7 +597,7 @@
     </tools>
   </ThingDef>
   
-  <ThingDef ParentName="BaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5K_SKS</defName>
     <label>MP5K STK</label>
     <description>A 9x19mm parabellum submachine gun with a butt stock installed. Handles exceptionally well and is quite accurate especially due to the extra support from the stock and it is quick in close quarter battles. Much better used in close quarter battles as it seriously lacks the firepower or range for battles at distances.</description>
