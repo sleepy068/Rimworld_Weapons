@@ -1,0 +1,18 @@
+Update v1.0.0
+Inital Release
+
+Additions:
+
+
+Changes:
+
+
+Localisation:
+
+
+Bug Fixes:
+
+
+Notes:
+To prevent bloating the crafting tables, the varients can only be traded for or looted.
+This helps with balancing them too.
