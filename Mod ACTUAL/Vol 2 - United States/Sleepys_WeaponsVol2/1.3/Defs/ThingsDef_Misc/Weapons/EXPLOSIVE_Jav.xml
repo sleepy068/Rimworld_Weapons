@@ -89,7 +89,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_Explosive">
-        <explosiveRadius>1</explosiveRadius>
+        <explosiveRadius>2</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>

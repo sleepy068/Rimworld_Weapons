@@ -69,7 +69,7 @@
         <defaultProjectile>Bullet_M249_556MM</defaultProjectile>
         <warmupTime>2.1</warmupTime>
         <range>25.9</range>
-		<burstShotCount>8</burstShotCount>
+		<burstShotCount>9</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>SLP_M249Shot</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
