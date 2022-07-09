@@ -77,7 +77,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_M400THP_556MM</defaultProjectile>
         <warmupTime>1.8</warmupTime>
-        <range>47.9</range>
+        <range>41.9</range>
 		<burstShotCount>2</burstShotCount>
         <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
         <soundCast>SLP_M400THShot</soundCast>

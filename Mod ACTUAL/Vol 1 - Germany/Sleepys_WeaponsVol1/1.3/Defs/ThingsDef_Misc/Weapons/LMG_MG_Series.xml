@@ -54,7 +54,7 @@
       <Mass>11.5</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.48</AccuracyShort>
-      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyMedium>0.38</AccuracyMedium>
       <AccuracyLong>0.27</AccuracyLong>
       <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
     </statBases>
