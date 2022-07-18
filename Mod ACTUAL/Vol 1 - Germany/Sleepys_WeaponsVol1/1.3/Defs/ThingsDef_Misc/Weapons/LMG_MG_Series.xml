@@ -20,6 +20,70 @@
     </projectile>
   </ThingDef>
   
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MG4KE_556MM</defName>
+    <label>5.56mm MG4KE bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>49</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MG4E_556MM</defName>
+    <label>5.56mm MG4E bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>50</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MG5_762MM</defName>
+    <label>7.62mm MG5 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>45</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.17</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HK21E_556MM</defName>
+    <label>5.56mm HK21E bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>45</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
   <!-- ================================= Weapons ==================================== -->
 
   <!-- MG3 -->
@@ -72,6 +136,314 @@
 		<burstShotCount>9</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>SLP_MG3Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- MG4 KE -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_MG4KE_S</defName>
+    <label>MG4 KE</label>
+    <description>The MG4 KE is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_GER_MG4KE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_MG3Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>670</MarketValue>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>9.7</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.48</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>105</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MG4KE_556MM</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>25.9</range>
+		<burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8-->
+        <soundCast>SLP_MG4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- MG4 E ACOG -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_MG4E_ACOG</defName>
+    <label>MG4 E ACOG</label>
+    <description>The MG4 K is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun fitted with an ACOG scope. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_GER_MG4E_ACOG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_MG3Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>730</MarketValue>
+      <!--<WorkToMake>45000</WorkToMake>-->
+      <Mass>10.1</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.49</AccuracyShort>
+      <AccuracyMedium>0.39</AccuracyMedium>
+      <AccuracyLong>0.27</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+	<!--
+    <costList>
+      <Steel>105</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MG4E_556MM</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>26.9</range>
+		<burstShotCount>7</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8-->
+        <soundCast>SLP_MG4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- MG5-->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_MG5A2_S</defName>
+    <label>MG5</label>
+    <description>The MG5 is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_GER_MG5A2_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_MG3Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>790</MarketValue>
+      <!--<WorkToMake>45000</WorkToMake>-->
+      <Mass>14.4</Mass>
+      <AccuracyTouch>0.41</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+    </statBases>
+	<!--
+    <costList>
+      <Steel>105</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MG5_762MM</defaultProjectile>
+        <warmupTime>2.1</warmupTime>
+        <range>25.9</range>
+		<burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8-->
+        <soundCast>SLP_MG4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- HK21 E -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_HK21E_S</defName>
+    <label>HK21 E</label>
+    <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its extremely long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_GER_HK21E_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_MG3Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>430</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>8.9</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HK21E_556MM</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>23.9</range>
+		<burstShotCount>15</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11 -->
+        <soundCast>SLP_HK216Shot</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

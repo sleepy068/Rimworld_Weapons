@@ -19,7 +19,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>SLP_JAVHEAT</damageDef>
-      <explosionRadius>1</explosionRadius>
+      <explosionRadius>1.5</explosionRadius>
       <speed>75</speed>
     </projectile>
   </ThingDef>

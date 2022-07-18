@@ -265,6 +265,7 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- ============= Generic ============= -->
 	<!-- Rifle or DMR Interaction (Generic) -->
 	<SoundDef>
 		<defName>SLP_RIFLEInter</defName>
@@ -294,221 +295,16 @@
 		</subSounds>
 	</SoundDef>
 	
-	
-	<!-- ============= Shooting Sounds ============= -->
-	<!-- MP5 -->
+	<!-- Shotgun Pump (Generic) -->
 	<SoundDef>
-		<defName>SLP_MP5Shot</defName>
+		<defName>SLP_ShotgunPumpInter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MP5Shot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>13</min>        
-					<max>13</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- MP5SD -->
-	<SoundDef>
-		<defName>SLP_MP5SDShot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MP5SDShot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>13</min>        
-					<max>13</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Glock -->
-	<SoundDef>
-		<defName>SLP_GLOCKShot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GLOCKShot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- M249 -->
-	<SoundDef>
-		<defName>SLP_M249Shot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M249Shot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- HK416 -->
-	<SoundDef>
-		<defName>SLP_HK416Shot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_HK416Shot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- HK 416 DMR -->
-	<SoundDef>
-		<defName>SLP_HK416DMRShot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_HK416DMRShot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- M85A1 -->
-	<SoundDef>
-		<defName>SLP_M85A1CQShot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M85A1CQShot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>35</min>        
-					<max>35</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>59.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Javelin -->
-	<SoundDef>
-		<defName>SLP_Javshot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_Javshot</clipFolderPath>
+						<clipFolderPath>SLP_ShotgunPumpInter</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -528,21 +324,21 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MG3 -->
+	<!-- Generic -->
 	<SoundDef>
-		<defName>SLP_MG3Shot</defName>
+		<defName>SLP_GenericInter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MG3Shot</clipFolderPath>
+						<clipFolderPath>SLP_GenericInter</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
+					<min>30</min>        
+					<max>30</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>
@@ -557,21 +353,21 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- WA2000 -->
+	<!-- Generic 2 -->
 	<SoundDef>
-		<defName>SLP_WA2000Shot</defName>
+		<defName>SLP_Generic2Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_WA2000Shot</clipFolderPath>
+						<clipFolderPath>SLP_Generic2Inter</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
+					<min>30</min>        
+					<max>30</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>
@@ -586,21 +382,21 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- M400TH -->
+	<!-- G36 -->
 	<SoundDef>
-		<defName>SLP_M400THShot</defName>
+		<defName>SLP_G36Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M400THShot</clipFolderPath>
+						<clipFolderPath>SLP_G36Inter</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
+					<min>30</min>        
+					<max>30</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>
@@ -614,35 +410,5 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
-	<!-- MG4 -->
-	<SoundDef>
-		<defName>SLP_MG4Shot</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MG4Shot</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>26</min>        
-					<max>26</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
 	
 </Defs>
