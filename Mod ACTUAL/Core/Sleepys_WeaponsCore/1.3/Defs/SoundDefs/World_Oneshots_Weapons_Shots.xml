@@ -407,6 +407,64 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- HK243 -->
+	<SoundDef>
+		<defName>SLP_HK243Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HK243Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- HK243 -->
+	<SoundDef>
+		<defName>SLP_HMK556Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HMK556Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	<!-- ==============   SHOTGUNS    ============ -->
 	<!-- Shotgun 1 -->
 	<SoundDef>
@@ -418,6 +476,35 @@
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>SLP_SHOTGUN1Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Shotgun 2 -->
+	<SoundDef>
+		<defName>SLP_ShotgunShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_ShotgunShot</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -554,6 +641,36 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- MP5 -->
+	<SoundDef>
+		<defName>SLP_HandgunShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HandgunShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
 	<!-- ==============   SILENCED    ============ -->
 	<!-- 556 -->
 	<SoundDef>
@@ -565,6 +682,35 @@
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>SLP_SL556Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- 65 -->
+	<SoundDef>
+		<defName>SLP_SL65Rifle</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SL65Rifle</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -613,6 +759,151 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- 93 -->
+	<SoundDef>
+		<defName>SLP_SL93Rifle</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SL93Rifle</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- 93 Int -->
+	<SoundDef>
+		<defName>SLP_SL93INTRifle</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SL93INTRifle</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- 93 M -->
+	<SoundDef>
+		<defName>SLP_SL93MRifle</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SL93MRifle</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- SMG -->
+	<SoundDef>
+		<defName>SLP_SLSMG1</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SLSMG1</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Heavy SMG -->
+	<SoundDef>
+		<defName>SLP_SLHSMG1</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SLHSMG1</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	<!-- 9mm -->
 	<SoundDef>
 		<defName>SLP_SL9mmPShot</defName>
@@ -623,6 +914,35 @@
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>SLP_SL9mmPShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Sniper -->
+	<SoundDef>
+		<defName>SLP_SLSniperShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SLSniperShot</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>

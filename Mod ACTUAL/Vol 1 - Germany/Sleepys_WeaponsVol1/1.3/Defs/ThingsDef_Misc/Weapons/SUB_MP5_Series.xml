@@ -433,4 +433,85 @@
     </tools>
   </ThingDef>
   
+  
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_MP5A5MIL_S</defName>
+    <label>MP5A5 MIL</label>
+    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. The MP5SD has a integrated suppressor that significantly reduces the volume of the weapon. It also forces supersonic rounds down to subsonic speeds.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MP5A5MIL_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_MP5Inter</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <!-- <WorkToMake>26000</WorkToMake> -->
+	  <MarketValue>500</MarketValue>
+      <Mass>3.12</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.4</AccuracyMedium>
+      <AccuracyLong>0.17</AccuracyLong>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+    </statBases>
+	<!--
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_MP5SD_9MM</defaultProjectile>
+        <warmupTime>0.65</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>SLP_MP5SDShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>butt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
 </Defs>

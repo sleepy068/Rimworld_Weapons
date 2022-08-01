@@ -265,7 +265,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- ============= Generic ============= -->
 	<!-- Rifle or DMR Interaction (Generic) -->
 	<SoundDef>
 		<defName>SLP_RIFLEInter</defName>
@@ -276,6 +275,35 @@
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>SLP_RIFLEInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Rifle Interaction 2 (Generic) -->
+	<SoundDef>
+		<defName>SLP_GenericRifleInter01</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_GenericRifleInter01</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -323,6 +351,36 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<!-- Shotgun Shell Load -->
+	<SoundDef>
+		<defName>SLP_ShotgunInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_ShotgunInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	
 	<!-- Generic -->
 	<SoundDef>
@@ -410,5 +468,239 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<!-- AK -->
+	<SoundDef>
+		<defName>SLP_AKInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_AKInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Gen Bolt -->
+	<SoundDef>
+		<defName>SLP_GenBoltInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_GenBoltInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Colt -->
+	<SoundDef>
+		<defName>SLP_ColtInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_ColtInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- P90 -->
+	<SoundDef>
+		<defName>SLP_P90Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_P90Inter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ============= Launcher/GL ============= -->
+	<!-- GL1 -->
+    <SoundDef>
+		<defName>SLP_GLInter1</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_GLInter1</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- GL2 -->
+    <SoundDef>
+		<defName>SLP_GLInter2</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_GLInter2</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Launcher 1 -->
+    <SoundDef>
+		<defName>SLP_LauncherInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_LauncherInter</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Launcher 2 -->
+    <SoundDef>
+		<defName>SLP_LauncherInter2</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_LauncherInter2</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	
 </Defs>

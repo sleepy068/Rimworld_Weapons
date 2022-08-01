@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =================================  ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HaenelMk556_S</defName>
+    <label>HMK556 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>74</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- Haenel Mk 556 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_HMK556_S</defName>
+    <label>HAENEL Mk 556</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_HAENELMK556_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenericRifleInter01</soundInteract>
+	<weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>575</MarketValue>
+      <!-- <WorkToMake>50000</WorkToMake> -->
+      <Mass>3.50</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.63</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+	<!--
+    <costList>
+      <Steel>110</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HaenelMk556_S</defaultProjectile>
+        <warmupTime>1.05</warmupTime>
+        <range>33.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11 -->
+        <soundCast>SLP_HMK556Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.4</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

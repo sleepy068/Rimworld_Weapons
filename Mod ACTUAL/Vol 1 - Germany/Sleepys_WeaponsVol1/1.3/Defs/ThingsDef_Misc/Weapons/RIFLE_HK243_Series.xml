@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =================================  ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_HK243_S</defName>
+    <label>HK243 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>72</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.17</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- HK243 -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_HK243_S</defName>
+    <label>HK243 S SAR</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model is designed as an all purpose weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_HK243SSAR_S_O4D2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-49.2</equippedAngleOffset>
+	
+    <soundInteract>SLP_Generic2Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>515</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.21</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.79</AccuracyShort>
+      <AccuracyMedium>0.73</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_HK243_S</defaultProjectile>
+        <warmupTime>0.90</warmupTime>
+        <range>27.9</range>
+		<!--
+		<burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots> 
+		-->
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11 -->
+        <soundCast>SLP_HK243Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

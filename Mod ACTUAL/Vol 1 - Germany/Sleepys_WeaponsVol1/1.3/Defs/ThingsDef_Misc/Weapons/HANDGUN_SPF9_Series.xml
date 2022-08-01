@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SPF9_9MM</defName>
+    <label>9mm SPF9 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- Glock 17 Grey -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_SPF9SFSDTAC_S</defName>
+    <label>SPF9-SF SD TAC</label>
+    <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_GER_SPF9SFSDTAC_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>175</MarketValue>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>0.719</Mass>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SPF9_9MM</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_HandgunShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
