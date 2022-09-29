@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HaenelMk556_S</defName>
+    <defName>SLP_Bullet_HaenelMk556_S</defName>
     <label>HMK556 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -75,7 +75,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HaenelMk556_S</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HaenelMk556_S</defaultProjectile>
         <warmupTime>1.05</warmupTime>
         <range>33.9</range>
 		<burstShotCount>3</burstShotCount>

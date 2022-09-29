@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_CR300_S</defName>
+    <defName>SLP_Bullet_CR300_S</defName>
     <label>CR300 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -75,7 +75,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_CR300_S</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_CR300_S</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>29.9</range>
 		<burstShotCount>4</burstShotCount>

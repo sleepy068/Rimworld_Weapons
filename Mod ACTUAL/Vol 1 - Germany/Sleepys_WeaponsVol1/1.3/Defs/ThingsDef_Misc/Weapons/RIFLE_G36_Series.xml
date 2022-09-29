@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_G36_S</defName>
+    <defName>SLP_Bullet_G36_S</defName>
     <label>G36 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -68,7 +68,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_G36_S</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_G36_S</defaultProjectile>
         <warmupTime>1.15</warmupTime>
         <range>26.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -150,7 +150,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_G36_S</defaultProjectile>
         <warmupTime>1.15</warmupTime>
         <range>28.9</range>
 		<burstShotCount>3</burstShotCount>

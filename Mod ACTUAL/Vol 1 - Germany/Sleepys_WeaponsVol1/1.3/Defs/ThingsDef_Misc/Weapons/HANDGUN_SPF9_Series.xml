@@ -3,7 +3,7 @@
 
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SPF9_9MM</defName>
+    <defName>SLP_Bullet_SPF9_9MM</defName>
     <label>9mm SPF9 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -60,7 +60,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SPF9_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_SPF9_9MM</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>22.9</range>
         <soundCast>SLP_HandgunShot</soundCast>

@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MG3_762MM</defName>
+    <defName>SLP_Bullet_MG3_762MM</defName>
     <label>7.62mm MG3 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -21,7 +21,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MG4KE_556MM</defName>
+    <defName>SLP_Bullet_MG4KE_556MM</defName>
     <label>5.56mm MG4KE bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -37,7 +37,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MG4E_556MM</defName>
+    <defName>SLP_Bullet_MG4E_556MM</defName>
     <label>5.56mm MG4E bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -53,7 +53,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MG5_762MM</defName>
+    <defName>SLP_Bullet_MG5_762MM</defName>
     <label>7.62mm MG5 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -69,7 +69,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HK21E_556MM</defName>
+    <defName>SLP_Bullet_HK21E_556MM</defName>
     <label>5.56mm HK21E bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -130,7 +130,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MG3_762MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MG3_762MM</defaultProjectile>
         <warmupTime>2.4</warmupTime>
         <range>30.9</range>
 		<burstShotCount>9</burstShotCount>
@@ -205,7 +205,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MG4KE_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MG4KE_556MM</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <range>25.9</range>
 		<burstShotCount>7</burstShotCount>
@@ -284,7 +284,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MG4E_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MG4E_556MM</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <range>26.9</range>
 		<burstShotCount>7</burstShotCount>
@@ -363,7 +363,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MG5_762MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MG5_762MM</defaultProjectile>
         <warmupTime>2.1</warmupTime>
         <range>25.9</range>
 		<burstShotCount>6</burstShotCount>
@@ -438,7 +438,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK21E_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK21E_556MM</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>23.9</range>
 		<burstShotCount>15</burstShotCount>

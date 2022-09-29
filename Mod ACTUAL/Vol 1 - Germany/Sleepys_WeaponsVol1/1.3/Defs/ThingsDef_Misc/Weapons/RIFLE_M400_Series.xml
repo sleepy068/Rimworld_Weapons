@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_M400THP_556MM</defName>
+    <defName>SLP_Bullet_M400THP_556MM</defName>
     <label>5.56mm M400THP bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -75,7 +75,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_M400THP_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_M400THP_556MM</defaultProjectile>
         <warmupTime>1.8</warmupTime>
         <range>41.9</range>
 		<burstShotCount>2</burstShotCount>

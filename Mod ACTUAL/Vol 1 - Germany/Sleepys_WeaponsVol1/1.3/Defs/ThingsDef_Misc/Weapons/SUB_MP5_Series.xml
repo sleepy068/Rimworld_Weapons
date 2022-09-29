@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MP5_9MM</defName>
+    <defName>SLP_Bullet_MP5_9MM</defName>
     <label>9mm MP5 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -21,7 +21,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MP5K_9MM</defName>
+    <defName>SLP_Bullet_MP5K_9MM</defName>
     <label>9mm MP5K bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -37,7 +37,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_MP5SD_9MM</defName>
+    <defName>SLP_Bullet_MP5SD_9MM</defName>
     <label>9mm MP5SD bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -95,7 +95,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5_9MM</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>20.9</range>
         <burstShotCount>3</burstShotCount>
@@ -174,7 +174,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5SD_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5SD_9MM</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>20.9</range>
         <burstShotCount>3</burstShotCount>
@@ -246,7 +246,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5K_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5K_9MM</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>18.9</range>
         <burstShotCount>3</burstShotCount>
@@ -320,7 +320,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5K_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5K_9MM</defaultProjectile>
         <warmupTime>0.57</warmupTime>
         <range>18.9</range>
         <burstShotCount>3</burstShotCount>
@@ -399,7 +399,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5_9MM</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>21.9</range>
         <burstShotCount>3</burstShotCount>
@@ -479,7 +479,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_MP5SD_9MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_MP5SD_9MM</defaultProjectile>
         <warmupTime>0.65</warmupTime>
         <range>22.9</range>
         <burstShotCount>3</burstShotCount>

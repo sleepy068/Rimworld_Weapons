@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HK416_556MM</defName>
+    <defName>SLP_Bullet_HK416_556MM</defName>
     <label>5.56mm HK416 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -21,7 +21,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HK416DMR_556MM</defName>
+    <defName>SLP_Bullet_HK416DMR_556MM</defName>
     <label>5.56mm HK416DMR bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -88,7 +88,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416_556MM</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>27.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -166,7 +166,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416_556MM</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -248,7 +248,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416_556MM</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>31.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -330,7 +330,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416_556MM</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>34.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -412,7 +412,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416_556MM</defaultProjectile>
         <warmupTime>1.3</warmupTime>
         <range>35.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -493,7 +493,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416DMR_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416DMR_556MM</defaultProjectile>
         <warmupTime>1.4</warmupTime>
         <range>37.9</range>
 		<burstShotCount>2</burstShotCount>
@@ -578,7 +578,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416DMR_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416DMR_556MM</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>38.9</range>
 		<burstShotCount>2</burstShotCount>
@@ -663,7 +663,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HK416DMR_556MM</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HK416DMR_556MM</defaultProjectile>
         <warmupTime>1.6</warmupTime>
         <range>40.9</range>
 		<burstShotCount>2</burstShotCount>

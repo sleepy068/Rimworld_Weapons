@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_HRS9_S</defName>
+    <defName>SLP_Bullet_HRS9_S</defName>
     <label>RS9 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -67,7 +67,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_HRS9_S</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_HRS9_S</defaultProjectile>
         <warmupTime>3.9</warmupTime>
         <range>49.9</range>
         <soundCast>SLP_SLSniperShot</soundCast>

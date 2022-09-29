@@ -2,7 +2,7 @@
 <Defs>
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_USC_45_S</defName>
+    <defName>SLP_Bullet_USC_45_S</defName>
     <label>.45 USC bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -60,7 +60,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_USC_45_S</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_USC_45_S</defaultProjectile>
         <warmupTime>0.55</warmupTime>
         <range>19.9</range>
         <soundCast>SLP_SLHSMG1</soundCast>

@@ -5,7 +5,7 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_F3STShotgun</defName>
+    <defName>SLP_Bullet_F3STShotgun</defName>
     <label>F3ST bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -65,7 +65,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_F3STShotgun</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_F3STShotgun</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>17.9</range>
         <soundCast>SLP_ShotgunShot</soundCast>
