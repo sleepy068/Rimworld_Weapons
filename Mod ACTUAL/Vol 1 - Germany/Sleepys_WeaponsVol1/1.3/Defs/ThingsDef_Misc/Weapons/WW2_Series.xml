@@ -223,9 +223,9 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_GEWEHR43_S</defName>
     <label>gewehr43</label>
-    <description>An ancient pattern bolt-action rifle. It has a long range, is accuracy and packs quite a punch.</description>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_GEWEHR43_S_O4D2</texPath>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_GEWEHR43_S_O4D2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
@@ -270,10 +270,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_WW2RifleShot01</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_GEWEHR43_S</defaultProjectile>
         <warmupTime>1.25</warmupTime>
         <range>35.9</range>
-        <soundCast>SLP_Bullet_GEWEHR43_S</soundCast>
+        <soundCast>SLP_WW2RifleShot01_S</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -303,9 +303,9 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_K98K_S</defName>
     <label>K98K</label>
-    <description>An ancient pattern bolt-action rifle. It has a long range, is accuracy and packs quite a punch.</description>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_K98K_S_O5D4</texPath>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_K98K_S_O5D4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
@@ -350,10 +350,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_WW2RifleShot01</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_K98K</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <range>40.9</range>
-        <soundCast>SLP_Bullet_GEWEHR43_S</soundCast>
+        <soundCast>SLP_WW2RifleShot01_S</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

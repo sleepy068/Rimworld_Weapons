@@ -1023,14 +1023,14 @@
 	
 	<!-- WW2 Rifle 01 -->
 	<SoundDef>
-		<defName>SLP_WW2RifleShot01</defName>
+		<defName>SLP_WW2RifleShot01_S</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_WW2RifleShot01</clipFolderPath>
+						<clipFolderPath>SLP_WW2RifleShot01_S</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
