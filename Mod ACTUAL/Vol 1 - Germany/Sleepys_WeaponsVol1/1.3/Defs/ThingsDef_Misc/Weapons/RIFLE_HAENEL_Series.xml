@@ -65,12 +65,14 @@
       <AccuracyLong>0.52</AccuracyLong>
       <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
+    <!--
     <costList>
-      <Steel>110</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

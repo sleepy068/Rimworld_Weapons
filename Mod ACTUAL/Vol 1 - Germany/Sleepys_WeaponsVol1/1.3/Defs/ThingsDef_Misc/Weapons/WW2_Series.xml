@@ -178,12 +178,14 @@
       <AccuracyLong>0.14</AccuracyLong>
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
+    <!--
     <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -260,12 +262,14 @@
       <AccuracyLong>0.72</AccuracyLong>
       <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
+    <!--
     <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -340,12 +344,14 @@
       <AccuracyLong>0.86</AccuracyLong>
       <RangedWeapon_Cooldown>1.72</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
+    <!--
     <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -378,6 +384,7 @@
       </li>
     </tools>
   </ThingDef>
+  
   <!-- ================================= Grenades ==================================== -->
   <ThingDef ParentName="BaseMakeableGrenade">
     <defName>SLP_Weapon_GrenadeStick</defName>

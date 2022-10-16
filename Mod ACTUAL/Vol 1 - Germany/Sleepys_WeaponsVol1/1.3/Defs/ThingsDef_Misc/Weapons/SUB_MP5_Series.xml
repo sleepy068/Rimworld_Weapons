@@ -58,7 +58,7 @@
     <defName>SLP_Gun_MP5A3_S</defName>
     <label>MP5A3</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
-    <graphicData>
+	<graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_HKMP5A3_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -164,12 +164,14 @@
       <AccuracyLong>0.18</AccuracyLong>
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+	
+    <!--
     <costList>
-      <Steel>65</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -389,12 +391,14 @@
       <AccuracyLong>0.18</AccuracyLong>
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
+    <!--
     <costList>
-      <Steel>65</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel></Steel>
+      <ComponentIndustrial></ComponentIndustrial>
     </costList>
 	-->
+
         <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -469,12 +473,12 @@
       <AccuracyLong>0.17</AccuracyLong>
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
-	<!--
+
     <costList>
       <Steel>65</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-	-->
+
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

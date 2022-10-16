@@ -24,7 +24,7 @@
     <defName>SLP_Gun_SPF9SFSDTAC_S</defName>
     <label>SPF9-SF SD TAC</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
-    <graphicData>
+	<graphicData>
       <texPath>Things/Item/Equipment/Handguns/SLP_GER_SPF9SFSDTAC_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
