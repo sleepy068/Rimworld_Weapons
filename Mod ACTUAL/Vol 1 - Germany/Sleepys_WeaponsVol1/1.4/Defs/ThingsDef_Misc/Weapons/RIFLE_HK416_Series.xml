@@ -80,7 +80,7 @@
     </statBases>
 
     <costList>
-      <Steel>60</Steel>
+      <Steel>50</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 
@@ -240,7 +240,7 @@
     </statBases>
 
     <costList>
-      <Steel>60</Steel>
+      <Steel>62</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 
@@ -322,7 +322,7 @@
     </statBases>
 
     <costList>
-      <Steel>60</Steel>
+      <Steel>80</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 
@@ -404,7 +404,7 @@
     </statBases>
 
     <costList>
-      <Steel>60</Steel>
+      <Steel>82</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 
@@ -570,7 +570,7 @@
     </statBases>
 
     <costList>
-      <Steel>110</Steel>
+      <Steel>112</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 
@@ -655,7 +655,7 @@
     </statBases>
 
     <costList>
-      <Steel>110</Steel>
+      <Steel>117</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 

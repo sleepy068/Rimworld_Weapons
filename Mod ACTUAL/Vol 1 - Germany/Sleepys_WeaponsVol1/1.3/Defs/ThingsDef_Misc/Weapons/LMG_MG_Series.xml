@@ -162,7 +162,7 @@
   </ThingDef>
   
   <!-- MG4 KE -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MG4KE_S</defName>
     <label>MG4 KE</label>
     <description>The MG4 KE is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
@@ -180,16 +180,20 @@
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
+	
+	<!--
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
+	
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>670</MarketValue>
-      <WorkToMake>45000</WorkToMake>
+      <!--<WorkToMake>45000</WorkToMake>-->
       <Mass>9.7</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.48</AccuracyShort>
@@ -197,10 +201,14 @@
       <AccuracyLong>0.26</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
+	
+	<!--
     <costList>
       <Steel>105</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
+	-->
+	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -274,11 +282,11 @@
       <AccuracyLong>0.27</AccuracyLong>
       <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
-	
+
 	<!--
     <costList>
-      <Steel></Steel>
-      <ComponentIndustrial></ComponentIndustrial>
+      <Steel>110</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 	-->
 
@@ -356,10 +364,10 @@
       <RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
     </statBases>
 
-    <!--
+	<!--
     <costList>
-      <Steel></Steel>
-      <ComponentIndustrial></ComponentIndustrial>
+      <Steel>115</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 	-->
 
@@ -399,7 +407,7 @@
   </ThingDef>
   
   <!-- HK21 E -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK21E_S</defName>
     <label>HK21 E</label>
     <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its extremely long bursts of fire are effective against groups of enemies.</description>
@@ -417,16 +425,20 @@
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
+	
+	<!--
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
+	
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>430</MarketValue>
-      <WorkToMake>40000</WorkToMake>
+      <!--<WorkToMake>40000</WorkToMake>-->
       <Mass>8.9</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.45</AccuracyShort>
@@ -434,10 +446,14 @@
       <AccuracyLong>0.2</AccuracyLong>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
+	
+	<!--
     <costList>
-      <Steel>75</Steel>
+      <Steel>85</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
+	-->
+	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

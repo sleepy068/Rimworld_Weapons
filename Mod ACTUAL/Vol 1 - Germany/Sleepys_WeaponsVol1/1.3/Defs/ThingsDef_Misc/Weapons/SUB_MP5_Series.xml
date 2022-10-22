@@ -58,11 +58,13 @@
     <defName>SLP_Gun_MP5A3_S</defName>
     <label>MP5A3</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+    <possessionCount>1</possessionCount>
 	<graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_HKMP5A3_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
+	<possessionCount>1</possessionCount>
 	<equippedAngleOffset>-45</equippedAngleOffset>
 	
     <soundInteract>SLP_MP5Inter</soundInteract>
@@ -165,12 +167,10 @@
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
 	
-    <!--
     <costList>
-      <Steel></Steel>
-      <ComponentIndustrial></ComponentIndustrial>
+      <Steel>70</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-	-->
 	
     <verbs>
       <li>
@@ -210,7 +210,7 @@
     </tools>
   </ThingDef>
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5K_S</defName>
     <label>MP5K</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is quite accurate and quick in close quarter battles. Much better used in close quarter battles as it seriously lacks the firepower or range for battles at distances.</description>
@@ -218,21 +218,28 @@
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_HKMP5K_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	
+	<possessionCount>1</possessionCount>
+	
     <soundInteract>SLP_MP5KInter</soundInteract>
     <weaponClasses>
       <li>RangedLight</li>
       <li>ShortShots</li>
     </weaponClasses>
+	
+	<!--
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
+	
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>250</MarketValue>
-      <WorkToMake>13000</WorkToMake>
+      <!--<WorkToMake>13000</WorkToMake>-->
       <Mass>2.53</Mass>
       <AccuracyTouch>0.93</AccuracyTouch>
       <AccuracyShort>0.67</AccuracyShort>
@@ -240,10 +247,12 @@
       <AccuracyLong>0.10</AccuracyLong>
       <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
+	
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
+	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -315,7 +324,7 @@
       <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>50</Steel>
+      <Steel>57</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
@@ -392,12 +401,10 @@
       <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
     </statBases>
 
-    <!--
     <costList>
-      <Steel></Steel>
-      <ComponentIndustrial></ComponentIndustrial>
+      <Steel>70</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-	-->
 
         <verbs>
       <li>
@@ -475,7 +482,7 @@
     </statBases>
 
     <costList>
-      <Steel>65</Steel>
+      <Steel>70</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
 

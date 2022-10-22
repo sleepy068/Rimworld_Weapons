@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_P229A</defName>
+    <label>P229 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.07</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_P320A</defName>
+    <label>P320 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_PQ5MA</defName>
+    <label>Q5 MatchSF bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>65</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_HKUSPA</defName>
+    <label>HK USPMatch bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- P229 Compact -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_P229C_S</defName>
+    <label>P229 Compact</label>
+	<description>A short recoil–operated lock breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    
+	<possessionCount>1</possessionCount>
+	
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_GER_P229COMPACT_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_P229Inter</soundInteract>
+    
+	<weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	
+    <!--
+	<recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <!--<WorkToMake>6500</WorkToMake>-->
+      <Mass>0.907</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_P229A</defaultProjectile>
+        <warmupTime>0.15</warmupTime>
+        <range>20.9</range>
+        <soundCast>SLP_P229Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	
+  </ThingDef>
+  
+  <!-- P320 Spectre -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_P320Spec_S</defName>
+    <label>P320 Spectre</label>
+	<description>A short recoil–operated lock breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    
+	<possessionCount>1</possessionCount>
+	
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_GER_P320SPECTRE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_P229Inter</soundInteract>
+    
+	<weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	
+    <!--
+	<recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>180</MarketValue>
+      <!--<WorkToMake>6500</WorkToMake>-->
+      <Mass>1.190</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_P320A</defaultProjectile>
+        <warmupTime>0.27</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_P229Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	
+  </ThingDef>
+  
+  <!-- Walther Q5 Match SF -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_Q5MatchSF_S</defName>
+    <label>Walther Q5MSF</label>
+	<description>The Walther Q5 Match SF, a short recoil–operated semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    
+	<possessionCount>1</possessionCount>
+	
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_GER_Q5MATCHSF_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_Q5MatchInter</soundInteract>
+    
+	<weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	
+    <!--
+	<recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>190</MarketValue>
+      <!--<WorkToMake>6500</WorkToMake>-->
+      <Mass>1.199</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.66</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>48</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_PQ5MA</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>25.9</range>
+        <soundCast>SLP_Q5MatchShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	
+  </ThingDef>
+  
+   <!-- HK USP Match -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_HKUSPM_S</defName>
+    <label>HK USP Match</label>
+	<description>A short recoil–operated modified browning lock system semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    
+	<possessionCount>1</possessionCount>
+	
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_GER_HKUSPMATCH_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_HKUSPInter</soundInteract>
+    
+	<weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+	
+    <!--
+	<recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>175</MarketValue>
+      <!--<WorkToMake>6500</WorkToMake>-->
+      <Mass>1.08</Mass>
+      <AccuracyTouch>0.78</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.31</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>42</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_PQ5MA</defaultProjectile>
+        <warmupTime>0.29</warmupTime>
+        <range>25.9</range>
+        <soundCast>SLP_HKUSPShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	
+  </ThingDef>
+</Defs>

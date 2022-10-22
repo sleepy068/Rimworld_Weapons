@@ -23,7 +23,7 @@
   <!-- ================================= Weapons ==================================== -->
 
   <!-- HAENEL RS9 -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HAENELRS9_S</defName>
     <label>HAENEL RS9</label>
     <description>An ancient design of precision sniper rifle. Semi-automatic action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
@@ -42,16 +42,19 @@
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+	
+	<!--
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>650</MarketValue>
-      <WorkToMake>44000</WorkToMake>
+      <!--<WorkToMake>44000</WorkToMake>-->
       <Mass>7.54</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.68</AccuracyShort>
@@ -59,17 +62,19 @@
       <AccuracyLong>0.85</AccuracyLong>
       <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
     </statBases>
+	
     <costList>
-      <Steel>60</Steel>
+      <Steel>90</Steel>
       <ComponentIndustrial>9</ComponentIndustrial>
     </costList>
+	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_HRS9_S</defaultProjectile>
         <warmupTime>3.9</warmupTime>
-        <range>49.9</range>
+        <range>47.9</range>
         <soundCast>SLP_SLSniperShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

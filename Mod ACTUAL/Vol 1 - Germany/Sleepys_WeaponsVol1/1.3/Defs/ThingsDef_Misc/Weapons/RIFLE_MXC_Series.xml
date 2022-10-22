@@ -66,12 +66,10 @@
       <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
     </statBases>
 
-    <!--
     <costList>
-      <Steel></Steel>
-      <ComponentIndustrial></ComponentIndustrial>
+      <Steel>105</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
-	-->
 
     <verbs>
       <li>

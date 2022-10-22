@@ -8,8 +8,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MP5Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_MP5Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -37,8 +37,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GLOCKInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GLOCKInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -66,8 +66,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MP5KInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_MP5KInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -95,8 +95,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M249Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_M249Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -124,8 +124,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M4Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_M4Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -153,8 +153,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_M82A1Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_M82A1Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -185,9 +185,14 @@
 		<subSounds>
 			<li>
 				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Lockon</clipPath>
+					</li>
+					<!--
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>SLP_Lockon</clipFolderPath>
 					</li>
+					-->
 				</grains>
 				<volumeRange>
 					<min>9</min>        
@@ -215,8 +220,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_MG3Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_MG3Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -244,8 +249,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_WA2000Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_WA2000Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -273,8 +278,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_RIFLEInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_RIFLEInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -302,8 +307,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GenericRifleInter01</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenericRifleInter01</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -331,8 +336,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_ShotgunPumpInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ShotgunPumpInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -360,8 +365,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_ShotgunInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ShotgunInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -390,8 +395,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GenericInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenericInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -419,8 +424,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_Generic2Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Generic2Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -448,8 +453,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_G36Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_G36Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -477,8 +482,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_AKInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_AKInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -506,8 +511,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GenBoltInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenBoltInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -535,8 +540,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_ColtInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ColtInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -564,8 +569,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_P90Inter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_P90Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -593,8 +598,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GenBoltInter02</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenBoltInter02</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -623,8 +628,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GLInter1</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GLInter1</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -652,8 +657,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_GLInter2</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GLInter2</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -681,8 +686,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_LauncherInter</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_LauncherInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -710,8 +715,8 @@
 		<subSounds>
 			<li>
 				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_LauncherInter2</clipFolderPath>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_LauncherInter2</clipPath>
 					</li>
 				</grains>
 				<volumeRange>

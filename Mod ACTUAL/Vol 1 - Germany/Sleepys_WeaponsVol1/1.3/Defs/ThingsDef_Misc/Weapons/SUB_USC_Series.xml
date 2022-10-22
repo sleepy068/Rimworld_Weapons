@@ -19,7 +19,7 @@
   
   <!-- ================================= Weapons ==================================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_USC_S</defName>
     <label>HK USC</label>
     <description>A .45 ACP submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
@@ -28,6 +28,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
+	<possessionCount>1</possessionCount>
 	<equippedAngleOffset>-45</equippedAngleOffset>
 	
     <soundInteract>SLP_Generic2Inter</soundInteract>
@@ -35,16 +36,22 @@
       <li>ShortShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+	<weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+	<!--
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
+	--> 
+	
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>290</MarketValue>
-      <WorkToMake>22000</WorkToMake>
+      <!--<WorkToMake>22000</WorkToMake>-->
       <Mass>2.78</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.88</AccuracyShort>
@@ -68,9 +75,6 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
     <tools>
       <li>
         <label>butt</label>

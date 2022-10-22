@@ -22,7 +22,7 @@
   
   <!-- ================================= Weapons ==================================== -->
   <!-- G36 -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_G36_S</defName>
     <label>G36</label>
     <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model is designed as an all purpose weapon.</description>
@@ -43,16 +43,18 @@
       <li>RangedHeavy</li>
     </weaponClasses>
 	-->
+	<!--
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>480</MarketValue>
-      <WorkToMake>40000</WorkToMake>
+      <!--<WorkToMake>40000</WorkToMake>-->
       <Mass>3.63</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
       <AccuracyShort>0.73</AccuracyShort>
@@ -61,7 +63,7 @@
       <RangedWeapon_Cooldown>1.81</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>60</Steel>
+      <Steel>70</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <verbs>
@@ -142,7 +144,7 @@
     </statBases>
 
     <costList>
-      <Steel>60</Steel>
+      <Steel>75</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 

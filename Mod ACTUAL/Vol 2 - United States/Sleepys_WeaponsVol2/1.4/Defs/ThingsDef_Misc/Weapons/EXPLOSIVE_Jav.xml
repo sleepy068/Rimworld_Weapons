@@ -31,6 +31,7 @@
     <description>A single-use rocket launcher that fires a high explosive anti-tank warhead. Good against tightly grouped enemies or heavily armoured targets. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once the fired, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
+	<smeltable>false</smeltable>
     <graphicData>
       <texPath>Things/Item/Equipment/MissileLaunchers/SLP_JAV_HEAT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -38,7 +39,7 @@
 	<equippedAngleOffset>-45</equippedAngleOffset>
     <statBases>
       <MarketValue>725</MarketValue>
-	  <WorkToMake>15000</WorkToMake>
+	  <!--<WorkToMake>15000</WorkToMake>-->
       <Mass>22.3</Mass>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
@@ -96,6 +97,7 @@
       <li Class="CompProperties_Biocodable"/>
     </comps>
 	
+	<!--
 	<recipeMaker>
       <researchPrerequisite>SLP_GWLaunchers</researchPrerequisite>
       <skillRequirements>
@@ -105,12 +107,15 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
+	
     <costList>
 	  <Steel>100</Steel>
       <ComponentIndustrial>12</ComponentIndustrial>
       <Plasteel>5</Plasteel>
       <Chemfuel>60</Chemfuel>
     </costList>
+	-->
+	
   </ThingDef>
   
   <DamageDef ParentName="Bomb">
@@ -143,6 +148,7 @@
     <description>A single-use rocket launcher that fires a high explosive anti-infantry warhead. Good against groups of enemies. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once the fired, the missile will take care of any guidance required and the user can quickly move out of the way.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
+	<smeltable>false</smeltable>
     <graphicData>
       <texPath>Things/Item/Equipment/MissileLaunchers/SLP_JAV_HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -150,7 +156,7 @@
 	<equippedAngleOffset>-45</equippedAngleOffset>
     <statBases>
       <MarketValue>850</MarketValue>
-	  <WorkToMake>15000</WorkToMake>
+	  <!--<WorkToMake>15000</WorkToMake>-->
       <Mass>22.3</Mass>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
@@ -208,6 +214,7 @@
       <li Class="CompProperties_Biocodable"/>
     </comps>
 	
+	<!--
 	<recipeMaker>
       <researchPrerequisite>SLP_GWLaunchers</researchPrerequisite>
       <skillRequirements>
@@ -223,6 +230,8 @@
       <Plasteel>5</Plasteel>
       <Chemfuel>90</Chemfuel>
     </costList>
+	-->
+	
   </ThingDef>
-  
+
 </Defs>

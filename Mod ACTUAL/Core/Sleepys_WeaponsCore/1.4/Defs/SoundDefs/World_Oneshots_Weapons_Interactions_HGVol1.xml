@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+  <!-- ============= Interactions ============= -->
+    <!-- HKUSP -->
+    <SoundDef>
+		<defName>SLP_HKUSPInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_HKUSPInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- P229 -->
+	<SoundDef>
+		<defName>SLP_P229Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_P229Inter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Q5 Match -->
+	<SoundDef>
+		<defName>SLP_Q5MatchInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Q5MatchInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+</Defs>

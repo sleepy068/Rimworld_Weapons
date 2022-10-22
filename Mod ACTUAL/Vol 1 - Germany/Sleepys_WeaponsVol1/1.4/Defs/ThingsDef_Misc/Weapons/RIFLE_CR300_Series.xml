@@ -42,11 +42,6 @@
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
 	<!--
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-	-->
-	<!--
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -67,7 +62,7 @@
     </statBases>
 
     <costList>
-      <Steel>110</Steel>
+      <Steel>70</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
 

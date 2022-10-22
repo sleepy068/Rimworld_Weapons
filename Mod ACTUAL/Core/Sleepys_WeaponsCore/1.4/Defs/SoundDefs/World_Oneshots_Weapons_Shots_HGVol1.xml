@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+ 	<!-- ============= Shooting Sounds ============= -->
+	<!-- HKUSP -->
+	<SoundDef>
+		<defName>SLP_HKUSPShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HKUSPShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- P229 -->
+	<SoundDef>
+		<defName>SLP_P229Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_P229Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>26</min>        
+					<max>26</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Q5MatchSF -->
+	<SoundDef>
+		<defName>SLP_Q5MatchShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_Q5MatchShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>13</min>        
+					<max>13</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

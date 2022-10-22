@@ -26,6 +26,7 @@
     <defName>SLP_Gun_MP7_S</defName>
     <label>MP7</label>
     <description>A 4.6x30mm submachine gun. Handles exceptionally well and is accurate and fast in close quarter battles. A good, compact yet powerful weapon that can provide support for those who aren't front line combatants. Lacks the range, accuracy or firepower for long range combat.</description>
+    <possessionCount>1</possessionCount>
 	<graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_HKMP7A_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>

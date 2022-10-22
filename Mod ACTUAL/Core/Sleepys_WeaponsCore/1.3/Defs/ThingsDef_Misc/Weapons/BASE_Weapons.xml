@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Name="SLPBaseGunWithQuality" Abstract="True" ParentName="BaseGunWithQuality">
+	<weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+	<!--
+	<tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	-->
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+  </ThingDef>
+
+
+</Defs>
