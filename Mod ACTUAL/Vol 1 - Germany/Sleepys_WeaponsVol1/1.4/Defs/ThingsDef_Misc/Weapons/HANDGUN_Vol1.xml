@@ -106,7 +106,7 @@
       <AccuracyShort>0.60</AccuracyShort>
       <AccuracyMedium>0.30</AccuracyMedium>
       <AccuracyLong>0.10</AccuracyLong>
-      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -120,7 +120,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_P229A</defaultProjectile>
         <warmupTime>0.15</warmupTime>
-        <range>20.9</range>
+        <range>19.9</range>
         <soundCast>SLP_P229Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
