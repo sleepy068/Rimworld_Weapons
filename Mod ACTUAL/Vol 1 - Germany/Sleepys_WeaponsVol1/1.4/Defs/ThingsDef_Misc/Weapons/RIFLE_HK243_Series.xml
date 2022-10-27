@@ -22,7 +22,7 @@
   
   <!-- ================================= Weapons ==================================== -->
   <!-- HK243 -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK243_S</defName>
     <label>HK243 S SAR</label>
     <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model is designed as an all purpose weapon.</description>
@@ -43,16 +43,18 @@
       <li>RangedHeavy</li>
     </weaponClasses>
 	-->
+	<!--
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
 	  <MarketValue>515</MarketValue>
-      <WorkToMake>40000</WorkToMake>
+      <!--<WorkToMake>40000</WorkToMake>-->
       <Mass>3.21</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.79</AccuracyShort>
