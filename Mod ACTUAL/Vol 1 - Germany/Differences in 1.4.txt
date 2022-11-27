@@ -1,9 +1,0 @@
-Smeltable items need a cost list, probably only needs steel or other smeltable resources.
-<costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-</costList>
-Smelting gives you 25% of the cost list smeltable products.
-
-Pawns can start with guns by having them as a possession:
-<possessionCount>1</possessionCount>

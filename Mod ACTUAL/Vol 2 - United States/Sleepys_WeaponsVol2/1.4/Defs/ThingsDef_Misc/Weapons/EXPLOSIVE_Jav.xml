@@ -137,7 +137,7 @@
     <projectile>
       <damageDef>SLP_JAVHE</damageDef>
       <explosionRadius>4.5</explosionRadius>
-      <speed>75</speed>
+      <speed>85</speed>
     </projectile>
   </ThingDef>
 
@@ -183,7 +183,7 @@
         <forcedMissRadius>0.1</forcedMissRadius>
         <warmupTime>5.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-        <range>35.9</range>
+        <range>38.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>SLP_Javshot</soundCast>
 		<soundAiming>SLP_Lockon</soundAiming>

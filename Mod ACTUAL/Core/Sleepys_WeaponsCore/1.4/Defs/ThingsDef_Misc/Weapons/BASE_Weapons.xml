@@ -5,6 +5,9 @@
 	<weaponTags>
       <li>Gun</li>
     </weaponTags>
+	<tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
 	<!--
 	<tradeTags>
       <li>ExoticMisc</li>
@@ -15,5 +18,18 @@
     </comps>
   </ThingDef>
 
+<ThingDef Name="SLP_BaseMakeableGunNoQuality" ParentName="BaseGun" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
 
 </Defs>
