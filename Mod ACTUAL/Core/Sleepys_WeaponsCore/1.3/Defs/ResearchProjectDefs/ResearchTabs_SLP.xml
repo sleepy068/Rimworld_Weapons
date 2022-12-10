@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-
-	<ResearchTabDef>
-		<defName>SLP_WEAP</defName>
-		<label>Weapons</label>
-	</ResearchTabDef>
-
-</Defs>
