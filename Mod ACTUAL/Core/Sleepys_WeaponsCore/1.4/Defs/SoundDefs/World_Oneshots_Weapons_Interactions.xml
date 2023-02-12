@@ -386,7 +386,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!-- Generic -->
 	<SoundDef>
 		<defName>SLP_GenericInter</defName>

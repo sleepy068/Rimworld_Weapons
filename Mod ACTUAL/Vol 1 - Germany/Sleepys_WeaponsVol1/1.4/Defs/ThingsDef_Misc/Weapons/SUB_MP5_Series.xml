@@ -52,6 +52,22 @@
     </projectile>
   </ThingDef>
   
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_MPX_9MM</defName>
+    <label>9mm MPX bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>45</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
   <!-- ================================= Weapons ==================================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -209,7 +225,7 @@
     </tools>
   </ThingDef>
   
-   <ThingDef ParentName="SLPBaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5K_S</defName>
     <label>MP5K</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is quite accurate and quick in close quarter battles. Much better used in close quarter battles as it seriously lacks the firepower or range for battles at distances.</description>
@@ -442,8 +458,7 @@
       </li>
     </tools>
   </ThingDef>
-  
-  
+   
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A5MIL_S</defName>
     <label>MP5A5 MIL</label>
@@ -523,5 +538,86 @@
     </tools>
   </ThingDef>
   
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_MPXCU_S</defName>
+    <label>MP5X Copperhead</label>
+    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is quite accurate and quick in close quarter battles. Much better used in close quarter battles as it seriously lacks the firepower or range for battles at distances.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MPXCU_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<possessionCount>1</possessionCount>
+	
+    <soundInteract>SLP_MP5KInter</soundInteract>
+    <weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>270</MarketValue>
+      <!--<WorkToMake>13000</WorkToMake>-->
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.92</AccuracyTouch>
+      <AccuracyShort>0.73</AccuracyShort>
+      <AccuracyMedium>0.33</AccuracyMedium>
+      <AccuracyLong>0.11</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_MPX_9MM</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>19.9</range>
+        <burstShotCount>3</burstShotCount>
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11 -->
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>SLP_MP5Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   
 </Defs>
