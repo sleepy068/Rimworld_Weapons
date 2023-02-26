@@ -378,7 +378,9 @@
       </li>
     </tools>
   </ThingDef>
+  
   <!-- ================================= Grenades ==================================== -->
+  <!-- Stick Grenade -->
   <ThingDef ParentName="BaseMakeableGrenade">
     <defName>SLP_Weapon_GrenadeStick</defName>
     <label>stick grenade</label>
@@ -464,6 +466,7 @@
     </weaponClasses>
   </ThingDef>
   
+  <!-- Bundle Stick Grenade -->
   <ThingDef ParentName="SLP_BaseNotMakeableGrenade">
     <defName>SLP_Weapon_GrenadeStickBundle</defName>
     <label>bundle stick grenade</label>

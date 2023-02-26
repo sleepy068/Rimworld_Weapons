@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= Snipers ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M85_50CAL</defName>
+    <label>.50cal M85 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <speed>150</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.47</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+
+  <!-- M82A1 CQ 50BMG -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_M82A1CQ_S</defName>
+    <label>M82A1 CQ 50BMG</label>
+    <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_M82A1CQ_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-47.2</equippedAngleOffset>
+	
+    <soundInteract>SLP_M82A1Inter</soundInteract>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AMAdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>780</MarketValue>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>13.5</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.94</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_M85_50CAL</defaultProjectile>
+        <warmupTime>5.3</warmupTime>
+        <range>52.9</range>
+        <soundCast>SLP_M85A1CQShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

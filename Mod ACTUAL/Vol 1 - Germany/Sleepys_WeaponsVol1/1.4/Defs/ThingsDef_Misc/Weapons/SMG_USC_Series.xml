@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_USC_45_S</defName>
+    <label>.45 USC bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>51</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USC_S</defName>
+    <label>HK USC</label>
+    <description>A .45 ACP submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_HKUSC_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<possessionCount>1</possessionCount>
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_Generic2Inter</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	--> 
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>290</MarketValue>
+      <!--<WorkToMake>22000</WorkToMake>-->
+      <Mass>2.78</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.17</AccuracyLong>
+      <RangedWeapon_Cooldown>0.60</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_USC_45_S</defaultProjectile>
+        <warmupTime>0.55</warmupTime>
+        <range>19.9</range>
+        <soundCast>SLP_SLHSMG1</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>butt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
