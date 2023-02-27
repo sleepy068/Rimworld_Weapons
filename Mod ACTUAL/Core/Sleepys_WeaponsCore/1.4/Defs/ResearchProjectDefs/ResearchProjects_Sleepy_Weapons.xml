@@ -10,6 +10,7 @@
     <description>Craft low-power recoil-operated guns like handguns and machine pistols.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -23,6 +24,7 @@
     <description>Craft weapon systems that rely on belt fed munitions.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>GasOperation</li>
     </prerequisites>
@@ -37,6 +39,7 @@
     <description>Craft well-machined and mechanically advanced handguns and machine pistols.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -51,6 +54,7 @@
     <description>Craft well-machined and mechanically advanced rifles, magazine based machine guns and shotguns.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>Gunsmithing</li>
     </prerequisites>
@@ -65,6 +69,7 @@
     <description>Craft well-machined and mechanically advanced sniper rifles.</description>
     <baseCost>700</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>PrecisionRifling</li>
     </prerequisites>
@@ -94,6 +99,7 @@
     <description>Craft weapon systems that use rocket propulsion to move a munition to hit the target.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>Mortars</li>
     </prerequisites>
@@ -107,6 +113,7 @@
     <description>Craft weapon systems that use rocket propulsion, aerodynamic design, control surfaces as well as electronic systems to move and guide a munition to precisely hit a target.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
     <prerequisites>
       <li>SLP_RocketWeapons</li>
     </prerequisites>
