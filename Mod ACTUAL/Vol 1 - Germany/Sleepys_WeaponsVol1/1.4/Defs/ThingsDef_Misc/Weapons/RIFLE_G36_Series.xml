@@ -105,7 +105,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_G36K_TAC</defName>
     <label>G36K TAC</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a ACOG sight attached allowing for better accuracy at longer ranges.</description>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a short range sight attached allowing for better accuracy at longer ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_GER_G36KTAC_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>

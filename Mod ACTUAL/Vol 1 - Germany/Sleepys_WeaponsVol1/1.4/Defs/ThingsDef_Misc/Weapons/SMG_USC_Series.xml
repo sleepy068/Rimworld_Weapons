@@ -18,7 +18,7 @@
   </ThingDef>
   
   <!-- ================================= Weapons ==================================== -->
-
+  <!-- USC -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_USC_S</defName>
     <label>HK USC</label>

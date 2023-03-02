@@ -242,11 +242,11 @@
     </tools>
   </ThingDef>
   
-  <!-- MG4 E ACOG -->
+  <!-- MG4 E SRS -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MG4E_ACOG</defName>
-    <label>MG4 E ACOG</label>
-    <description>The MG4 K is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun fitted with an ACOG scope. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <label>MG4 E SRS</label>
+    <description>The MG4 E is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun fitted with a short range scope. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/LMG/SLP_GER_MG4E_ACOG</texPath>
       <graphicClass>Graphic_Single</graphicClass>

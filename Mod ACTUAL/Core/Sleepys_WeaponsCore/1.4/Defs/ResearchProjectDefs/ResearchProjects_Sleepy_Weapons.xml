@@ -29,7 +29,7 @@
       <li>GasOperation</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Small Arms (Handguns, SMGs) -->
@@ -44,7 +44,7 @@
       <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>2.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Long Arms (Rifles, Magazine LMGs and Shotguns) -->
@@ -59,7 +59,7 @@
       <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Long Range Systems (Snipers and DMRs) -->
@@ -75,7 +75,7 @@
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Anti-Materiel Weapons 
@@ -104,7 +104,7 @@
       <li>Mortars</li>
     </prerequisites>
     <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
@@ -118,8 +118,8 @@
       <li>SLP_RocketWeapons</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Highest Tier 

@@ -197,11 +197,11 @@
     </tools>
   </ThingDef>
   
-  <!-- HK 416 M ACOG -->
+  <!-- HK 416 M SRS -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK416M_ACOG</defName>
-    <label>HK416M ACOG</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a ACOG sight attached allowing for better accuracy at longer ranges.</description>
+    <label>HK416M SRS</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a short range sight attached allowing for better accuracy at longer ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_HK416M_ACOG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -361,11 +361,11 @@
     </tools>
   </ThingDef>
   
-  <!-- HK 416 L ACOG -->
+  <!-- HK 416 L SRS -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK416L_ACOG</defName>
-    <label>HK416L ACOG</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model is designed with a longer barrel and a ACOG sight allowing for much higher accuracy at longer ranges.</description>
+    <label>HK416L SRS</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model is designed with a longer barrel and a short range sight allowing for much higher accuracy at longer ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_HK416L_ACOG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -524,11 +524,11 @@
     </tools>
   </ThingDef>
   
-   <!-- HK 416 DMR ACOG -->
+  <!-- HK 416 DMR SRS -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK416DMR_ACOG</defName>
-    <label>HK416 DMR ACOG</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has very good range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle and has a ACOG sight, giving it higher accuracy and power.</description>
+    <label>HK416 DMR SRS</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has very good range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle and has a short range sight, giving it higher accuracy and power.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_HK416DMR_ACOG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -609,11 +609,11 @@
     </tools>
   </ThingDef>
   
-  <!-- HK 416 DMR SCOPE -->
+  <!-- HK 416 DMR LRS -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HK416DMR_SCOPE</defName>
-    <label>HK416 DMR SC</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has excellent range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle with a rifle scope, giving it higher accuracy and power.</description>
+    <label>HK416 DMR LRS</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has excellent range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle with a long range rifle scope, giving it higher accuracy and power.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_HK416DMR_SCOPE</texPath>
       <graphicClass>Graphic_Single</graphicClass>

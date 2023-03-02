@@ -22,6 +22,7 @@
 
   <!-- ================================= Weapons ==================================== -->
 
+  <!-- MP7 -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>SLP_Gun_MP7_S</defName>
     <label>MP7</label>

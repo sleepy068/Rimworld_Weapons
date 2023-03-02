@@ -25,7 +25,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MXRATSBR_S</defName>
     <label>MCX Rattler SBR</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has decent range, fair power, and good accuracy but it is best at providing supressive fire.</description>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has decent range, fair power, and good accuracy but it is best at providing suppressive fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_GER_MXCRATTLERSBR_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -69,7 +69,7 @@
   </ThingDef>
   
   <!-- ================================= Weapons ==================================== -->
-
+  <!-- MP5A3 -->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>SLP_Gun_MP5A3_S</defName>
     <label>MP5A3</label>
@@ -146,10 +146,11 @@
     </tools>
   </ThingDef>
   
+  <!-- MP5SD-->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5SD_S</defName>
     <label>MP5SD</label>
-    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. The MP5SD has a integrated suppressor that significantly reduces the volume of the weapon. It also forces supersonic rounds down to subsonic speeds.</description>
+    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. The MP5SD has a integrated suppressor that significantly reduces the sound of the weapon firing. It also forces supersonic rounds down to subsonic speeds.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_HKMP5SD_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -225,6 +226,7 @@
     </tools>
   </ThingDef>
   
+  <!-- MP5K -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5K_S</defName>
     <label>MP5K</label>
@@ -306,6 +308,7 @@
     </tools>
   </ThingDef>
   
+  <!-- MP5K STK -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5K_SKS</defName>
     <label>MP5K STK</label>
@@ -380,6 +383,7 @@
     </tools>
   </ThingDef>
   
+  <!-- MP5A3 TAC -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3TAC_S</defName>
     <label>MP5A3 TAC</label>
@@ -459,10 +463,11 @@
     </tools>
   </ThingDef>
    
+  <!-- MP5A5 MIL -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A5MIL_S</defName>
     <label>MP5A5 MIL</label>
-    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat. The MP5SD has a integrated suppressor that significantly reduces the volume of the weapon. It also forces supersonic rounds down to subsonic speeds.</description>
+    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MP5A5MIL_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -538,6 +543,7 @@
     </tools>
   </ThingDef>
   
+  <!-- MPXCU -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MPXCU_S</defName>
     <label>MP5X Copperhead</label>
