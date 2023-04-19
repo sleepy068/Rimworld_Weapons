@@ -17,7 +17,7 @@
     <statBases>
       <MarketValue>725</MarketValue>
 	  <!--<WorkToMake>15000</WorkToMake>-->
-      <Mass>22.3</Mass>
+      <Mass>8</Mass>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -134,7 +134,7 @@
     <statBases>
       <MarketValue>850</MarketValue>
 	  <!--<WorkToMake>15000</WorkToMake>-->
-      <Mass>22.3</Mass>
+      <Mass>8</Mass>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>

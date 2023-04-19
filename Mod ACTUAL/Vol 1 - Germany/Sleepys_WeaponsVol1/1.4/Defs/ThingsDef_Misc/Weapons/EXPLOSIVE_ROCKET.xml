@@ -41,7 +41,7 @@
     <statBases>
       <MarketValue>700</MarketValue>
 	  <WorkToMake>10000</WorkToMake>
-      <Mass>15.2</Mass>
+      <Mass>6</Mass>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <techLevel>Industrial</techLevel>
