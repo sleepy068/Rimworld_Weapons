@@ -36,7 +36,7 @@
   <ResearchProjectDef>
     <defName>SLP_AdvSM</defName>
     <label>small arms systems</label>
-    <description>Craft well-machined and mechanically advanced handguns and machine pistols.</description>
+    <description>Craft well-machined and mechanically advanced handguns, machine pistols and sub machine guns.</description>
     <baseCost>1200</baseCost>
     <techLevel>Industrial</techLevel>
 	<tab>SLP_WeaponsCore</tab>
