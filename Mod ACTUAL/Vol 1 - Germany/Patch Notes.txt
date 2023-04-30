@@ -1,18 +1,14 @@
-Update v1.0.0
+Update v1.0.1
 Inital Release
 
 Additions:
-
+N/A
 
 Changes:
-
+N/A
 
 Localisation:
-
+Fixed a grammer mistake in the MG4 series
 
 Bug Fixes:
-
-
-Notes:
-To prevent bloating the crafting tables, the varients can only be traded for or looted.
-This helps with balancing them too.
+N/A

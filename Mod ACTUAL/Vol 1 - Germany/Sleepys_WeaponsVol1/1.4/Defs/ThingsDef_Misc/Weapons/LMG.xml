@@ -165,7 +165,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MG4KE_S</defName>
     <label>MG4 KE</label>
-    <description>The MG4 KE is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <description>The MG4 KE is a one person, gas-operated, belt-fed, air-cooled, automatic light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/LMG/SLP_GER_MG4KE_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -246,7 +246,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MG4E_ACOG</defName>
     <label>MG4 E SRS</label>
-    <description>The MG4 E is a one person operated a gas-operated, belt-fed, air-cooled, automatic light machine gun fitted with a short range scope. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <description>The MG4 E is a one person, gas-operated, belt-fed, air-cooled, automatic light machine gun fitted with a short range scope. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/LMG/SLP_GER_MG4E_ACOG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
