@@ -1,11 +1,12 @@
-Update v1.0.0
+Update v1.0.1
 Inital Release
 
 Additions:
 
 
 Changes:
-
+Better mapped out the sound xmls so I can track overall usage.
+Replaced SLP_GenBoltInter.wav with a better sound (I didn't like it).
 
 Localisation:
 

@@ -11,4 +11,4 @@ Localisation:
 Fixed a grammer mistake in the MG4 series
 
 Bug Fixes:
-N/A
+Fixed MP5A5 MIL sound, had the wrong weapon weapon fire sound cast

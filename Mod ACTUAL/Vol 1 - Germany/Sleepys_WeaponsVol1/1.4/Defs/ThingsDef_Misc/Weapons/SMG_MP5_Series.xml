@@ -514,7 +514,7 @@
         <range>22.9</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>SLP_MP5SDShot</soundCast>
+        <soundCast>SLP_MP5Shot</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

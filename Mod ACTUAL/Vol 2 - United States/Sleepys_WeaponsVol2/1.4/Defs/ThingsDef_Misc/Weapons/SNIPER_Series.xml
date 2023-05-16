@@ -24,7 +24,7 @@
 
   <!-- M82A1 CQ 50BMG -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
-    <defName>SLP_Gun_M82A1CQ_S</defName>
+    <defName>SLP_Gun_USA_M82A1CQ_S</defName>
     <label>M82A1 CQ 50BMG</label>
     <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them.</description>
     <graphicData>

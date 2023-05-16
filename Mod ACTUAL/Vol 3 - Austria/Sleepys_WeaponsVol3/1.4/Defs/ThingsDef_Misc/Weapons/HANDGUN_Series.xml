@@ -23,7 +23,7 @@
   <!-- ================================= Weapons ==================================== -->
   <!-- Glock 17 -->
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>SLP_Gun_GLOCK17_S</defName>
+    <defName>SLP_Gun_AST_GLOCK17_S</defName>
     <label>Glock 17</label>
     <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
     <possessionCount>1</possessionCount>

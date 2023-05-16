@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Defs>
-  <!-- ============= Interactions ============= -->
-    <!-- MP5 -->
+	<!-- ============= Interactions ============= -->
+	<!-- ============= Handgun ============= -->
+	<!-- HKUSP --><!-- Used 1x -->
     <SoundDef>
-		<defName>SLP_MP5Inter</defName>
+		<defName>SLP_HKUSPInter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_MP5Inter</clipPath>
+						<clipPath>SLP_HKUSPInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -29,7 +30,65 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Glock -->
+	<!-- P229 --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_P229Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_P229Inter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Q5 Match --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_Q5MatchInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Q5MatchInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Glock --><!-- Used 1x -->
 	<SoundDef>
 		<defName>SLP_GLOCKInter</defName>
 		<context>MapOnly</context>
@@ -58,7 +117,66 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MP5K -->
+	<!-- Colt -->
+	<SoundDef>
+		<defName>SLP_ColtInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ColtInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ============= SMG ============= -->
+    <!-- MP5 --><!-- Used 4x -->
+    <SoundDef>
+		<defName>SLP_MP5Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_MP5Inter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- MP5K --><!-- Used 4x -->
 	<SoundDef>
 		<defName>SLP_MP5KInter</defName>
 		<context>MapOnly</context>
@@ -87,16 +205,16 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- M249 -->
+	<!-- P90 -->
 	<SoundDef>
-		<defName>SLP_M249Inter</defName>
+		<defName>SLP_P90Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_M249Inter</clipPath>
+						<clipPath>SLP_P90Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -116,7 +234,38 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- M4 -->
+	<!-- PP19 (Generic) --><!-- Used 3x -->
+	<SoundDef>
+		<defName>SLP_SMG_GenericInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_SMG_GenericInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<!-- ============= Rifle ============= -->
+	<!-- M4 --><!-- Used 8x -->
 	<SoundDef>
 		<defName>SLP_M4Inter</defName>
 		<context>MapOnly</context>
@@ -145,132 +294,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- M85A1 -->
-	<SoundDef>
-		<defName>SLP_M82A1Inter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_M82A1Inter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Missile Lock On Sound -->
-	<SoundDef>
-		<defName>SLP_Lockon</defName>
-		<sustain>true</sustain>
-		<context>MapOnly</context>
-		<eventNames />
-		<maxSimultaneous>2</maxSimultaneous>
-        <priorityMode>PrioritizeNearest</priorityMode>  
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_Lockon</clipPath>
-					</li>
-					<!--
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_Lockon</clipFolderPath>
-					</li>
-					-->
-				</grains>
-				<volumeRange>
-					<min>9</min>        
-					<max>9</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<!--<sustainLoop>False</sustainLoop>-->
-				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- MG3 -->
-	<SoundDef>
-		<defName>SLP_MG3Inter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_MG3Inter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- WA2000 -->
-	<SoundDef>
-		<defName>SLP_WA2000Inter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_WA2000Inter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Rifle or DMR Interaction (Generic) -->
+	<!-- Rifle or DMR Interaction (Generic) --><!-- Used 3x -->
 	<SoundDef>
 		<defName>SLP_RIFLEInter</defName>
 		<context>MapOnly</context>
@@ -299,7 +323,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Rifle Interaction 2 (Generic) -->
+	<!-- Rifle Interaction 2 (Generic) --><!-- Used 1x -->
 	<SoundDef>
 		<defName>SLP_GenericRifleInter01</defName>
 		<context>MapOnly</context>
@@ -328,123 +352,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Shotgun Pump (Generic) -->
-	<SoundDef>
-		<defName>SLP_ShotgunPumpInter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_ShotgunPumpInter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Shotgun Shell Load -->
-	<SoundDef>
-		<defName>SLP_ShotgunInter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_ShotgunInter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Generic -->
-	<SoundDef>
-		<defName>SLP_GenericInter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_GenericInter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- Generic 2 -->
-	<SoundDef>
-		<defName>SLP_Generic2Inter</defName>
-		<context>MapOnly</context>
-		<eventNames />
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_Generic2Inter</clipPath>
-					</li>
-				</grains>
-				<volumeRange>
-					<min>30</min>        
-					<max>30</max>
-				</volumeRange>   
-				<pitchRange>
-					<min>0.9770588</min>
-					<max>1.137647</max>
-				</pitchRange>
-				<distRange>
-					<min>0</min>
-					<max>50.40025</max>
-				</distRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<!-- G36 -->
+	<!-- G36 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_G36Inter</defName>
 		<context>MapOnly</context>
@@ -502,16 +410,17 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt -->
+	<!-- ============= LMG ============= -->
+	<!-- M249 --><!-- Used 1x -->
 	<SoundDef>
-		<defName>SLP_GenBoltInter</defName>
+		<defName>SLP_M249Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_GenBoltInter</clipPath>
+						<clipPath>SLP_M249Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -531,16 +440,16 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Colt -->
+	<!-- MG3 --><!-- Used 5x -->
 	<SoundDef>
-		<defName>SLP_ColtInter</defName>
+		<defName>SLP_MG3Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_ColtInter</clipPath>
+						<clipPath>SLP_MG3Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -560,16 +469,17 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- P90 -->
+	<!-- ============= Sniper ============= -->
+	<!-- M85A1 --><!-- Used 1x -->
 	<SoundDef>
-		<defName>SLP_P90Inter</defName>
+		<defName>SLP_M82A1Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_P90Inter</clipPath>
+						<clipPath>SLP_M82A1Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -589,16 +499,16 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt 2 -->
+	<!-- WA2000 --><!-- Used 3x -->
 	<SoundDef>
-		<defName>SLP_GenBoltInter02</defName>
+		<defName>SLP_WA2000Inter</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SLP_GenBoltInter02</clipPath>
+						<clipPath>SLP_WA2000Inter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -618,8 +528,67 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- ============= Launcher/GL ============= -->
-	<!-- GL1 -->
+	<!-- ============= Shotgun ============= -->
+	<!-- Shotgun Pump (Generic) -->
+	<SoundDef>
+		<defName>SLP_ShotgunPumpInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ShotgunPumpInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Shotgun Shell Load --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_ShotgunInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_ShotgunInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ============= Explosives ============= -->
+	<!-- GL1 --><!-- Used 3x -->
     <SoundDef>
 		<defName>SLP_GLInter1</defName>
 		<context>MapOnly</context>
@@ -735,5 +704,160 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- ============= Beeps and Boops ============= -->
+	<!-- Missile Lock On Sound --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_Lockon</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>2</maxSimultaneous>
+        <priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Lockon</clipPath>
+					</li>
+					<!--
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_Lockon</clipFolderPath>
+					</li>
+					-->
+				</grains>
+				<volumeRange>
+					<min>9</min>        
+					<max>9</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<!--<sustainLoop>False</sustainLoop>-->
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ============= Generic Slider Sounds ============= -->
+	<!-- Generic -->
+	<SoundDef>
+		<defName>SLP_GenericInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenericInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Generic 2 --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_Generic2Inter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_Generic2Inter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Gen Bolt --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_GenBoltInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenBoltInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Gen Bolt 2 --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_GenBoltInter02</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_GenBoltInter02</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 </Defs>
