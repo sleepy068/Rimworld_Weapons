@@ -25,7 +25,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_HMK556_S</defName>
     <label>HAENEL Mk 556</label>
-    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power and good accuracy.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Rifles/SLP_GER_HAENELMK556_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>

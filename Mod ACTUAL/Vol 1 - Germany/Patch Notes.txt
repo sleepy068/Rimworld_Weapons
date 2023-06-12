@@ -1,5 +1,4 @@
-Update v1.0.1
-Inital Release
+Update v1.0.2 Build 12/06/23 |
 
 Additions:
 N/A
@@ -8,7 +7,7 @@ Changes:
 N/A
 
 Localisation:
-Fixed a grammer mistake in the MG4 series
+N/A
 
 Bug Fixes:
-Fixed MP5A5 MIL sound, had the wrong weapon weapon fire sound cast
+N/A

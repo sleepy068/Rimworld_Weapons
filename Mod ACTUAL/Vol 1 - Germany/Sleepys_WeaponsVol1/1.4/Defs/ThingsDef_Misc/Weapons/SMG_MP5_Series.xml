@@ -387,7 +387,7 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MP5A3TAC_S</defName>
     <label>MP5A3 TAC</label>
-    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat but has a tactical support equipment attached. This helps the weapon perform better at longer ranges.</description>
+    <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat but has tactical support equipment attached. This helps the weapon perform better at longer ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MP5A3TAC_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
