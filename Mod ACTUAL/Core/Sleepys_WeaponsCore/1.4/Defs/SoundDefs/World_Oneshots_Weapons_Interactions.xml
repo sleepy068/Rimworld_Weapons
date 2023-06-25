@@ -263,9 +263,8 @@
 		</subSounds>
 	</SoundDef>
 	
-	
 	<!-- ============= Rifle ============= -->
-	<!-- M4 --><!-- Used 8x -->
+	<!-- M4 --><!-- Used 10x -->
 	<SoundDef>
 		<defName>SLP_M4Inter</defName>
 		<context>MapOnly</context>
@@ -391,6 +390,35 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>SLP_AKInter</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>        
+					<max>30</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- AUG --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_AUGInter</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SLP_AUGInter</clipPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -744,7 +772,7 @@
 	</SoundDef>
 	
 	<!-- ============= Generic Slider Sounds ============= -->
-	<!-- Generic -->
+	<!-- Generic --><!-- Used 1x -->
 	<SoundDef>
 		<defName>SLP_GenericInter</defName>
 		<context>MapOnly</context>
@@ -802,7 +830,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt --><!-- Used 1x -->
+	<!-- Gen Bolt --><!-- Used 3x -->
 	<SoundDef>
 		<defName>SLP_GenBoltInter</defName>
 		<context>MapOnly</context>

@@ -1,8 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
 
   <!-- ================================= SMG Series ==================================== -->
-  
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
     <defName>SLP_Bullet_F1_AUS</defName>

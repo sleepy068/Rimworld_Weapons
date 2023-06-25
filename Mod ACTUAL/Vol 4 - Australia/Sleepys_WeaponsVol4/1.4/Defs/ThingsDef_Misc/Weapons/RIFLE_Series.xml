@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- AMAPMC Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_AMAPMC</defName>
+    <label>AMAPMC bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>80</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.33</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- CSW GEN1 FP Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_CSWGEN1FP</defName>
+    <label>CSWGEN1FP bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>78</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.21</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- F88 Austeyr Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_F88</defName>
+    <label>F88 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- F90 Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_F90</defName>
+    <label>F90 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- L1A1 SLR Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_L1A1SLR</defName>
+    <label>L1A1 SLR bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>90</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.26</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- LA101 Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_LA101</defName>
+    <label>LA101 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>65</speed>
+	  <stoppingPower>0.25</stoppingPower>
+	  <armorPenetrationBase>0.08</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- T2M K5 Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_T2MK5</defName>
+    <label>T2MK5 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- F88 Austeyr -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUS_F88_S</defName>
+    <label>F88 Austeyr</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has an integrated scope.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_F88_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>455</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.57</AccuracyLong>
+      <RangedWeapon_Cooldown>1.79</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_F88</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>32.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_AUGShot2</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- L1A1 SLR -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUS_L1A1SLR_S</defName>
+    <label>L1A1 SLR</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_L1A1SLR_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenericInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>410</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.89</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
+      <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+	  <Steel>40</Steel>
+      <WoodLog>20</WoodLog>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_L1A1SLR</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>30.9</range>
+        <soundCast>SLP_HK243Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- AMAPMC -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_AMAPMC_S</defName>
+    <label>AMAPMC</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has very good range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle and has higher accuracy, range and power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_AMAPMC_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>245</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>4.1</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.91</AccuracyMedium>
+      <AccuracyLong>0.84</AccuracyLong>
+      <RangedWeapon_Cooldown>1.88</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_AMAPMC</defaultProjectile>
+        <warmupTime>2.15</warmupTime>
+        <range>36.9</range>
+        <soundCast>SLP_RIFLE_M21Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- CSW GEN1 FP -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_CSWGEN1FP_S</defName>
+    <label>CSW GEN1 FP</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has very good range, decent power, and good accuracy. This particular model is designed as a designated marksman rifle and has higher accuracy, range and power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_CSWGEN1FP_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M4Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>410</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_CSWGEN1FP</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>34.9</range>
+        <soundCast>SLP_RIFLE_M21Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- F90 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_F90_S</defName>
+    <label>F90</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a shorter barrel and close quarter battle modifications.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_F90_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>460</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>3.7</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.73</AccuracyShort>
+      <AccuracyMedium>0.68</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.69</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_F90</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>31.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_AUGShot3</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- LA101 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_LA101_S</defName>
+    <label>LA101</label>
+    <description>A general-purpose gas-operated rifle for field or urban combat. It has good range and good accuracy but lacks considerably with power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_LA101_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>185</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>3.1</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_LA101</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>27.9</range>
+        <soundCast>SLP_RIFLE_22Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- T2M K5 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_T2MK5_S</defName>
+    <label>T2M K5</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUS_T2MK5_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M4Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>435</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.57</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.69</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_T2MK5</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>30.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_M4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

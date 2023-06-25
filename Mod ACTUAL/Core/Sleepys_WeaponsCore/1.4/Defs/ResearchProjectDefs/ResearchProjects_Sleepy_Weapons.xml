@@ -2,7 +2,8 @@
 <Defs>
 
   <!--===========================================-->
-
+  <!-- In Game Tech -->
+  <!-- Smithing, RecurveBow, LongBlades, Greatbow, IEDs, Gunsmithing, BlowbackOperation, GasOperation, Mortars -->
   <!-- Low Tier (But outside original tech tree) -->
   <ResearchProjectDef>
     <defName>SLP_RecoilOperated</defName>
