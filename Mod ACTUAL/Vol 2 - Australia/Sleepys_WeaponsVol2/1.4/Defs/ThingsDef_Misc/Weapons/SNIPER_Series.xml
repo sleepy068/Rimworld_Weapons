@@ -72,7 +72,7 @@
 	
 	<equippedAngleOffset>-45.0</equippedAngleOffset>
 	
-    <soundInteract>SLP_M4Inter</soundInteract>
+    <soundInteract>SLP_GenBoltInter</soundInteract>
     <weaponTags>
       <li>SniperRifle</li>
     </weaponTags>
@@ -113,7 +113,7 @@
         <defaultProjectile>SLP_Bullet_LA105_S</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>43.9</range>
-        <soundCast>SLP_RIFLE_PLACEHOLDER</soundCast>
+        <soundCast>SLP_WA2000Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

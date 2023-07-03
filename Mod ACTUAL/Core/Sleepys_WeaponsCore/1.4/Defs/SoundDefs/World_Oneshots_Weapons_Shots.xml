@@ -614,14 +614,14 @@
 	
 	<!-- 22 RIFLE --><!-- Used 1x -->
 	<SoundDef>
-		<defName>SLP_RIFLE_22Shot</defName>
+		<defName>SLP_RIFLE_22RIFLEShot</defName>
 		<context>MapOnly</context>
 		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>SLP_RIFLE_22Shot</clipFolderPath>
+						<clipFolderPath>SLP_RIFLE_22RIFLEShot</clipFolderPath>
 					</li>
 				</grains>
 				<volumeRange>
@@ -846,7 +846,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- WA2000 --><!-- Used 1x -->
+	<!-- WA2000 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_WA2000Shot</defName>
 		<context>MapOnly</context>

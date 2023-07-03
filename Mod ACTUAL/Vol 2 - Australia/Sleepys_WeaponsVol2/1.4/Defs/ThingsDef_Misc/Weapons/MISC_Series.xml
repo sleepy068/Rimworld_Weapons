@@ -7,7 +7,7 @@
 	  <li>ShortShots</li>
 	  <li>LongShots</li>
 	  <li>Neolithic</li>
-	  <li>Ranged</li>
+	  <li>Ranged</li> 
     </weaponClasses>
   -->
   
@@ -62,14 +62,17 @@
 
   <!-- ================================= Grenades ==================================== -->
   <!-- F1 Grenade Projectile -->
-  <ThingDef Name="SLP_AUS_BaseFragGrenadeProjectile_1" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_AUS_1">
     <defName>SLP_AUS_Proj_F1G</defName>
     <label>f1 grenade</label>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_AUS_1" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
 	<thingClass>Projectile_Explosive</thingClass>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_F1GRENADE_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>0.70</drawSize>
+	  <drawSize>0.40</drawSize>
     </graphicData>
     <projectile>
       <explosionRadius>1.9</explosionRadius >
@@ -83,7 +86,7 @@
     <defName>SLP_AUS_Grenade_F1_S</defName>
     <label>f1 grenade</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_F1GRENADE_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -113,14 +116,15 @@
     </recipeMaker>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_F1GRENADE_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>0.70</drawSize>
+	  <drawSize>0.40</drawSize>
     </graphicData>
     <uiIconScale>1</uiIconScale>
     <soundInteract>Interact_Grenade</soundInteract>
     <techLevel>Industrial</techLevel>
     <statBases>
+	  <MarketValue>265</MarketValue>
       <Mass>1</Mass>
       <RangedWeapon_Cooldown>2.54</RangedWeapon_Cooldown>
       <WorkToMake>12000</WorkToMake>
@@ -164,14 +168,17 @@
   </ThingDef>
   
   <!-- Jam Tin Grenade Projectile -->
-  <ThingDef Name="SLP_AUS_BaseFragGrenadeProjectile_2" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_AUS_2">
     <defName>SLP_AUS_Proj_JAMTING</defName>
     <label>jam tin grenade</label>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_AUS_2" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
 	<thingClass>Projectile_Explosive</thingClass>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_JAMTINGREN_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>0.70</drawSize>
+	  <drawSize>0.40</drawSize>
     </graphicData>
     <projectile>
       <explosionRadius>1.9</explosionRadius >
@@ -185,7 +192,7 @@
     <defName>SLP_AUS_Grenade_JAMTIN_S</defName>
     <label>jam tin grenade</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_JAMTINGREN_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -215,14 +222,15 @@
     </recipeMaker>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_F1GRENADE_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>0.70</drawSize>
+	  <drawSize>0.40</drawSize>
     </graphicData>
     <uiIconScale>1</uiIconScale>
     <soundInteract>Interact_Grenade</soundInteract>
     <techLevel>Industrial</techLevel>
     <statBases>
+	  <MarketValue>150</MarketValue>
       <Mass>1</Mass>
       <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
       <WorkToMake>12000</WorkToMake>
@@ -269,13 +277,14 @@
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>SLP_AUS_BOOMERANG</defName>
     <label>boomerang</label>
-    <description>A boomerang is a throwing stick with aerodynamic properties, historically, used as hunting weapons and traditionally made of wood. Boomerangs come in many shapes and sizes and while they have a decent range and power they are just as quick to use.</description>
+    <description>A boomerang is a throwing stick with aerodynamic properties, historically, used as a hunting weapon and traditionally made of wood. Boomerangs come in many shapes and sizes and while they have a decent range and power they are just as quick to use.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_BOOMERANG_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_BOOMERANG_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.85</drawSize>
     </graphicData>
 	
-	<equippedAngleOffset>-45</equippedAngleOffset>
+	<equippedAngleOffset>45</equippedAngleOffset>
 	
     <soundInteract>Interact_BeatFire</soundInteract>
 	
@@ -284,12 +293,13 @@
     </costList>
 	
     <statBases>
+	  <MarketValue>80</MarketValue>
       <WorkToMake>7000</WorkToMake>
       <Mass>1</Mass>
-      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyTouch>0.81</AccuracyTouch>
       <AccuracyShort>0.71</AccuracyShort>
-      <AccuracyMedium>0.50</AccuracyMedium>
-      <AccuracyLong>0.32</AccuracyLong>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
 	
@@ -301,6 +311,9 @@
     </weaponClasses>
 	
     <recipeMaker>
+	  <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
@@ -336,7 +349,7 @@
     <defName>SLP_AUS_Boomerang_Thrown</defName>
     <label>boomerang</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_AUS_BOOMERANG_S</texPath>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_BOOMERANG_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -344,12 +357,12 @@
       <damageAmountBase>15</damageAmountBase>
       <stoppingPower>1.0</stoppingPower>
       <armorPenetrationBase>0.05</armorPenetrationBase>
-      <speed>51</speed>
+      <speed>35</speed>
     </projectile>
   </ThingDef>
   
   <DamageDef Name="SLP_DDEF_BOOMERANG">
-    <defName>SLP_DDEF_Boomerang</defName>
+    <defName>SLP_DDEF_BOOMERANG</defName>
     <label>boomerang</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>

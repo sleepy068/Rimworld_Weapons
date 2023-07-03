@@ -78,7 +78,7 @@
   
   <!-- F88 Austeyr Bullet -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_F88</defName>
+    <defName>SLP_Bullet_F88_S</defName>
     <label>F88 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -95,7 +95,7 @@
   
   <!-- F90 Bullet -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_F90</defName>
+    <defName>SLP_Bullet_F90_S</defName>
     <label>F90 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -129,7 +129,7 @@
   
   <!-- LA101 Bullet -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_LA101</defName>
+    <defName>SLP_Bullet_LA101_S</defName>
     <label>LA101 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -146,7 +146,7 @@
   
   <!-- T2M K5 Bullet -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_T2MK5</defName>
+    <defName>SLP_Bullet_T2MK5_S</defName>
     <label>T2MK5 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -205,7 +205,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_F88</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_F88_S</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>32.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -524,7 +524,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_F90</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_F90_S</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>31.9</range>
 		<burstShotCount>3</burstShotCount>
@@ -606,10 +606,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_LA101</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_LA101_S</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>27.9</range>
-        <soundCast>SLP_RIFLE_22Shot</soundCast>
+        <soundCast>SLP_RIFLE_22RIFLEShot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -686,7 +686,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_T2MK5</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_T2MK5_S</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>30.9</range>
 		<burstShotCount>3</burstShotCount>

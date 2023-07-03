@@ -830,7 +830,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt --><!-- Used 3x -->
+	<!-- Gen Bolt --><!-- Used 4x -->
 	<SoundDef>
 		<defName>SLP_GenBoltInter</defName>
 		<context>MapOnly</context>
