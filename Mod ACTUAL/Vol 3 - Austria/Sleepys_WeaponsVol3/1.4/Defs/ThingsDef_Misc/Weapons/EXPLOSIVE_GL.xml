@@ -3,7 +3,7 @@
 
   <!-- Steyr GL40 -->
   <DamageDef ParentName="Bomb">
-    <defName>SLP_AUT_BOMB_STEYRGL40</defName>
+    <defName>SLP_AUT_BOMB_STEYRGL40_S</defName>
     <defaultDamage>25</defaultDamage>
     <defaultStoppingPower>0.5</defaultStoppingPower>
     <defaultArmorPenetration>0.10</defaultArmorPenetration>
@@ -11,7 +11,7 @@
   </DamageDef>
 
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_AUT_STEYRGL40</defName>
+    <defName>SLP_Bullet_AUT_STEYRGL40_S</defName>
     <label>steyr gl40 shell</label>
     <graphicData>
       <texPath>Things/Item/Equipment/Projectile/SLP_AUT_PROJ_GL_HE</texPath>
@@ -22,7 +22,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <speed>45</speed>
-      <damageDef>SLP_AUT_BOMB_STEYRGL40</damageDef>
+      <damageDef>SLP_AUT_BOMB_STEYRGL40_S</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.9</explosionRadius>
       <ai_IsIncendiary>false</ai_IsIncendiary>
@@ -67,7 +67,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_AUT_STEYRGL40</defaultProjectile>
+        <defaultProjectile>SLP_Bullet_AUT_STEYRGL40_S</defaultProjectile>
         <warmupTime>3.5</warmupTime>
         <range>25.9</range>
         <forcedMissRadius>1.5</forcedMissRadius>

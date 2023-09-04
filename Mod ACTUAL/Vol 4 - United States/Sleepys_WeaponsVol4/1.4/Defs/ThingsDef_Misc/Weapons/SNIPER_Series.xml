@@ -4,9 +4,27 @@
   <!-- ================================= Snipers ==================================== -->
   
   <!-- ================================= Projectiles ==================================== -->
+  <!-- M82A1 CQ 50BMG -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_M85_50CAL</defName>
-    <label>.50cal M85 bullet</label>
+    <defName>Bullet_SLP_M85_50CAL</defName>
+    <label>M85 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>150</speed>
+	  <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Anzio 20mm -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_ANZIO20MM</defName>
+    <label>anzio 20mm bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -15,8 +33,8 @@
       <damageDef>Bullet</damageDef>
       <damageAmountBase>35</damageAmountBase>
       <speed>150</speed>
-	  <stoppingPower>1.5</stoppingPower>
-	  <armorPenetrationBase>0.47</armorPenetrationBase>
+	  <stoppingPower>4.0</stoppingPower>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
@@ -26,9 +44,9 @@
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_USA_M82A1CQ_S</defName>
     <label>M82A1 CQ 50BMG</label>
-    <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them.</description>
+    <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also reduces the users movement speed.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SniperRifles/SLP_M82A1CQ_S</texPath>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_M82A1CQ_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
@@ -42,6 +60,9 @@
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
 	
 	<!--
     <recipeMaker>
@@ -54,14 +75,14 @@
 	
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>780</MarketValue>
+	  <MarketValue>650</MarketValue>
       <WorkToMake>60000</WorkToMake>
       <Mass>13.5</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.94</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.9</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>120</Steel>
@@ -71,10 +92,91 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_M85_50CAL</defaultProjectile>
-        <warmupTime>5.3</warmupTime>
-        <range>52.9</range>
+        <defaultProjectile>Bullet_SLP_M85_50CAL</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>49.9</range>
         <soundCast>SLP_M85A1CQShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Anzio 20mm -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_ANZIO20_S</defName>
+    <label>Anzio 20mm</label>
+    <description>An ancient design of an anti-materiel sniper rifle. Bolt action and packs an terrifying punch. It has an exceptionally long range, great accuracy and object obliterating power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also significantly reduces the users movement speed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_ANZIO20MM_O47D0_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-47.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_M82A1Inter</soundInteract>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.75</MoveSpeed>
+    </equippedStatOffsets>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AMAdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>1500</MarketValue>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>27.0</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>240</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_ANZIO20MM</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>59.9</range>
+        <soundCast>SLP_MSRShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

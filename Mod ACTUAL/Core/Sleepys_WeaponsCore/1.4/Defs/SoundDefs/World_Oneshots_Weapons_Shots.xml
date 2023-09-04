@@ -962,7 +962,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MSR --><!-- Used 0x -->
+	<!-- MSR --><!-- Used 1x -->
 	<SoundDef>
 		<defName>SLP_MSRShot</defName>
 		<context>MapOnly</context>
