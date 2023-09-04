@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+
+  <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- AUG A3 SA SE -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_AUGA3SASE_S</defName>
+    <label>AUG A3 SASE bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- AUG A3 SA -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_AUGA3SA_S</defName>
+    <label>AUG A3 SA bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- AUG A3 SF -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_AUGA3SF_S</defName>
+    <label>AUG A3 SF bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- AUG A3 Z -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_AUGA3Z_S</defName>
+    <label>AUG A3 Z bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.16</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- MK22 COM -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_MK22COM_S</defName>
+    <label>MK22 COM bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- STM 556 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_STM556_S</defName>
+    <label>STM 556 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.16</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ISSC XM5 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_ISSCXM5_S</defName>
+    <label>ISSC XM5 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- AUG A3 SA SE -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUT_AUGA3SASE_S</defName>
+    <label>AUG A3 SASE</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has an integrated scope.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_AUGA3SASE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>453</MarketValue>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.63</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.71</AccuracyMedium>
+      <AccuracyLong>0.57</AccuracyLong>
+      <RangedWeapon_Cooldown>1.79</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_AUGA3SASE_S</defaultProjectile>
+        <warmupTime>1.22</warmupTime>
+        <range>32.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_AUGShot2</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- AUG A3 SA -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_AUGA3SA_S</defName>
+    <label>AUG A3 SA</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_AUGA3SA_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>363</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>3.3</Mass>
+      <AccuracyTouch>0.77</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.51</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_AUGA3SA_S</defaultProjectile>
+        <warmupTime>1.10</warmupTime>
+        <range>24.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_AUGShot3</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- AUG A3 SF -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_AUGA3SF_S</defName>
+    <label>AUG A3 SF</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has an integrated scope and a special forces style loadout.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_AUGA3SF_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>481</MarketValue>
+      <Mass>3.7</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.71</AccuracyMedium>
+      <AccuracyLong>0.58</AccuracyLong>
+      <RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_AUGA3SF_S</defaultProjectile>
+        <warmupTime>1.22</warmupTime>
+        <range>33.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_SL556Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- AUG A3 Z -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_AUGA3Z_S</defName>
+    <label>AUG A3 Z</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This particular model has a longer barrel and performs better at longer ranges.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_AUGZA3_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_AUGInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>403</MarketValue>
+      <Mass>3.75</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_AUGA3Z_S</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_AUGShot1</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- MK22 COM -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUT_MK22COM_S</defName>
+    <label>MK22 COM</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_MK22COM_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M4Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>347</MarketValue>
+      <WorkToMake>35000</WorkToMake>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_MK22COM_S</defaultProjectile>
+        <warmupTime>1.20</warmupTime>
+        <range>26.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_SLSMG1</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- STM 556 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_STM556_S</defName>
+    <label>STM 556</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy. This model has an integrated scope and tactical weapons gear.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_STM556_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M4Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>474</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>4.0</Mass>
+      <AccuracyTouch>0.62</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.67</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_STM556_S</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>32.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_M4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- ISSC XM5 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_ISSCXM5_S</defName>
+    <label>ISSC XM5</label>
+    <description>A general-purpose gas-operated assault rifle for field or urban combat. It has good range, fair power, and good accuracy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_AUT_XM5_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M4Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>333</MarketValue>
+      <!--<WorkToMake>40000</WorkToMake>-->
+      <Mass>3.3</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_ISSCXM5_S</defaultProjectile>
+        <warmupTime>1.00</warmupTime>
+        <range>28.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_RIFLE_22RIFLEShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

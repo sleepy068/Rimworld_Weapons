@@ -14,5 +14,5 @@ Bug Fixes:
 
 
 Notes:
-To prevent bloating the crafting tables, the varients can only be traded for or looted.
+To prevent bloating the crafting tables, many weapons can only be traded for or looted.
 This helps with balancing them too.

@@ -1,12 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- ================================= GLOCK Series ==================================== -->
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+  
+  <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
   
   <!-- ================================= Projectiles ==================================== -->
+  <!-- Glock 17 -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_GLOCK17_9MM</defName>
-    <label>9mm glock bullet</label>
+    <defName>Bullet_SLP_GLOCK17_S</defName>
+    <label>glock 17 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -14,21 +55,226 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>9</damageAmountBase>
-      <speed>50</speed>
+      <speed>55</speed>
 	  <stoppingPower>0.5</stoppingPower>
 	  <armorPenetrationBase>0.10</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
+  <!-- Glock 17L -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK17L_S</defName>
+    <label>glock 17l bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>62</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 18 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK18_S</defName>
+    <label>glock 18 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.09</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 19X -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK19X_S</defName>
+    <label>glock 19x bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 19X COM -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK19XCOM_S</defName>
+    <label>glock 19x com bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 34 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK34_S</defName>
+    <label>glock 34 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 40 MOS -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK40MOS_S</defName>
+    <label>glock 40 mos bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 43 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK43_S</defName>
+    <label>glock 43 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.07</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 43x -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK43X_S</defName>
+    <label>glock 43x bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.07</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 44LR -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK44LR_S</defName>
+    <label>glock 44lr bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.05</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Steyr L9A2MF -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_STEYRL9A2MF_S</defName>
+    <label>steyr l9a2mf bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Steyr M9A1 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_STEYRM9A1_S</defName>
+    <label>steyr m9a1 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>9</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Glock 34 CM -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_GLOCK34CM_S</defName>
+    <label>glock 34cm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>65</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  
   <!-- ================================= Weapons ==================================== -->
   <!-- Glock 17 -->
   <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>SLP_Gun_AST_GLOCK17_S</defName>
+    <defName>SLP_Gun_AUT_GLOCK17_S</defName>
     <label>Glock 17</label>
-    <description>A 9x19mm short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
     <possessionCount>1</possessionCount>
 	<graphicData>
-      <texPath>Things/Item/Equipment/Handguns/SLP_GLOCK17_S</texPath>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G17_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>SLP_GLOCKInter</soundInteract>
@@ -46,9 +292,9 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>150</MarketValue>
+	  <MarketValue>114</MarketValue>
       <WorkToMake>6500</WorkToMake>
-      <Mass>0.95</Mass>
+      <Mass>1.09</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.30</AccuracyMedium>
@@ -63,7 +309,70 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_GLOCK17_9MM</defaultProjectile>
+        <defaultProjectile>Bullet_SLP_GLOCK17_S</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 17L -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK17L_S</defName>
+    <label>Glock 17L</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance, is quick and with slightly more accuracy and range thanks to a longer barrel. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G17L_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>116</MarketValue>
+      <Mass>1.15</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK17L_S</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>SLP_GLOCKShot</soundCast>
@@ -91,4 +400,706 @@
       </li>
     </tools>
   </ThingDef>
+  
+  <!-- Glock 18 -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUT_GLOCK18_S</defName>
+    <label>Glock 18</label>
+    <description>A short recoil–operated, locked-breech fully automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+    <possessionCount>1</possessionCount>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G18_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>SLP_RecoilOperated</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>114</MarketValue>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>1.09</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>0.72</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK18_S</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>20.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 19X -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK19X_S</defName>
+    <label>Glock 19X</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G19X_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>122</MarketValue>
+      <Mass>1.09</Mass>
+      <AccuracyTouch>0.87</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.31</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK19X_S</defaultProjectile>
+        <warmupTime>0.27</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 19X COM -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK19XCOM_S</defName>
+    <label>Glock 19X COM</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G19XCOMBO_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>123</MarketValue>
+      <Mass>1.15</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.79</AccuracyShort>
+      <AccuracyMedium>0.32</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK19XCOM_S</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>23.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 34 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK34_S</defName>
+    <label>Glock 34</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G34_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>139</MarketValue>
+      <Mass>1.25</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK34_S</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>23.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 34 CM -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK34CM_S</defName>
+    <label>Glock 34 CM</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G34CM_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>174</MarketValue>
+      <Mass>1.25</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>1.04</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK34CM_S</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>25.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 40 MOS -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK40MOS_S</defName>
+    <label>Glock 40 MOS</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G40MOS_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>119</MarketValue>
+      <Mass>1.30</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.79</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.10</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK40MOS_S</defaultProjectile>
+        <warmupTime>0.40</warmupTime>
+        <range>25.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 43 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK43_S</defName>
+    <label>Glock 43</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G43_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>84</MarketValue>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.20</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK43_S</defaultProjectile>
+        <warmupTime>0.15</warmupTime>
+        <range>18.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 43X -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK43X_S</defName>
+    <label>Glock 43X</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G43X_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>84</MarketValue>
+      <Mass>0.85</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.52</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK43X_S</defaultProjectile>
+        <warmupTime>0.17</warmupTime>
+        <range>19.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Glock 44 LR -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_GLOCK44LR_S</defName>
+    <label>Glock 44 22LR</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_G44COMPACT22LR_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_GLOCKInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>92</MarketValue>
+      <Mass>0.7</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.10</AccuracyLong>
+      <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_GLOCK44LR_S</defaultProjectile>
+        <warmupTime>0.15</warmupTime>
+        <range>18.9</range>
+        <soundCast>SLP_GLOCKShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Steyr L9A2MF -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_STEYRL9A2MF_S</defName>
+    <label>Steyr L9A2MF</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_STEYRL9A2MF_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_HKUSPInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>116</MarketValue>
+      <Mass>1.08</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_STEYRL9A2MF_S</defaultProjectile>
+        <warmupTime>0.23</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_HandgunShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Steyr M9A1 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_STEYRM9A1_S</defName>
+    <label>Steyr M9A1</label>
+    <description>A short recoil–operated, locked-breech semi-automatic pistol. Handles exceptionally well, requires little maintenance and is accurate and quick. Lacks the range, accuracy or firepower for long range combat.</description>
+	<graphicData>
+      <texPath>Things/Item/Equipment/Handguns/SLP_AUT_STEYRM9A1_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>SLP_HKUSPInter</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>117</MarketValue>
+      <Mass>1.08</Mass>
+      <AccuracyTouch>0.83</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_STEYRM9A1_S</defaultProjectile>
+        <warmupTime>0.30</warmupTime>
+        <range>22.9</range>
+        <soundCast>SLP_HandgunShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
 </Defs>

@@ -30,7 +30,7 @@
 	</SoundDef>
 	
 	<!-- ============= Handgun ============= -->
-	<!-- Glock --><!-- Used 1x -->
+	<!-- Glock --><!-- Used 12x -->
 	<SoundDef>
 		<defName>SLP_GLOCKShot</defName>
 		<context>MapOnly</context>
@@ -59,7 +59,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Handgun Generic--><!-- Used 1x -->
+	<!-- Handgun Generic--><!-- Used 3x -->
 	<SoundDef>
 		<defName>SLP_HandgunShot</defName>
 		<context>MapOnly</context>
@@ -525,7 +525,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- AUG 1 --><!--  -->
+	<!-- AUG 1 --><!-- Used 1x -->
 	<SoundDef>
 		<defName>SLP_RIFLE_AUGShot1</defName>
 		<context>MapOnly</context>
@@ -554,7 +554,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- AUG 2 --><!-- Used 1x -->
+	<!-- AUG 2 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_RIFLE_AUGShot2</defName>
 		<context>MapOnly</context>
@@ -583,7 +583,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- AUG SMG --><!-- Used 1x -->
+	<!-- AUG SMG --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_RIFLE_AUGShot3</defName>
 		<context>MapOnly</context>
@@ -612,7 +612,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- 22 RIFLE --><!-- Used 1x -->
+	<!-- 22 RIFLE --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_RIFLE_22RIFLEShot</defName>
 		<context>MapOnly</context>
@@ -670,7 +670,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- M4 --><!-- Used 1x -->
+	<!-- M4 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_RIFLE_M4Shot</defName>
 		<context>MapOnly</context>
@@ -729,7 +729,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MG3 --><!-- Used 1x -->
+	<!-- MG3 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_MG3Shot</defName>
 		<context>MapOnly</context>
@@ -817,7 +817,7 @@
 	</SoundDef>
 	
 	<!-- ============= Sniper ============= -->
-	<!-- M85A1 --><!-- Used 1x -->
+	<!-- M85A1 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_M85A1CQShot</defName>
 		<context>MapOnly</context>
@@ -846,7 +846,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- WA2000 --><!-- Used 2x -->
+	<!-- WA2000 --><!-- Used 9x -->
 	<SoundDef>
 		<defName>SLP_WA2000Shot</defName>
 		<context>MapOnly</context>
@@ -898,6 +898,180 @@
 				<distRange>
 					<min>0</min>
 					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- AS50 --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_AS50Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_AS50</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Barrett --><!-- Used 0x -->
+	<SoundDef>
+		<defName>SLP_BarrettShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_BARRETT</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- MSR --><!-- Used 0x -->
+	<SoundDef>
+		<defName>SLP_MSRShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_MSR</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Basic 1 --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_SNIPERBASIC1Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_BASIC1</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Basic 2 --><!-- Used 2x -->
+	<SoundDef>
+		<defName>SLP_SNIPERBASIC2Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_BASIC2</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Basic 3 (Heavier) --><!-- Used 3x -->
+	<SoundDef>
+		<defName>SLP_SNIPERBASIC3Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_SNIPER_BASIC3</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>        
+					<max>35</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>59.40025</max>
 				</distRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1197,7 +1371,7 @@
 	</SoundDef>
 	
 	<!-- ==============   Silenced    ============ -->
-	<!-- 556 --><!-- Used 2x -->
+	<!-- 556 --><!-- Used 3x -->
 	<SoundDef>
 		<defName>SLP_SL556Shot</defName>
 		<context>MapOnly</context>
@@ -1371,7 +1545,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- SMG -->
+	<!-- SMG --><!-- Used x1 -->
 	<SoundDef>
 		<defName>SLP_SLSMG1</defName>
 		<context>MapOnly</context>

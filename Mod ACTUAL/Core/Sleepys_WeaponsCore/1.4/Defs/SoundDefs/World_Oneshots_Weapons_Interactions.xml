@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Defs>
 	<!-- ============= Interactions ============= -->
 	<!-- ============= Handgun ============= -->
-	<!-- HKUSP --><!-- Used 1x -->
+	<!-- HKUSP --><!-- Used 3x -->
     <SoundDef>
 		<defName>SLP_HKUSPInter</defName>
 		<context>MapOnly</context>
@@ -88,7 +88,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Glock --><!-- Used 1x -->
+	<!-- Glock --><!-- Used 12x -->
 	<SoundDef>
 		<defName>SLP_GLOCKInter</defName>
 		<context>MapOnly</context>
@@ -264,7 +264,7 @@
 	</SoundDef>
 	
 	<!-- ============= Rifle ============= -->
-	<!-- M4 --><!-- Used 10x -->
+	<!-- M4 --><!-- Used 13x -->
 	<SoundDef>
 		<defName>SLP_M4Inter</defName>
 		<context>MapOnly</context>
@@ -468,7 +468,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MG3 --><!-- Used 5x -->
+	<!-- MG3 --><!-- Used 6x -->
 	<SoundDef>
 		<defName>SLP_MG3Inter</defName>
 		<context>MapOnly</context>
@@ -830,7 +830,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt --><!-- Used 4x -->
+	<!-- Gen Bolt --><!-- Used 8x -->
 	<SoundDef>
 		<defName>SLP_GenBoltInter</defName>
 		<context>MapOnly</context>
@@ -859,7 +859,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- Gen Bolt 2 --><!-- Used 2x -->
+	<!-- Gen Bolt 2 --><!-- Used 6x -->
 	<SoundDef>
 		<defName>SLP_GenBoltInter02</defName>
 		<context>MapOnly</context>
