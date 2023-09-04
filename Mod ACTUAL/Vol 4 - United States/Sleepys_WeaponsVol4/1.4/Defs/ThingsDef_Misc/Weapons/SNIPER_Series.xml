@@ -6,7 +6,7 @@
   <!-- ================================= Projectiles ==================================== -->
   <!-- M82A1 CQ 50BMG -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SLP_M85_50CAL</defName>
+    <defName>Bullet_SLP_M85_50CAL_S</defName>
     <label>M85 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -23,7 +23,7 @@
   
   <!-- Anzio 20mm -->
   <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_SLP_ANZIO20MM</defName>
+    <defName>Bullet_SLP_ANZIO20MM_S</defName>
     <label>anzio 20mm bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -92,7 +92,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SLP_M85_50CAL</defaultProjectile>
+        <defaultProjectile>Bullet_SLP_M85_50CAL_S</defaultProjectile>
         <warmupTime>4.0</warmupTime>
         <range>49.9</range>
         <soundCast>SLP_M85A1CQShot</soundCast>
@@ -173,7 +173,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_SLP_ANZIO20MM</defaultProjectile>
+        <defaultProjectile>Bullet_SLP_ANZIO20MM_S</defaultProjectile>
         <warmupTime>4.0</warmupTime>
         <range>59.9</range>
         <soundCast>SLP_MSRShot</soundCast>

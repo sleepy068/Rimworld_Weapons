@@ -32,7 +32,7 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseGun">
-    <defName>SLP_Gun_AUT_STEYRGL40</defName>
+    <defName>SLP_Gun_AUT_STEYRGL40_S</defName>
     <label>steyr gl40 launcher</label>
     <description>A wide-barrelled grenade launcher. The shell will upon impact explode causing damage to the surroundings.</description>
     <graphicData>
