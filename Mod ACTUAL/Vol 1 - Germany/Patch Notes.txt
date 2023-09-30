@@ -4,7 +4,7 @@ Additions:
 N/A
 
 Changes:
-N/A
+Adjusted Handgun WeaponTags so it is more accurately identified as a handgun.
 
 Localisation:
 N/A

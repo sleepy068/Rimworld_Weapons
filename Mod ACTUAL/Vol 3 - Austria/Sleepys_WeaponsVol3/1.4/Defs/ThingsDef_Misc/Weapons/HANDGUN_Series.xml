@@ -280,6 +280,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -350,6 +351,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -413,10 +415,11 @@
     </graphicData>
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
-      <li>SimpleGun</li>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponTags>
     <weaponClasses>
-      <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponClasses>
     <recipeMaker>
       <researchPrerequisite>SLP_RecoilOperated</researchPrerequisite>
@@ -484,6 +487,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -547,6 +551,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -610,6 +615,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -673,6 +679,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -736,6 +743,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -799,6 +807,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -862,6 +871,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -925,6 +935,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -988,6 +999,7 @@
     <soundInteract>SLP_HKUSPInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -1051,6 +1063,7 @@
     <soundInteract>SLP_HKUSPInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>

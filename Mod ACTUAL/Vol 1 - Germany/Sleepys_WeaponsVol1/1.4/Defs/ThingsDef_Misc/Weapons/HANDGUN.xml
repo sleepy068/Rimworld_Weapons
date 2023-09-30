@@ -99,6 +99,7 @@
     
 	<weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -181,6 +182,7 @@
     
 	<weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -263,6 +265,7 @@
     
 	<weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -345,6 +348,7 @@
     
 	<weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -424,6 +428,7 @@
     <soundInteract>SLP_GLOCKInter</soundInteract>
     <weaponTags>
       <li>SimpleGun</li>
+      <li>Autopistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
