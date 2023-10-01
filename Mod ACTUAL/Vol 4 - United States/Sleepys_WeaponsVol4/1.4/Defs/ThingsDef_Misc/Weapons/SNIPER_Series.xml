@@ -31,7 +31,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>35</damageAmountBase>
+      <damageAmountBase>40</damageAmountBase>
       <speed>150</speed>
 	  <stoppingPower>4.0</stoppingPower>
 	  <armorPenetrationBase>0.50</armorPenetrationBase>
@@ -161,8 +161,8 @@
       <Mass>27.0</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.90</AccuracyMedium>
-      <AccuracyLong>0.85</AccuracyLong>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.78</AccuracyLong>
       <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
     </statBases>
     <costList>
@@ -174,7 +174,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_SLP_ANZIO20MM_S</defaultProjectile>
-        <warmupTime>3.9</warmupTime>
+        <warmupTime>4.0</warmupTime>
         <range>54.9</range>
         <soundCast>SLP_MSRShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
