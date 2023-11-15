@@ -19,6 +19,7 @@
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   
+  <!-- Belt fed munitions (Belt LMG) -->
   <ResearchProjectDef>
     <defName>SLP_BeltLMG</defName>
     <label>belt-fed systems</label>

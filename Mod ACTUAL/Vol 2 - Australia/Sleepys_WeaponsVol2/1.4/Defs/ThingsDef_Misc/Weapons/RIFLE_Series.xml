@@ -181,7 +181,7 @@
     </weaponTags>
 
     <recipeMaker>
-      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <researchPrerequisite>SLP_AdvLR</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -259,7 +259,7 @@
     </weaponClasses>
 	-->
     <recipeMaker>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <researchPrerequisite>SLP_AdvLR</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>

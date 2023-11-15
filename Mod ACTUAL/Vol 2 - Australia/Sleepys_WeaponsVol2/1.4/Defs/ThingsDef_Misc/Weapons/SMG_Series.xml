@@ -279,7 +279,7 @@
     </weaponClasses>
 	
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
