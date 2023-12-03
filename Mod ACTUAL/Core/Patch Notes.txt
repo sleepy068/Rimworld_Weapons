@@ -1,7 +1,7 @@
 Update v1.0.3 Build 02/10/23 | Post
 
 Additions:
-N/A
+Added 1 new technology, 'heavy machine gun systems' to allow for new weapon styles been worked on.
 
 Changes:
 N/A

@@ -816,6 +816,123 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- ============= HMG ============= -->
+	<!-- .30 CAL --><!-- Used 1x -->
+	<SoundDef>
+		<defName>SLP_HMG_30CALShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HMG_30CALShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>        
+					<max>40</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- .50 CAL --><!-- Used 0x -->
+	<SoundDef>
+		<defName>SLP_HMG_50CALShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HMG_50CALShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>        
+					<max>40</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- .50 CAL Alt Version--><!-- Used 0x -->
+	<SoundDef>
+		<defName>SLP_HMG_50CALALTShot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HMG_50CALALTShot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>        
+					<max>40</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- MG42 --><!-- Used 0x -->
+	<SoundDef>
+		<defName>SLP_HMG_MG42Shot</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>SLP_HMG_MG42Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>        
+					<max>40</max>
+				</volumeRange>   
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	<!-- ============= Sniper ============= -->
 	<!-- M85A1 --><!-- Used 2x -->
 	<SoundDef>
@@ -1004,8 +1121,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>        
-					<max>35</max>
+					<min>29</min>        
+					<max>29</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>
@@ -1033,8 +1150,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>        
-					<max>35</max>
+					<min>29</min>        
+					<max>29</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>
@@ -1062,8 +1179,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>        
-					<max>35</max>
+					<min>29</min>        
+					<max>29</max>
 				</volumeRange>   
 				<pitchRange>
 					<min>0.9770588</min>

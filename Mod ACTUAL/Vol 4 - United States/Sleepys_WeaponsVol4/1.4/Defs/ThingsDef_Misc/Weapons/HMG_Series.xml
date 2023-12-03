@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+  
+  <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+  
+  <!-- ================================= HMG ==================================== -->
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- .30 Cal Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_30CAL</defName>
+    <label>0.30 Caliber bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- .50 Cal Bullet -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_50CAL</defName>
+    <label>0.50 Caliber bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>100</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- M1919 Mounted HMG -->
+	<ThingDef ParentName="SLP_MannedTurretBase">
+		<defName>SLP_Mount_Turret_M1919_S</defName> 
+		<label>M1919 Mounted Turret</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mount/HMGTripod/SLP_TRIPOD1_S</texPath> 
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconPath>UI/SLP_M1919_UI</uiIconPath>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>29</Mass>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Needs new barrel</outOfFuelMessage>
+				<fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
+				<fuelCapacity>750</fuelCapacity>      <!-- 15 bursts -->
+				<fuelMultiplier>10</fuelMultiplier> <!-- 5 steel per burst, 75 per full rearm -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.33</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+			
+		</comps>
+		<costList>
+			<Steel>210</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
+		<building>
+			<turretGunDef>SLP_Gun_Turret_M1919_S</turretGunDef>
+			<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+		</building>
+		<!--
+		<tradeTags>
+			<li></li>
+		</tradeTags>
+		-->
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+    <defName>SLP_Gun_Turret_M1919_S</defName>
+    <label>M1919 Turret Gun</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/HMG/SLP_USA_M1919_MNT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.21</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_SLP_30CAL</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+		<minRange>1.9</minRange>
+        <range>32.9</range>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <burstShotCount>50</burstShotCount>
+        <soundCast>SLP_HMG_30CALShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!-- M2HB Mounted HMG -->
+	<ThingDef ParentName="SLP_MannedTurretBase">
+		<defName>SLP_Mount_Turret_M2HB_S</defName> 
+		<label>M2HB Mounted Turret</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/Mount/HMGTripod/SLP_TRIPOD1_S</texPath> 
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconPath>UI/SLP_M2HB_UI</uiIconPath>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>29</Mass>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Needs new barrel</outOfFuelMessage>
+				<fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
+				<fuelCapacity>750</fuelCapacity>      <!-- 15 bursts -->
+				<fuelMultiplier>10</fuelMultiplier> <!-- 5 steel per burst, 75 per full rearm -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.33</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+			
+		</comps>
+		<costList>
+			<Steel>375</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
+		<building>
+			<turretGunDef>SLP_Gun_Turret_M2HB_S</turretGunDef>
+			<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+		</building>
+		<!--
+		<tradeTags>
+			<li></li>
+		</tradeTags>
+		-->
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+    <defName>SLP_Gun_Turret_M2HB_S</defName>
+    <label>M2HB Turret Gun</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/HMG/SLP_USA_M2HB_MNT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.15</AccuracyTouch>
+      <AccuracyShort>0.21</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_SLP_50CAL</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+		<minRange>3.9</minRange>
+        <range>35.9</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>50</burstShotCount>
+        <soundCast>SLP_HMG_50CALShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>
