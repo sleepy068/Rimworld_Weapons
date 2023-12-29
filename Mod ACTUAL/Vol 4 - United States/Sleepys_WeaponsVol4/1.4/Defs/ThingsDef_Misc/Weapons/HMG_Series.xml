@@ -89,7 +89,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mount/HMGTripod/SLP_TRIPOD1_S</texPath> 
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
@@ -144,7 +144,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/HMG/SLP_USA_M1919_MNT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.15</AccuracyTouch>
@@ -161,7 +161,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>Bullet_SLP_30CAL</defaultProjectile>
         <warmupTime>1.0</warmupTime>
-		<minRange>1.9</minRange>
+		<minRange>2.9</minRange>
         <range>32.9</range>
         <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
         <burstShotCount>50</burstShotCount>
@@ -181,7 +181,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/Mount/HMGTripod/SLP_TRIPOD1_S</texPath> 
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
@@ -236,13 +236,13 @@
     <graphicData>
       <texPath>Things/Item/Equipment/HMG/SLP_USA_M2HB_MNT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+	  <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.15</AccuracyTouch>
       <AccuracyShort>0.21</AccuracyShort>
       <AccuracyMedium>0.25</AccuracyMedium>
-      <AccuracyLong>0.18</AccuracyLong>
+      <AccuracyLong>0.21</AccuracyLong>
       <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
@@ -257,7 +257,7 @@
         <range>35.9</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>50</burstShotCount>
-        <soundCast>SLP_HMG_50CALShot</soundCast>
+        <soundCast>SLP_HMG_50CALALTShot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
