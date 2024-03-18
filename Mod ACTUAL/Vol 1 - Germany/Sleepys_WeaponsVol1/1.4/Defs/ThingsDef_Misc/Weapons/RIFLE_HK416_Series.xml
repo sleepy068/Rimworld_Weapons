@@ -69,7 +69,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>510</MarketValue>
+	  <MarketValue>441</MarketValue>
       <!--<WorkToMake>40000</WorkToMake>-->
       <Mass>3.01</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
@@ -149,7 +149,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>480</MarketValue>
+	  <MarketValue>461</MarketValue>
       <WorkToMake>40000</WorkToMake>
       <Mass>3.49</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
@@ -229,7 +229,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>530</MarketValue>
+	  <MarketValue>480</MarketValue>
       <!--<WorkToMake>40000</WorkToMake>-->
       <Mass>3.62</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
@@ -311,7 +311,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>600</MarketValue>
+	  <MarketValue>454</MarketValue>
       <!-- <WorkToMake>40000</WorkToMake> -->
       <Mass>4.01</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
@@ -393,9 +393,9 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>650</MarketValue>
+	  <MarketValue>478</MarketValue>
       <!-- <WorkToMake>40000</WorkToMake> -->
-      <Mass>4.01</Mass>
+      <Mass>4.14</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.89</AccuracyMedium>
@@ -476,7 +476,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>780</MarketValue>
+	  <MarketValue>440</MarketValue>
       <WorkToMake>50000</WorkToMake>
       <Mass>5.21</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
@@ -559,7 +559,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>850</MarketValue>
+	  <MarketValue>441</MarketValue>
       <!-- <WorkToMake>50000</WorkToMake> -->
       <Mass>5.40</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
@@ -644,9 +644,9 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>850</MarketValue>
+	  <MarketValue>900</MarketValue>
       <!-- <WorkToMake>50000</WorkToMake> -->
-      <Mass>5.40</Mass>
+      <Mass>5.62</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.67</AccuracyShort>
       <AccuracyMedium>0.98</AccuracyMedium>

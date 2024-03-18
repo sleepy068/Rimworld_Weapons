@@ -40,6 +40,7 @@
     </weaponClasses>
 	
     <statBases>
+	  <MarketValue>241</MarketValue>
       <WorkToMake>12000</WorkToMake>
       <Mass>3.4</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>

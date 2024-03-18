@@ -6,21 +6,21 @@
     <packageId>sleepy068.weaponscore</packageId>
     <supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
     </supportedVersions>
 
     <description>
+[h2]Sleepy's Weapons - Core (v1.0.2)[/h2]
+[img]https://i.imgur.com/WWS4fVr.png[/img]
 
-[h2]Sleepy's Weapons - Core (v1.0.0)[/h2]
+I love to add content to this game that I feel is missing or that I'd like expanded. I figure that if I enjoy what I've added, others may too so I to post my mods to the workshop. Balance is critical to me as I am a vanilla player and I'll try to ensure nothing is unbalanced but ultimately I have a goal in mind for the content I am adding so what I consider balanced may not always be what you'd consider balanced. Hopefully you enjoy the mod none the less.
 
+You can find the stats of all weapons added by all my 'Sleepy's Weapons' mods here:
 
 [img]https://i.imgur.com/DbnM7jC.png[/img]
 [b]What Does This Mod Add?[/b]
 This mod doesn't add anything by itself, it simply sets up core infrastructure such as the research tab, base weapon definitions and other small pieces for my other weapons mods. 
 This prevents those mods all having to add the same stuff, causing them to override each other, which can slow the game down on loading it up and cause errors in the log.
-
-[img]https://i.imgur.com/ss8ZNXk.png[/img]
-[b]Roadmap:[/b]
-
 
 [img]https://i.imgur.com/YySbEPN.png[/img]
 [b]On Going Games:[/b]
@@ -28,7 +28,7 @@ This prevents those mods all having to add the same stuff, causing them to overr
 - It will cause issues if removed from an existing save (consider starting a new game to see if you are happy with the content). You can try destroying all the content added but I'd be worried existing addictions might cause problems with world pawns.
 
 [b]Compatibility[/b]
-- Combat Extended: Not Compatible (I don't play with this mod sorry, if my mod becomes popular enough, I'll write a patch or leave that to the CE team)
+None required at the moment.
 
 [b]Integrated Compatibility:[/b]
 None at the moment.
@@ -45,8 +45,10 @@ No known issues.
 [b]Language Support[/b]
 English (Always Latest)(Developed in this Language)
 
-Latest Version:
+Github:
 https://github.com/sleepy068/Rimworld_Weapons
+
+Please post any issue reports to my Github. I appreciate any feedback but please keep in mind I have a goal in mind for the content I am adding so what I consider balanced may not always be what you'd consider balanced.
     </description>
 
     <modDependencies>

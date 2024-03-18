@@ -53,7 +53,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>650</MarketValue>
+	  <MarketValue>556</MarketValue>
       <!--<WorkToMake>44000</WorkToMake>-->
       <Mass>7.54</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
