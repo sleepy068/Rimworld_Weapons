@@ -546,7 +546,7 @@
   <!-- MPXCU -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
     <defName>SLP_Gun_MPXCU_S</defName>
-    <label>MP5X Copperhead</label>
+    <label>MPX Copperhead</label>
     <description>A 9x19mm parabellum submachine gun. Handles exceptionally well and is quite accurate and quick in close quarter battles. Much better used in close quarter battles as it seriously lacks the firepower or range for battles at distances.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MPXCU_S</texPath>
