@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= WW2 Weapons ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef Name="SLP_BaseGrenadeProjectile_1" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>15</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseGrenadeProjectile_2" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>10</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_GEWEHR43_S</defName>
+    <label>7.92×57mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>1</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_K98K</defName>
+    <label>7.92×57mm bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+      <speed>88</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.29</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_MP40_9MM</defName>
+    <label>9mm MP40 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>44</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_M39_STICKGRENADE</defName>
+    <defaultDamage>30</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.08</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Grenade_M39_S</defName>
+    <label>stick grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenade_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SLP_M39_STICKGRENADE</damageDef>
+      <explosionRadius>1.5</explosionRadius>
+      <speed>15</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_BUNDSTICKGRENADE</defName>
+    <defaultDamage>70</defaultDamage>
+    <defaultStoppingPower>1.0</defaultStoppingPower>
+    <defaultArmorPenetration>0.20</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADEHEAVY</soundExplosion>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Grenade_BundGrenade</defName>
+    <label>bundle stick grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenadeBundle_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SLP_BUNDSTICKGRENADE</damageDef>
+      <explosionRadius>2.5</explosionRadius>
+      <speed>10</speed>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- MP40 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_MP40_S</defName>
+    <label>MP40</label>
+    <description>A ancient general-purpose gas-operated submachine rifle for field or urban combat. Handles exceptionally well and is accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SubmachineGuns/SLP_GER_MP40_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+   <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>314</MarketValue>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>3.97</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.69</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.14</AccuracyLong>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_MP40_9MM</defaultProjectile>
+        <warmupTime>0.52</warmupTime>
+        <range>20.9</range>
+		<burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots> <!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11 -->
+        <soundCast>SLP_MP40Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- GEWEHR43 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_GEWEHR43_S</defName>
+    <label>gewehr43</label>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_GEWEHR43_S_O4D2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-49.2</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter02</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+   <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>261</MarketValue>
+      <WorkToMake>27000</WorkToMake>
+      <Mass>4.4</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.72</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_GEWEHR43_S</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>35.9</range>
+        <soundCast>SLP_WW2RifleShot01_S</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- K98K -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_K98K_S</defName>
+    <label>K98K</label>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Rifles/SLP_GER_K98K_S_O5D4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-50.4</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter02</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+   <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>255</MarketValue>
+      <WorkToMake>28500</WorkToMake>
+      <Mass>4.1</Mass>
+      <AccuracyTouch>0.59</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.94</AccuracyMedium>
+      <AccuracyLong>0.86</AccuracyLong>
+      <RangedWeapon_Cooldown>1.72</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>65</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_K98K</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>40.9</range>
+        <soundCast>SLP_WW2RifleShot01_S</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- ================================= Grenades ==================================== -->
+  <!-- Stick Grenade -->
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>SLP_Weapon_GrenadeStick</defName>
+    <label>stick grenade</label>
+    <description>Old-school stick shaped fragmentation grenades. They can be thrown a decent distance due to their shape, where they'll explode, damaging anything and anyone nearby.</description>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenade_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.70</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>75</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw stick grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>16.9</range>
+        <forcedMissRadius>2.1</forcedMissRadius>
+        <warmupTime>1.8</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>SLP_Proj_GrenadeStick</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_1" ParentName="SLP_BaseGrenadeProjectile_1" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenade_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.70</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.5</explosionRadius >
+      <damageDef>SLP_M39_STICKGRENADE</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_1">
+    <defName>SLP_Proj_GrenadeStick</defName>
+    <label>stick grenade</label>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseNotMakeableGrenade" ParentName="BaseWeapon" Abstract="True">
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+  </ThingDef>
+  
+  <!-- Bundle Stick Grenade -->
+  <ThingDef ParentName="SLP_BaseNotMakeableGrenade">
+    <defName>SLP_Weapon_GrenadeStickBundle</defName>
+    <label>bundle stick grenade</label>
+    <description>Old-school bundle stick shaped fragmentation grenades. They can be thrown but are quite heavy, they'll create a massive explosion, damaging anything and anyone nearby.</description>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenadeBundle_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.70</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>3</Mass>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Chemfuel>140</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw stick grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>9.9</range>
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <warmupTime>2.0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>SLP_Proj_BundleGrenadeStick</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_2" ParentName="SLP_BaseGrenadeProjectile_2" Abstract="True">
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_GER_StickGrenadeBundle_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.70</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>2.5</explosionRadius >
+      <damageDef>SLP_BUNDSTICKGRENADE</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_2">
+    <defName>SLP_Proj_BundleGrenadeStick</defName>
+    <label>bundle stick grenade</label>
+  </ThingDef>
+  
+</Defs>

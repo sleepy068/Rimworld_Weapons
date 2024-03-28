@@ -1,10 +1,10 @@
-Update v1.0.4 Build 17/03/24 | Post
+Update v1.0.5 Build 21/03/24 | Post
 
 Additions:
-Added 1 new technology, 'heavy machine gun systems' to allow for new weapon styles been worked on.
+N/A
 
 Changes:
-1.5 Compatibility
+N/A
 
 Localisation:
 N/A

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- HK169 HE -->
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_HK169HE</defName>
+    <defaultDamage>30</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.20</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_HK169HE</defName>
+    <label>hk169 HE shell</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_GL_HE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<shaderType>TransparentPostLight</shaderType>-->
+      <!--<color>(68,150,215)</color>-->
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>SLP_HK169HE</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>SLP_Gun_HK169HELauncher</defName>
+    <label>HK169 HE launcher</label>
+    <description>A wide-barrelled grenade launcher. The shell will upon impact explode causing damage to the surroundings.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_GER_HK169HE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+    <soundInteract>SLP_GLInter1</soundInteract>
+    <generateCommonality>0.01</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <!--<WorkToMake>30000</WorkToMake>-->
+      <Mass>2.0</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	<!--
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <displayPriority>460</displayPriority>
+    </recipeMaker>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_HK169HE</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>1.4</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SLP_GL01Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- HK169 AP -->
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_HK169AP</defName>
+    <defaultDamage>20</defaultDamage>
+    <defaultStoppingPower>1.0</defaultStoppingPower>
+    <defaultArmorPenetration>0.43</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_HK169AP</defName>
+    <label>hk169 AP shell</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_GL_AP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<shaderType>TransparentPostLight</shaderType>-->
+      <!--<color>(68,150,215)</color>-->
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>46</speed>
+      <damageDef>SLP_HK169AP</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.4</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>SLP_Gun_HK169APLauncher</defName>
+    <label>HK169 AP launcher</label>
+    <description>A wide-barrelled grenade launcher. The shell packs a punch and can do serious damage against armoured targets but lacks the bang to take out groups.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_GER_HK169AP_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+    <soundInteract>SLP_GLInter1</soundInteract>
+    <generateCommonality>0.01</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <!--<WorkToMake>30000</WorkToMake>-->
+      <Mass>2.0</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	<!--
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <displayPriority>460</displayPriority>
+    </recipeMaker>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_HK169AP</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>1.4</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SLP_GL02Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- HK169 ICD -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_HK169ICD</defName>
+    <label>hk169 incendiary grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_GL_INCEND</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<shaderType>TransparentPostLight</shaderType>-->
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>2.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>SLP_Gun_HK169ICDLauncher</defName>
+    <label>HK169 incendiary launcher</label>
+    <description>A wide-barrelled grenade launcher. The shell will upon impact explode into flames, burning and igniting the surroundings.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_GER_HK169ICD_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-45.0</equippedAngleOffset>
+    <soundInteract>SLP_GLInter1</soundInteract>
+    <generateCommonality>0.01</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <!--<WorkToMake>30000</WorkToMake>-->
+      <Mass>2.0</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	<!--
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <displayPriority>460</displayPriority>
+    </recipeMaker>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_HK169ICD</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>23.9</range>
+        <forcedMissRadius>1.4</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SLP_GL03Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
