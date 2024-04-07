@@ -409,7 +409,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- G36 --><!-- Used 2x -->
+	<!-- G36 --><!-- Used 4x -->
 	<SoundDef>
 		<defName>SLP_G36Shot</defName>
 		<context>MapOnly</context>
@@ -467,7 +467,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- HMK556 --><!-- Used 1x -->
+	<!-- HMK556 --><!-- Used 2x -->
 	<SoundDef>
 		<defName>SLP_HMK556Shot</defName>
 		<context>MapOnly</context>

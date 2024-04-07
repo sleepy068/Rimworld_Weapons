@@ -22,7 +22,7 @@
   
   <!-- ================================= Weapons ==================================== -->
   <!-- Blaser F3 ST -->
-  <ThingDef ParentName="SLPBaseGunWithQuality">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>SLP_Gun_F3ST_S</defName>
     <label>Blaser F3 ST</label>
     <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>

@@ -1,0 +1,11 @@
+Handguns
+Revolvers
+Machine Pistols
+SMGs
+Rifles
+Bolt Actions
+Sniper Rifles
+Shotguns
+LMG
+HMG
+Misc

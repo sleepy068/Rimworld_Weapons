@@ -354,7 +354,7 @@
     </graphicData>
     <projectile>
       <damageDef>SLP_DDEF_BOOMERANG</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>10</damageAmountBase>
       <stoppingPower>1.0</stoppingPower>
       <armorPenetrationBase>0.05</armorPenetrationBase>
       <speed>35</speed>

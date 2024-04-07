@@ -264,7 +264,7 @@
 	</SoundDef>
 	
 	<!-- ============= Rifle ============= -->
-	<!-- M4 --><!-- Used 13x -->
+	<!-- M4 --><!-- Used 16x -->
 	<SoundDef>
 		<defName>SLP_M4Inter</defName>
 		<context>MapOnly</context>
