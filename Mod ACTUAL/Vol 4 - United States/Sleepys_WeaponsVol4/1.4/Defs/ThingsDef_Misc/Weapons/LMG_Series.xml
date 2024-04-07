@@ -28,7 +28,7 @@
     <label>M249</label>
     <description>The M249 is a gas-operated, belt/magazine-fed, air-cooled, automatic, shoulder-fired light machine gun. While heavy and inaccurate it can quickly put a lot of rounds down range and is effective against large groups.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/LMG/SLP_M249_S</texPath>
+      <texPath>Things/Item/Equipment/LMG/SLP_USA_M249_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
