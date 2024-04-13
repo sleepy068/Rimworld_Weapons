@@ -128,7 +128,7 @@
 		<resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
 		<building>
 			<turretGunDef>SLP_Gun_Turret_M1919_S</turretGunDef>
-			<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
 		</building>
 		<!--
 		<tradeTags>
@@ -151,7 +151,7 @@
       <AccuracyShort>0.25</AccuracyShort>
       <AccuracyMedium>0.21</AccuracyMedium>
       <AccuracyLong>0.18</AccuracyLong>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
@@ -164,7 +164,7 @@
 		<minRange>2.9</minRange>
         <range>32.9</range>
         <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-        <burstShotCount>50</burstShotCount>
+        <burstShotCount>30</burstShotCount>
         <soundCast>SLP_HMG_30CALShot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -220,7 +220,7 @@
 		<resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
 		<building>
 			<turretGunDef>SLP_Gun_Turret_M2HB_S</turretGunDef>
-			<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
 		</building>
 		<!--
 		<tradeTags>
@@ -243,7 +243,7 @@
       <AccuracyShort>0.21</AccuracyShort>
       <AccuracyMedium>0.25</AccuracyMedium>
       <AccuracyLong>0.21</AccuracyLong>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
@@ -256,7 +256,7 @@
 		<minRange>3.9</minRange>
         <range>35.9</range>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-        <burstShotCount>50</burstShotCount>
+        <burstShotCount>30</burstShotCount>
         <soundCast>SLP_HMG_50CALALTShot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
