@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li> 
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+
+  <!-- ================================= Setups ==================================== -->
+  <ThingDef Name="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>12</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>0.4</shadowSize>
+    </projectile>
+  </ThingDef>
+
+  <!-- ================================= Grenades ==================================== -->
+  <!-- F1 Grenade Projectile -->
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_AUS_1">
+    <defName>SLP_AUS_Proj_F1G</defName>
+    <label>f1 grenade</label>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_AUS_1" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.40</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>SLP_AUS_F1_GRENADE</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_AUS_Grenade_F1_S</defName>
+    <label>f1 grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SLP_AUS_F1_GRENADE</damageDef>
+      <explosionRadius>1.9</explosionRadius>
+      <speed>12</speed>
+    </projectile>
+  </ThingDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_AUS_F1_GRENADE</defName>
+    <defaultDamage>45</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+  
+  <!-- F1 Grenade -->
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>SLP_AUS_WEAPON_Grenade_F1_S</defName>
+    <label>f1 grenade</label>
+    <description>Old-school fragmentation grenades. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby.</description>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_F1GRENADE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.40</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+	  <MarketValue>265</MarketValue>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>2.54</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>75</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw f1 grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.4</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>SLP_AUS_Proj_F1G</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Jam Tin Grenade Projectile -->
+  <ThingDef ParentName="SLP_BaseFragGrenadeProjectile_AUS_2">
+    <defName>SLP_AUS_Proj_JAMTING</defName>
+    <label>jam tin grenade</label>
+  </ThingDef>
+  
+  <ThingDef Name="SLP_BaseFragGrenadeProjectile_AUS_2" ParentName="SLP_AUS_BaseGrenadeProjectile" Abstract="True">
+	<thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.40</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>SLP_AUS_JAMTIN_GRENADE</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>50</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_AUS_Grenade_JAMTIN_S</defName>
+    <label>jam tin grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>SLP_AUS_JAMTIN_GRENADE</damageDef>
+      <explosionRadius>1.9</explosionRadius>
+      <speed>12</speed>
+    </projectile>
+  </ThingDef>
+
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_AUS_JAMTIN_GRENADE</defName>
+    <defaultDamage>45</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+  
+  <!-- Jam Tin Grenade -->
+  <ThingDef ParentName="BaseMakeableGrenade">
+    <defName>SLP_AUS_WEAPON_Grenade_JAMTIN_S</defName>
+    <label>jam tin grenade</label>
+    <description>Old-school improvised fragmentation grenades made from old ration tins and explosives material. They can be thrown a short distance, where they'll explode quickly, damaging anything and anyone nearby although they take a little awhile longer to prep for the throw.</description>
+    <recipeMaker>
+      <researchPrerequisite>Machining</researchPrerequisite>
+    </recipeMaker>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_JAMTINGREN_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.40</drawSize>
+    </graphicData>
+    <uiIconScale>1</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+	  <MarketValue>150</MarketValue>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Chemfuel>45</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw jam tin grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>15.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.8</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>SLP_AUS_Proj_JAMTING</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Boomerang -->
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>SLP_AUS_BOOMERANG</defName>
+    <label>boomerang</label>
+    <description>A boomerang is a throwing stick with aerodynamic properties, historically, used as a hunting weapon and traditionally made of wood. Boomerangs come in many shapes and sizes and while they have a decent range and power they are just as quick to use.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_BOOMERANG_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.85</drawSize>
+    </graphicData>
+	
+	<equippedAngleOffset>45</equippedAngleOffset>
+	
+    <soundInteract>Interact_BeatFire</soundInteract>
+	
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+	
+    <statBases>
+	  <MarketValue>80</MarketValue>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1</Mass>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <weaponTags>
+      <li>NeolithicRangedDecent</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+	
+    <recipeMaker>
+	  <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_AUS_Boomerang_Thrown</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>20.9</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>9</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>SLP_AUS_Boomerang_Thrown</defName>
+    <label>boomerang</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Misc/SLP_AUS_BOOMERANG_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>SLP_DDEF_BOOMERANG</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <stoppingPower>1.0</stoppingPower>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="SLP_DDEF_BOOMERANG">
+    <defName>SLP_DDEF_BOOMERANG</defName>
+    <label>boomerang</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been cut to death.</deathMessage>
+    <hediff>Cut</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+</Defs>

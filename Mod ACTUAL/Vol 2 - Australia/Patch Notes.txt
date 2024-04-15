@@ -1,15 +1,16 @@
-Update v1.0.0 Build 03/09/23 | 06/04/24
+Update v1.0.1 Build 03/09/23 | 06/04/24
 
 Additions:
-Initial Release
+Added F90 GL with underslung grenade launcher functionality (1.5 only)
 
 Changes:
-
+N/A
 
 Localisation:
-
+N/A
 
 Bug Fixes:
-
+N/A
 
 Notes:
+N/A
