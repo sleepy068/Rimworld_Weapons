@@ -1076,9 +1076,9 @@
         <abilityDef>SLP_UNSL_GL1_S</abilityDef>
         <maxCharges>1</maxCharges>
         <soundReload>SLP_GLInter1</soundReload>
-        <chargeNoun>25mm grenades</chargeNoun>
+        <chargeNoun>40mm grenades</chargeNoun>
         <ammoDef>Steel</ammoDef>
-        <ammoCountPerCharge>15</ammoCountPerCharge>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
       </li>
       <li Class="CompProperties_Forbiddable"/>

@@ -1,4 +1,4 @@
-Update v1.0.7 Build 06/04/24| Post 
+Update v1.0.10 Build 17/04/24| Post 
 
 Additions:
 N/A
@@ -7,7 +7,7 @@ Changes:
 N/A
 
 Localisation:
-N/A
+Fixed grammar mistake on Panzerfaust 3
 
 Bug Fixes:
 N/A

@@ -29,7 +29,7 @@
   <!-- Panzerfaust 3 -->
   <ThingDef ParentName="SLP_BaseMakeableGunNoQuality">
     <defName>SLP_Gun_PanzerfaustThree</defName>
-    <label>panzerfaust  3</label>
+    <label>panzerfaust 3</label>
     <description>A single-use rocket launcher that fires one large-bore explosive rockets. Good against small groups of tough targets.</description>
     <tickerType>Normal</tickerType>
     <smeltable>false</smeltable>

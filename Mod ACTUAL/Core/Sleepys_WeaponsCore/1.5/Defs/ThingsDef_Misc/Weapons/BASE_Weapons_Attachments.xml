@@ -4,11 +4,11 @@
   <!-- Underslung Grenade Launcher -->
   <AbilityDef>
     <defName>SLP_UNSL_GL1_S</defName>
-    <label>underslung grenade launcher</label>
+    <label>grenade launcher</label>
     <description>Fire a high explosive grenade from the weapon's underslung grenade launcher.</description>
     <iconPath>UI/Abilities/SLP_ICON_UNGL_S</iconPath>
     <aiCanUse>true</aiCanUse>
-    <warmupStartSound>SLP_GLInter1</warmupStartSound>
+    <!--<warmupStartSound>SLP_GLInter1</warmupStartSound>-->
     <showOnCharacterCard>false</showOnCharacterCard>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>

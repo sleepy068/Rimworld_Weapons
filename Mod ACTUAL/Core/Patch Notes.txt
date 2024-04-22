@@ -1,7 +1,7 @@
-Update v1.0.5 Build 21/03/24 | Post
+Update v1.0.6 Build 15/04/24 | Post
 
 Additions:
-Added Underslung attachments base defintions for weapons (1.5 only)(1.5 allows for secondary fire abilities)
+N/A
 
 Changes:
 N/A

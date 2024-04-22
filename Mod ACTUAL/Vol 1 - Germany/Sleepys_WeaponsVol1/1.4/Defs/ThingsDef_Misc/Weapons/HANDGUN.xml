@@ -461,9 +461,6 @@
         <defaultProjectile>SLP_Bullet_SPF9_9MM</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>22.9</range>
-		<burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
         <soundCast>SLP_HandgunShot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
