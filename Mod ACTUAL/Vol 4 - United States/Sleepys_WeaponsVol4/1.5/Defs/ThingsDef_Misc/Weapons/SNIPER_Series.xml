@@ -127,11 +127,11 @@
     <label>Anzio 20mm</label>
     <description>An ancient design of an anti-materiel sniper rifle. Bolt action and packs an terrifying punch. It has an exceptionally long range, great accuracy and object obliterating power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also significantly reduces the users movement speed.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_ANZIO20MM_O47D0_S</texPath>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_ANZIO20MM_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
-	<equippedAngleOffset>-47.0</equippedAngleOffset>
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
 	
     <soundInteract>SLP_M82A1Inter</soundInteract>
     <weaponTags>
