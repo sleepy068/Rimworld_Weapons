@@ -35,6 +35,7 @@
   </ThingDef>
 
   <!-- ================================= Turret Base Setup ==================================== -->
+  <!-- Buildable, Normal Machine Gun Style Turret -->
   <ThingDef Name="SLP_MannedTurretBase" ParentName="BuildingBase" Abstract="true">
 	<thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -105,9 +106,9 @@
       <Beauty>-20</Beauty>
     </statBases>
     <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+	  <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
     <researchPrerequisites>
       <li>SLP_HMG</li>

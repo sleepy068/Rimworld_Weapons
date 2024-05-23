@@ -4,7 +4,8 @@ Additions:
 N/A
 
 Changes:
-N/A
+Adjusted SLP_MannedTurretBase to be used under roofs, set up a few other turret definitions for use with manned, unmanned and other style turrets.
+Renamed SLP_HMG to "Heavy Weapon Systems"
 
 Localisation:
 N/A

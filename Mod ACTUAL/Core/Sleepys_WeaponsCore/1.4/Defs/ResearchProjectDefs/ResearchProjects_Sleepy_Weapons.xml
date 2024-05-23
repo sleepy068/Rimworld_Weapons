@@ -34,11 +34,11 @@
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
   
-   <!-- Heavy Machine Gun Systems) -->
+  <!-- Heavy Machine Gun Systems) -->
   <ResearchProjectDef>
     <defName>SLP_HMG</defName>
-    <label>heavy machine gun systems</label>
-    <description>Craft weapon systems designed pin and suppress the enemy.</description>
+    <label>heavy weapon systems</label>
+    <description>Craft weapon systems designed suppress or destroy the enemy.</description>
     <baseCost>1500</baseCost>
     <techLevel>Industrial</techLevel>
 	<tab>SLP_WeaponsCore</tab>
