@@ -114,4 +114,86 @@
       <li>SLP_HMG</li>
     </researchPrerequisites>
   </ThingDef>
+  
+  <!-- Buildable, Sentry Machine Gun Style Turret -->
+  <ThingDef Name="SLP_SentryTurretBase" ParentName="BuildingBase" Abstract="true">
+	<thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+	<!--
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Security/TurretMortar_Base</texPath>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <shadowData>
+        <offset>(-0.13,-0.87,-0.1)</offset>
+        <volume>(0.5,0.4,1.05)</volume>
+      </shadowData>
+    </graphicData>
+	<size>(2,2)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>75</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+	<inspectorTabs>
+      <li>ITab_Shells</li>
+    </inspectorTabs>
+	<building>
+      <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>28.0</turretBurstCooldownTime>
+      <buildingTags>
+        <li>Artillery</li>
+      </buildingTags>
+    </building>
+	<uiIconScale>1.1</uiIconScale>
+	-->
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+	<rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+	<!--
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+	-->
+    <tickerType>Normal</tickerType>
+	<techLevel>Industrial</techLevel>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <comps>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.25</Flammability>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>30</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+	  <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>SLP_HMG</li>
+    </researchPrerequisites>
+  </ThingDef>
 </Defs>
