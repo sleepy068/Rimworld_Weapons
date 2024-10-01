@@ -5,7 +5,7 @@
   <ThingDef ParentName="BaseGun">
     <defName>SLP_Gun_USA_JAV_HEAT</defName>
     <label>FGM-148 Javelin (HEAT)</label>
-    <description>A single-use rocket launcher that fires a high explosive anti-tank warhead. Good against tightly grouped enemies or heavily armoured targets. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once the fired, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
+    <description>A single-use rocket launcher that fires a high explosive anti-tank warhead. Good against tightly grouped enemies or heavily armoured targets. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once released, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
 	<smeltable>false</smeltable>
@@ -122,7 +122,7 @@
   <ThingDef ParentName="BaseGun">
     <defName>SLP_Gun_USA_JAV_HE</defName>
     <label>FGM-148 Javelin (HE)</label>
-    <description>A single-use rocket launcher that fires a high explosive anti-infantry warhead. Good against groups of enemies. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once the fired, the missile will take care of any guidance required and the user can quickly move out of the way.</description>
+    <description>A single-use rocket launcher that fires a high explosive anti-infantry warhead. Good against groups of enemies. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once released, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
 	<smeltable>false</smeltable>

@@ -8,6 +8,7 @@ N/A
 
 Localisation:
 Fixed more grammer mistakes on Blaser F3 ST
+Fixed grammer issuses in general
 
 Bug Fixes:
 N/A
