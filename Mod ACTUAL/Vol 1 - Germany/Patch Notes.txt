@@ -1,4 +1,4 @@
-Update v1.0.10 Build 01/06/24| Post 
+Update v1.0.10 Build 24/11/24 | Post 
 
 Additions:
 N/A
@@ -7,8 +7,7 @@ Changes:
 N/A
 
 Localisation:
-Fixed more grammer mistakes on Blaser F3 ST
-Fixed grammer issuses in general
+N/A
 
 Bug Fixes:
 N/A
