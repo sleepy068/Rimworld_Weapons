@@ -6,6 +6,8 @@
   <ResearchTabDef>
     <defName>SLP_WeaponsCore</defName>
     <label>Weapons</label>
+	<generalTitle>Weapons research projects</generalTitle>
+	<generalDescription>Unlock new weapon technologies by researching at a research bench. You can only have one active project at a time.</generalDescription>
   </ResearchTabDef>
 
 </Defs>

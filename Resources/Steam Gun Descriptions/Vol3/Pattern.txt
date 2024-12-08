@@ -1,0 +1,11 @@
+1 Handguns
+2 Revolvers
+3 Machine Pistols
+4 SMGs
+5 Rifles
+6 Bolt Actions
+7 Sniper Rifles
+8 Shotguns
+9 LMG
+10 HMG
+11 Misc

@@ -4,7 +4,7 @@ Additions:
 N/A
 
 Changes:
-N/A
+Fixed up the hover over description for the weapons reseach tab.
 
 Localisation:
 N/A
