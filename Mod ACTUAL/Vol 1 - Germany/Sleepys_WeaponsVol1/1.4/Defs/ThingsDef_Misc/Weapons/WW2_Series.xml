@@ -233,7 +233,7 @@
 	
     <soundInteract>SLP_GenBoltInter02</soundInteract>
     <weaponClasses>
-      <li>ShortShots</li>
+      <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
 	<!--
@@ -313,7 +313,7 @@
 	
     <soundInteract>SLP_GenBoltInter02</soundInteract>
     <weaponClasses>
-      <li>ShortShots</li>
+      <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
 	<!--

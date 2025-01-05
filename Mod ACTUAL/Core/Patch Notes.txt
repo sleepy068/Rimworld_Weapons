@@ -1,10 +1,10 @@
-Update v1.0.7 Build 24/11/24| Post 
+Update v1.0.8 Build 04/01/25 | Post 
 
 Additions:
 N/A
 
 Changes:
-Fixed up the hover over description for the weapons reseach tab.
+N/A
 
 Localisation:
 N/A

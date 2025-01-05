@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Weapon Classes
+    <weaponClasses>
+	  <li>RangedLight</li>
+	  <li>RangedHeavy</li>
+	  <li>ShortShots</li>
+	  <li>LongShots</li>
+	  <li>Neolithic</li>
+	  <li>Ranged</li>
+    </weaponClasses>
+  -->
+  
+  <!-- Weapon Tags
+    <weaponTags>
+	  <li>SimpleGun</li>
+	  <li>Autopistol</li>
+      <li>Revolver</li>
+	  <li>AssaultRifle</li>
+      <li>SniperRifle</li>
+	  <li>ShortShots</li>
+	  <li>GrenadeSmoke</li>
+	  <li>GrenadeEMP</li>
+	  <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>NeolithicRangedHeavy</li>
+	  <li>NeolithicRangedChief</li>
+	  <li>MedievalMeleeBasic</li>
+	  <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+	  <li>IndustrialGunAdvanced</li>
+	  <li>SpacerGun</li>
+      <li>Spear</li>
+	  <li>LongSword</li>
+      <li>NoRelic</li>
+    </weaponTags>
+  -->
+
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- ML Scout -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_MLSCOUT_S</defName>
+    <label>ml scout bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <speed>100</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.37</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Scout Ranger -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_SCOUTRANGER_S</defName>
+    <label>scout ranger bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+      <speed>100</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- ML Scout -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUT_MLSCOUT_S</defName>
+    <label>ML Scout</label>
+    <description>An ancient design of precision sniper rifle. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_AUT_MLSCOUT_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>247</MarketValue>
+      <!--<WorkToMake>44000</WorkToMake>-->
+      <Mass>3.3</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.69</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium>
+      <AccuracyLong>0.62</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_MLSCOUT_S</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>32.9</range>
+        <soundCast>SLP_SNIPERBASIC1Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Scout Ranger -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUT_SCOUTRANGER_S</defName>
+    <label>Scout Ranger</label>
+    <description>An ancient design of precision sniper rifle. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_AUT_SCOUTRANGER_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>247</MarketValue>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>4.3</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.73</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_SCOUTRANGER_S</defaultProjectile>
+        <warmupTime>1.70</warmupTime>
+        <range>34.9</range>
+        <soundCast>SLP_SNIPERBASIC1Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
