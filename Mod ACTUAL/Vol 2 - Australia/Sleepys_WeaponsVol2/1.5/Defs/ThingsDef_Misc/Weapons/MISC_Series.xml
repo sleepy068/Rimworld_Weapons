@@ -358,6 +358,7 @@
       <stoppingPower>1.0</stoppingPower>
       <armorPenetrationBase>0.05</armorPenetrationBase>
       <speed>35</speed>
+	  <spinRate>5</spinRate>
     </projectile>
   </ThingDef>
   

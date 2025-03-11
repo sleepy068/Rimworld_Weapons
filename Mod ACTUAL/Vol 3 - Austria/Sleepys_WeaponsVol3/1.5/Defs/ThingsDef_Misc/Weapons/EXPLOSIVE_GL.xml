@@ -12,7 +12,7 @@
 
   <ThingDef ParentName="BaseBullet">
     <defName>SLP_Bullet_AUT_STEYRGL40_S</defName>
-    <label>steyr gl40 shell</label>
+    <label>steyr GL40 shell</label>
     <graphicData>
       <texPath>Things/Item/Equipment/Projectile/SLP_AUT_PROJ_GL_HE</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -33,7 +33,7 @@
   
   <ThingDef ParentName="BaseGun">
     <defName>SLP_Gun_AUT_STEYRGL40_S</defName>
-    <label>steyr gl40 launcher</label>
+    <label>steyr GL40 launcher</label>
     <description>A wide-barrelled grenade launcher. The shell will upon impact explode causing damage to the surroundings.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/Misc/SLP_AUT_STEYRGL40_S</texPath>

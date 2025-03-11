@@ -4,7 +4,7 @@ Additions:
 N/A
 
 Changes:
-N/A
+Added graphic spin to Boomerang
 
 Localisation:
 N/A
