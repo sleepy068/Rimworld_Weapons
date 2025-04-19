@@ -69,7 +69,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_USC_45_S</defaultProjectile>
         <warmupTime>0.55</warmupTime>
-        <range>19.9</range>
+        <range>20.9</range>
         <soundCast>SLP_SLHSMG1</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
