@@ -4,7 +4,7 @@
   <!-- FGM-148 Javelin (HEAT) -->
   <ThingDef ParentName="BaseGun">
     <defName>SLP_Gun_USA_JAV_HEAT</defName>
-    <label>FGM-148 Javelin (HEAT)</label>
+    <label>FGM-148 Javelin)</label>
     <description>A single-use rocket launcher that fires a high explosive anti-tank warhead. Good against tightly grouped enemies or heavily armoured targets. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once released, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
@@ -43,7 +43,7 @@
         <forcedMissRadius>0.1</forcedMissRadius>
         <warmupTime>5.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-        <range>46.9</range>
+        <range>49.9</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>SLP_Javshot</soundCast>
 		<soundAiming>SLP_Lockon</soundAiming>
@@ -115,122 +115,6 @@
       <damageDef>SLP_JAVHEAT</damageDef>
       <explosionRadius>1.5</explosionRadius>
       <speed>75</speed>
-    </projectile>
-  </ThingDef>
-
-  <!-- FGM-148 Javelin (HE) -->
-  <ThingDef ParentName="BaseGun">
-    <defName>SLP_Gun_USA_JAV_HE</defName>
-    <label>FGM-148 Javelin (HE)</label>
-    <description>A single-use rocket launcher that fires a high explosive anti-infantry warhead. Good against groups of enemies. May start fires.\n\nThe weapon is known as a 'fire and forget' launcher, meaning while it takes a little time to get and maintain a lock, once released, the missile will take care of any guidance required and the user can quickly move out of the way. While this launcher packs quite a punch, a poorly locked target or poorly skilled operator will not likely result in a hit.</description>
-    <tickerType>Normal</tickerType>
-    <techLevel>Spacer</techLevel>
-	<smeltable>false</smeltable>
-    <graphicData>
-      <texPath>Things/Item/Equipment/MissileLaunchers/SLP_USA_JAV_HE</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<equippedAngleOffset>-45</equippedAngleOffset>
-    <statBases>
-      <MarketValue>850</MarketValue>
-	  <!--<WorkToMake>15000</WorkToMake>-->
-      <Mass>8</Mass>
-      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
-    </statBases>
-    <weaponTags>
-      <li>Gun</li>
-      <li>GunSingleUse</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <thingSetMakerTags>
-      <li>SingleUseWeapon</li>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
-    <relicChance>0</relicChance>
-    <verbs>
-      <li>
-        <verbClass>Verb_ShootOneUse</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_JAV_HE</defaultProjectile>
-        <forcedMissRadius>0.1</forcedMissRadius>
-        <warmupTime>5.5</warmupTime>
-        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-        <range>38.9</range>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>SLP_Javshot</soundCast>
-		<soundAiming>SLP_Lockon</soundAiming>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <onlyManualCast>true</onlyManualCast>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <muzzleFlashScale>14</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>11.7</power>
-        <cooldownTime>2.6</cooldownTime>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>4.5</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-      </li>
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-	
-	<!--
-	<recipeMaker>
-      <researchPrerequisite>SLP_GWLaunchers</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>9</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
-      </recipeUsers>
-    </recipeMaker>
-    <costList>
-	  <Steel>80</Steel>
-      <ComponentIndustrial>12</ComponentIndustrial>
-      <Plasteel>5</Plasteel>
-      <Chemfuel>90</Chemfuel>
-    </costList>
-	-->
-	
-  </ThingDef>
-
-  <DamageDef ParentName="Bomb">
-    <defName>SLP_JAVHE</defName>
-    <defaultDamage>50</defaultDamage>
-    <defaultStoppingPower>1.0</defaultStoppingPower>
-    <defaultArmorPenetration>0.10</defaultArmorPenetration>
-  </DamageDef>
-  
-  <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_JAV_HE</defName>
-    <label>javelin HE rocket</label>
-    <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_JAV_MISSILE</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>SLP_JAVHE</damageDef>
-      <explosionRadius>4.5</explosionRadius>
-      <speed>85</speed>
     </projectile>
   </ThingDef>
 
