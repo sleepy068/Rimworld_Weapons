@@ -1,10 +1,14 @@
 Update v1.0.5 Build 15/04/24 | Post 
+Updates applied to 1.5 only.
 
 Additions:
 N/A
 
 Changes:
-N/A
+LA105 Woomera Accuracy (Medium) increased from 0.84 to 0.86
+LA105 Woomera Accuracy (Long) increased from 0.82 to 0.84
+LA105 Woomera Ranged Cooldown reduced from 2.0 to 1.45
+LA105 Woomera Warm-up reduced from 3.5 to 3.3
 
 Localisation:
 N/A

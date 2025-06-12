@@ -181,9 +181,9 @@
       <Mass>6.2</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.68</AccuracyShort>
-      <AccuracyMedium>0.82</AccuracyMedium>
-      <AccuracyLong>0.77</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.84</AccuracyMedium>
+      <AccuracyLong>0.79</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -196,7 +196,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_ELITE08_S</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>3.1</warmupTime>
         <range>42.9</range>
         <soundCast>SLP_SNIPERBASIC3Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -262,10 +262,10 @@
       <!--<WorkToMake>44000</WorkToMake>-->
       <Mass>12.4</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
-      <AccuracyShort>0.50</AccuracyShort>
-      <AccuracyMedium>0.95</AccuracyMedium>
-      <AccuracyLong>0.92</AccuracyLong>
-      <RangedWeapon_Cooldown>2.9</RangedWeapon_Cooldown>
+      <AccuracyShort>0.58</AccuracyShort>
+      <AccuracyMedium>0.97</AccuracyMedium>
+      <AccuracyLong>0.94</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -278,7 +278,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_HS50_S</defaultProjectile>
-        <warmupTime>4.15</warmupTime>
+        <warmupTime>3.70</warmupTime>
         <range>51.9</range>
         <soundCast>SLP_AS50Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -342,9 +342,9 @@
       <Mass>5.00</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.73</AccuracyShort>
-      <AccuracyMedium>0.89</AccuracyMedium>
-      <AccuracyLong>0.88</AccuracyLong>
-      <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.91</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -357,7 +357,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_SSG04A1_S</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>3.1</warmupTime>
         <range>40.9</range>
         <soundCast>SLP_SNIPERBASIC3Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -421,9 +421,9 @@
       <Mass>4.20</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -436,7 +436,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_SSG69_S</defaultProjectile>
-        <warmupTime>3.3</warmupTime>
+        <warmupTime>2.9</warmupTime>
         <range>44.9</range>
         <soundCast>SLP_SNIPERBASIC2Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -497,9 +497,9 @@
       <Mass>3.6</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.80</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.77</AccuracyLong>
+      <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>75</Steel>
@@ -510,7 +510,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_STEYRMONOBLOC_S</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>3.0</warmupTime>
         <range>37.9</range>
         <soundCast>SLP_SNIPERBASIC2Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -574,9 +574,9 @@
       <Mass>6.30</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.92</AccuracyMedium>
-      <AccuracyLong>0.89</AccuracyLong>
-      <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.94</AccuracyMedium>
+      <AccuracyLong>0.81</AccuracyLong>
+      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -589,7 +589,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_SX1MTR_S</defaultProjectile>
-        <warmupTime>3.4</warmupTime>
+        <warmupTime>3.0</warmupTime>
         <range>42.9</range>
         <soundCast>SLP_SNIPERBASIC3Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

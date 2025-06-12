@@ -1,10 +1,35 @@
 Update v1.0.11 Build 04/01/25 | Post 
+Buffs to reflect new balance changes in 1.6
 
 Additions:
 N/A
 
 Changes:
+Updated folder path to 1.5 instead of 1.4 (no real change, system stuff only)
+
 HK USC Ranged increased from 19.9 to 20.9
+MG5 Ranged Cooldown Time reduced from 2.1 to 1.9
+MG5 Warm Up Time reduced from 2.1 to 1.75
+MG4 E SRS Ranged Cooldown Time reduced from 1.9 to 1.75
+MG4 E SRS Warm Up Time reduced from 1.6 to 1.55
+MG4 KE Ranged Cooldown Time reduced from 1.9 to 1.75
+MG4 KE Warm Up Time reduced from 1.6 to 1.55
+MG3 Ranged Cooldown Time reduced from 2 to 1.95
+MG3 Warm Up Time reduced from 2.4 to 2.3
+HK21 E Damage increased from 6 to 7
+
+HAENEL RS9 Ranged Cooldown Time reduced from 2.6 to 2.2
+HAENEL RS9 Warm Up Time reduced from 3.9 to 3.5
+HAENEL RS9 Accuracy (Medium) increased from 0.82 to 0.84
+HAENEL RS9 Accuracy (Long) increased from 0.85 to 0.87
+R8 ULTS Ranged Cooldown Time reduced from 1.9 to 1.5
+R8 ULTS Warm Up Time reduced from 2.3 to 1.9
+R8 ULTS Accuracy (Medium) increased from 0.86 to 0.88
+R8 ULTS Accuracy (Long) increased from 0.80 to 0.82
+WA2000 Ranged Cooldown Time reduced from 2.0 to
+WA2000 Warm Up Time reduced from 3.5 to
+WA2000 Accuracy (Medium) increased from 0.90 to
+WA2000 Accuracy (Long) increased from 0.87 to
 
 Localisation:
 N/A

@@ -5,34 +5,34 @@
   
   <!-- ================================= Projectiles ==================================== -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_HRS9_S</defName>
-    <label>RS9 bullet</label>
+    <defName>SLP_Bullet_R8ULTS_S</defName>
+    <label>R8 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>29</damageAmountBase>
-      <speed>120</speed>
+      <damageAmountBase>22</damageAmountBase>
+      <speed>90</speed>
 	  <stoppingPower>1.5</stoppingPower>
-	  <armorPenetrationBase>0.42</armorPenetrationBase>
+	  <armorPenetrationBase>0.31</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
   <!-- ================================= Weapons ==================================== -->
 
-  <!-- HAENEL RS9 -->
+  <!-- R8 Ultimate Silence -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
-    <defName>SLP_Gun_HAENELRS9_S</defName>
-    <label>HAENEL RS9</label>
-    <description>An ancient design of precision sniper rifle. Semi-automatic action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <defName>SLP_Gun_BlaserR8ULTS_S</defName>
+    <label>Blaser R8 Ultimate</label>
+    <description>An ancient design of precision sniper rifle. Bolt action. It has considerable range, great accuracy and good power. While somewhat unwieldy for close quarters combat, this design is lightweight so it is quick and easy to aim.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SniperRifles/SLP_GER_HAENELRS9_S_O3D0</texPath>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_GER_R8ULTS_S_O6D0</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
-	<equippedAngleOffset>-48.0</equippedAngleOffset>
+	<equippedAngleOffset>-51.0</equippedAngleOffset>
 	
     <soundInteract>SLP_WA2000Inter</soundInteract>
     <weaponTags>
@@ -55,27 +55,27 @@
     <statBases>
 	  <MarketValue>556</MarketValue>
       <!--<WorkToMake>44000</WorkToMake>-->
-      <Mass>7.54</Mass>
-      <AccuracyTouch>0.40</AccuracyTouch>
-      <AccuracyShort>0.68</AccuracyShort>
-      <AccuracyMedium>0.82</AccuracyMedium>
-      <AccuracyLong>0.85</AccuracyLong>
-      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+      <Mass>3.1</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
-      <Steel>90</Steel>
-      <ComponentIndustrial>9</ComponentIndustrial>
+      <Steel>70</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
 	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_HRS9_S</defaultProjectile>
-        <warmupTime>3.9</warmupTime>
-        <range>47.9</range>
-        <soundCast>SLP_SLSniperShot</soundCast>
+        <defaultProjectile>SLP_Bullet_R8ULTS_S</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>36.9</range>
+        <soundCast>SLP_SNIPER_R8ULTShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

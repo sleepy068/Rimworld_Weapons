@@ -96,9 +96,9 @@
       <Mass>4.75</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.73</AccuracyShort>
-      <AccuracyMedium>0.84</AccuracyMedium>
-      <AccuracyLong>0.82</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.84</AccuracyLong>
+      <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
@@ -111,7 +111,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_LA105_S</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <warmupTime>3.3</warmupTime>
         <range>43.9</range>
         <soundCast>SLP_WA2000Shot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
