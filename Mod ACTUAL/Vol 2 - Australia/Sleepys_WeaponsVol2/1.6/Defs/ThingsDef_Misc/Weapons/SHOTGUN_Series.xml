@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =================================  ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_MIROKUMK38_S</defName>
+    <label>Miroku MK38 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>2</stoppingPower>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_MIROKUMK70_S</defName>
+    <label>Miroku MK70 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- Miroku MK38 Trap -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_AUS_MIROKUMK38_S</defName>
+    <label>Miroku MK38 Trap</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_AUS_MIROKUMK38TRAP_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>206</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.90</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>30</Steel>
+	  <WoodLog>30</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <recipeMaker>
+	  <researchPrerequisite>SLP_AdvLR</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_MIROKUMK38_S</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>18.9</range>
+        <soundCast>SLP_ShotgunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Miroku MK70  -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_AUS_MIROKUMK70_S</defName>
+    <label>Miroku MK70</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_AUS_MIROKUMK70_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>256</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.6</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.88</AccuracyShort>
+      <AccuracyMedium>0.79</AccuracyMedium>
+      <AccuracyLong>0.39</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>30</Steel>
+	  <WoodLog>30</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_MIROKUMK70_S</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>18.9</range>
+        <soundCast>SLP_ShotgunShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

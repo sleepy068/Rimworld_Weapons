@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===========================================-->
+  <!-- In Game Tech -->
+  <!-- Smithing, RecurveBow, LongBlades, Greatbow, IEDs, Gunsmithing, BlowbackOperation, GasOperation, Mortars -->
+  <!-- Low Tier (But outside original tech tree) -->
+  <ResearchProjectDef>
+    <defName>SLP_RecoilOperated</defName>
+    <label>recoil operation</label>
+    <description>Craft low-power recoil-operated guns like handguns and machine pistols.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Belt fed munitions (Belt LMG) -->
+  <ResearchProjectDef>
+    <defName>SLP_BeltLMG</defName>
+    <label>belt-fed systems</label>
+    <description>Craft weapon systems that rely on belt fed munitions.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>GasOperation</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Heavy Machine Gun Systems) -->
+  <ResearchProjectDef>
+    <defName>SLP_HMG</defName>
+    <label>heavy weapon systems</label>
+    <description>Craft weapon systems designed suppress or destroy the enemy.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>SLP_BeltLMG</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Small Arms (Handguns, SMGs) -->
+  <ResearchProjectDef>
+    <defName>SLP_AdvSM</defName>
+    <label>small arms systems</label>
+    <description>Craft well-machined and mechanically advanced handguns, machine pistols and sub machine guns.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Long Arms (Rifles, Magazine LMGs and Shotguns) -->
+  <ResearchProjectDef>
+    <defName>SLP_AdvLR</defName>
+    <label>long arms systems</label>
+    <description>Craft well-machined and mechanically advanced rifles, magazine based machine guns and shotguns.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>3.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Long Range Systems (Snipers and DMRs) -->
+  <ResearchProjectDef>
+    <defName>SLP_AdvSniper</defName>
+    <label>long range systems</label>
+    <description>Craft well-machined and mechanically advanced sniper rifles.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>PrecisionRifling</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Anti-Materiel Weapons 
+  <ResearchProjectDef>
+    <defName>SLP_AMAdvSniper</defName>
+    <label>anti-materiel weapons</label>
+    <description>Craft long range and powerful weapons designed for use against equipment, structures, and other hardware.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SLP_AdvSniper</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef> -->
+  
+  <ResearchProjectDef>
+    <defName>SLP_RocketWeapons</defName>
+    <label>rocket-propelled weapons</label>
+    <description>Craft weapon systems that use rocket propulsion to move a munition to hit the target.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>Mortars</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>SLP_GuidedRocket</defName>
+    <label>guided rocket systems</label>
+    <description>Craft weapon systems that use rocket propulsion, aerodynamic design, control surfaces as well as electronic systems to move and guide a munition to precisely hit a target.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<tab>SLP_WeaponsCore</tab>
+    <prerequisites>
+      <li>SLP_RocketWeapons</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <!-- Highest Tier 
+  <ResearchProjectDef>
+    <defName>SLP_MeticRifle</defName>
+    <label>meticulous rifling</label>
+    <description>Craft meticulously-machined and mechanically advanced guns like assault rifles, machine guns and sniper rifles.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>PrecisionRifling</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef> -->
+  
+</Defs>

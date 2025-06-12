@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Underslung Grenade Launcher -->
+  <AbilityDef>
+    <defName>SLP_UNSL_GL1_S</defName>
+    <label>grenade launcher</label>
+    <description>Fire a high explosive grenade from the weapon's underslung grenade launcher.</description>
+    <iconPath>UI/Abilities/SLP_ICON_UNGL_S</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <!--<warmupStartSound>SLP_GLInter1</warmupStartSound>-->
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>SLP_GL04Shot</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>SLP_Bullet_UNSL_G_HE</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <!-- Underslung Grenade Launcher -->
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_UNSL_G_HE_S</defName>
+    <defaultDamage>30</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.20</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_UNSL_G_HE</defName>
+    <label>HE Grenade</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_UNGL_HE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<shaderType>TransparentPostLight</shaderType>-->
+      <!--<color>(68,150,215)</color>-->
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>SLP_UNSL_G_HE_S</damageDef>
+      <explosionRadius>1.9</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+</Defs>

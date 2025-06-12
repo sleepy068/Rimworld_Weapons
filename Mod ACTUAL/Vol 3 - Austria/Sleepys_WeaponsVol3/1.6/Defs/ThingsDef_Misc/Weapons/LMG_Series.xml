@@ -54,7 +54,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
+      <damageAmountBase>12</damageAmountBase>
       <speed>55</speed>
 	  <stoppingPower>1.0</stoppingPower>
 	  <armorPenetrationBase>0.13</armorPenetrationBase>
@@ -96,7 +96,7 @@
       <AccuracyShort>0.50</AccuracyShort>
       <AccuracyMedium>0.40</AccuracyMedium>
       <AccuracyLong>0.28</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>120</Steel>
