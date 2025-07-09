@@ -437,7 +437,7 @@
 		</subSounds>
 	</SoundDef>
 	
-	<!-- MP5 --><!-- Used 0x -->
+	<!-- Thompson --><!-- Used 0x -->
 	<SoundDef>
 		<defName>SLP_ThompsonShot</defName>
 		<context>MapOnly</context>

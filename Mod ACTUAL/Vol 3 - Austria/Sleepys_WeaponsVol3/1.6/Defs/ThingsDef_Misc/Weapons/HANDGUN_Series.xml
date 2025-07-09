@@ -293,7 +293,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>114</MarketValue>
+	  <MarketValue>121</MarketValue>
       <WorkToMake>6500</WorkToMake>
       <Mass>1.09</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
@@ -358,7 +358,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>116</MarketValue>
+	  <MarketValue>122</MarketValue>
       <Mass>1.15</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
@@ -429,7 +429,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>114</MarketValue>
+	  <MarketValue>122</MarketValue>
       <WorkToMake>6500</WorkToMake>
       <Mass>1.09</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
@@ -497,7 +497,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>122</MarketValue>
+	  <MarketValue>130</MarketValue>
       <Mass>1.09</Mass>
       <AccuracyTouch>0.87</AccuracyTouch>
       <AccuracyShort>0.77</AccuracyShort>
@@ -561,7 +561,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>123</MarketValue>
+	  <MarketValue>133</MarketValue>
       <Mass>1.15</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.79</AccuracyShort>
@@ -625,7 +625,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>139</MarketValue>
+	  <MarketValue>137</MarketValue>
       <Mass>1.25</Mass>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
@@ -689,7 +689,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>174</MarketValue>
+	  <MarketValue>159</MarketValue>
       <Mass>1.25</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
@@ -753,7 +753,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>119</MarketValue>
+	  <MarketValue>125</MarketValue>
       <Mass>1.30</Mass>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.79</AccuracyShort>
@@ -817,7 +817,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>84</MarketValue>
+	  <MarketValue>93</MarketValue>
       <Mass>0.8</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.50</AccuracyShort>
@@ -881,7 +881,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>84</MarketValue>
+	  <MarketValue>93</MarketValue>
       <Mass>0.85</Mass>
       <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.52</AccuracyShort>
@@ -945,7 +945,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>92</MarketValue>
+	  <MarketValue>107</MarketValue>
       <Mass>0.7</Mass>
       <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.60</AccuracyShort>
@@ -1009,7 +1009,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>116</MarketValue>
+	  <MarketValue>124</MarketValue>
       <Mass>1.08</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
@@ -1073,7 +1073,7 @@
     </weaponClasses>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>117</MarketValue>
+	  <MarketValue>125</MarketValue>
       <Mass>1.08</Mass>
       <AccuracyTouch>0.83</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>

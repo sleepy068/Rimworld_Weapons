@@ -123,7 +123,7 @@
       <damageAmountBase>18</damageAmountBase>
       <speed>90</speed>
 	  <stoppingPower>1.5</stoppingPower>
-	  <armorPenetrationBase>0.26</armorPenetrationBase>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
@@ -320,8 +320,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SLP_Bullet_L1A1SLR</defaultProjectile>
-        <warmupTime>1.25</warmupTime>
-        <range>30.9</range>
+        <warmupTime>1.1</warmupTime>
+        <range>33.9</range>
         <soundCast>SLP_HK243Shot</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

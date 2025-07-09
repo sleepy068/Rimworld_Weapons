@@ -1,4 +1,5 @@
-Update v1.0.12 Build 12/06/25 | Post 
+Update v1.0.13 Build 08/07/25 | Post 
+Patches excluding bug fixes applied to 1.6 only.
 
 Additions:
 N/A

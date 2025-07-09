@@ -89,7 +89,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>530</MarketValue>
+	  <MarketValue>467</MarketValue>
       <WorkToMake>46000</WorkToMake>
       <Mass>11.5</Mass>
       <AccuracyTouch>0.41</AccuracyTouch>

@@ -104,7 +104,7 @@
 	-->
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>247</MarketValue>
+	  <MarketValue>224</MarketValue>
       <!--<WorkToMake>44000</WorkToMake>-->
       <Mass>3.3</Mass>
       <AccuracyTouch>0.55</AccuracyTouch>
@@ -176,7 +176,7 @@
     </recipeMaker>
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
-	  <MarketValue>247</MarketValue>
+	  <MarketValue>228</MarketValue>
       <WorkToMake>17500</WorkToMake>
       <Mass>4.3</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
