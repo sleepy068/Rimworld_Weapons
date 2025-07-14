@@ -10,7 +10,7 @@
     <techLevel>Spacer</techLevel>
 	<smeltable>false</smeltable>
     <graphicData>
-      <texPath>Things/Item/Equipment/MissileLaunchers/SLP_USA_JAV_HEAT</texPath>
+      <texPath>Things/Item/Equipment/MissileLaunchers/SLP_USA_JAV_HEAT_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<equippedAngleOffset>-45</equippedAngleOffset>
@@ -106,7 +106,7 @@
     <defName>SLP_Bullet_JAV_HEAT</defName>
     <label>javelin HEAT rocket</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_JAV_MISSILE</texPath>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_JAV_MISSILE_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
