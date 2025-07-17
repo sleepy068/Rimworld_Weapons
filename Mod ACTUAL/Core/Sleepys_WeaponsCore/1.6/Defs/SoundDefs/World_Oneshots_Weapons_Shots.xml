@@ -267,7 +267,6 @@
 	<SoundDef>
 		<defName>SLP_MP5Shot</defName>
 		<context>MapOnly</context>
-		<eventNames />
 		<subSounds>
 			<li>
 				<grains>
