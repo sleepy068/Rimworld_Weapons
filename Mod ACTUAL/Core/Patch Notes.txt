@@ -7,7 +7,7 @@ Changes:
 N/A
 
 Localisation:
-N/A
+Fixed grammer mistake with research Heavy Weapon Systems description
 
 Bug Fixes:
 N/A
