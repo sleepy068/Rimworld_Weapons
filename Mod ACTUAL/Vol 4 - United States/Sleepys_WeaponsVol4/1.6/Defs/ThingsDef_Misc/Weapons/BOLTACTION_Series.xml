@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= WW2 Weapons ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- M1A -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_M1A_S</defName>
+    <label>M1A bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M1 GARAND -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_M1GARAND_S</defName>
+    <label>M1 Garand bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>70</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.30</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <!-- ================================= Weapons ==================================== -->
+  <!-- M1A -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M1A_S</defName>
+    <label>M1A</label>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/BoltActions/SLP_USA_M1A_STEEL_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_RIFLEInter</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+   <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>255</MarketValue>
+      <!--<WorkToMake>28500</WorkToMake>-->
+      <Mass>3.99</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_M1A_S</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>34.9</range>
+        <soundCast>SLP_RIFLE_M21Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M1 GARAND -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_USA_M1GARAND_S</defName>
+    <label>M1 Garand</label>
+    <description>An ancient pattern bolt-action rifle. It has a long range, is accurate and packs quite a punch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/BoltActions/SLP_USA_M1GARAND_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_RIFLE_M1GARANDInter</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	-->
+
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>415</displayPriority>
+    </recipeMaker>
+
+   <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>250</MarketValue>
+      <WorkToMake>28500</WorkToMake>
+      <Mass>4.30</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+    </statBases>
+
+    <costList>
+	  <WoodLog>30</WoodLog>
+      <Steel>30</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_M1GARAND_S</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>33.9</range>
+        <soundCast>SLP_RIFLE_M1GARAND</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>
