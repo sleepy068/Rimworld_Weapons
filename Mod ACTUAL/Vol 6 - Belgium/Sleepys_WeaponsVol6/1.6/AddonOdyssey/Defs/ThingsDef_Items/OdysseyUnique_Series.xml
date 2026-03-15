@@ -46,70 +46,15 @@
   <!-- ================================= Projectiles ==================================== -->
 
   <!-- ================================= Weapons ==================================== -->
-  <!-- Desert Eagle -->
-  <ThingDef ParentName="SLP_Gun_USA_DesertEagle_S">
-    <defName>SLP_Gun_DesertEagle_Unique</defName>
-    <label>unique desert eagle</label>
-    <description>A desert eagle with customized parts.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/Unique/SLP_USA_DESERTEAGLE</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <!--<shaderType>CutoutComplex</shaderType>-->
-    </graphicData>
-    <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
-    <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
-    <comps Inherit="False">
-      <li Class="CompProperties_EquippableAbilityReloadable" /> <!-- Props are populated by traits -->
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Styleable"/>
-      <li Class="CompProperties_Biocodable"/>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
-      <li Class="CompProperties_UniqueWeapon">
-        <weaponCategories>
-          <li>Ranged</li>
-          <li>BulletFiring</li>
-          <li>Gun</li>
-          <li>Pistol</li>
-          <li>Sighted</li>
-        </weaponCategories>
-        <namerLabels>
-          <li>iron</li>
-          <li>hammer</li>
-        </namerLabels>
-      </li>
-    </comps>
-    <generateAllowChance>0</generateAllowChance>
-    <possessionCount>0</possessionCount>
-    <tradeability>Sellable</tradeability>
-    <thingSetMakerTags Inherit="False" >
-      <li>RewardStandardLowFreq</li>
-      <li>UniqueWeapon</li>
-    </thingSetMakerTags>
-    <recipeMaker Inherit="False" IsNull="True" />
-    <thingCategories Inherit="False">
-      <li>WeaponsUnique</li>
-    </thingCategories>
-    <descriptionHyperlinks>
-      <ThingDef>SLP_Gun_USA_DesertEagle_S</ThingDef>
-    </descriptionHyperlinks>
-  </ThingDef>
-  
   <!-- Vector -->
-  <ThingDef ParentName="SLP_Gun_USA_Vector_S">
-    <defName>SLP_Gun_Vector_Unique</defName>
-    <label>unique vector</label>
+  <ThingDef ParentName="SLP_Gun_BEL_FNP90_S">
+    <defName>SLP_Gun_BEL_FNP90_Unique</defName>
+    <label>unique FN P90</label>
     <description>A vector with customized parts.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/Unique/SLP_USA_VECTOR</texPath>
+      <texPath>Things/Item/Equipment/Unique/SLP_BEL_FNP90</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-      <!--<shaderType>CutoutComplex</shaderType>-->
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
     <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
@@ -134,7 +79,7 @@
           <li>Sighted</li>
           <li>BurstFire</li>
           <li>LowStoppingPower</li>
-          <li>Attachable</li>
+          <!--<li>Attachable</li>-->
         </weaponCategories>
         <namerLabels>
           <!--<li>heavy SMG</li>-->
@@ -155,7 +100,7 @@
       <li>WeaponsUnique</li>
     </thingCategories>
     <descriptionHyperlinks>
-      <ThingDef>SLP_Gun_USA_Vector_S</ThingDef>
+      <ThingDef>SLP_Gun_BEL_FNP90_S</ThingDef>
     </descriptionHyperlinks>
   </ThingDef>
   

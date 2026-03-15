@@ -43,44 +43,10 @@
 
   <!-- ================================= SMG Series ==================================== -->
   <!-- ================================= Projectiles ==================================== -->
-  <!-- CMR30 -->
+  <!-- FN P90 -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_CMR30_S</defName>
-    <label>CMR30 bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>6</damageAmountBase>
-      <speed>50</speed>
-	  <stoppingPower>0.5</stoppingPower>
-	  <armorPenetrationBase>0.09</armorPenetrationBase>
-    </projectile>
-  </ThingDef>
-  
-  <!-- Thompson M1 -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_ThompsonM1_S</defName>
-    <label>Thompson M1 bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <speed>50</speed>
-	  <stoppingPower>0.5</stoppingPower>
-	  <armorPenetrationBase>0.12</armorPenetrationBase>
-    </projectile>
-  </ThingDef>
-  
-  <!-- Vector -->
-  <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_Vector_S</defName>
-    <label>Vector bullet</label>
+    <defName>SLP_Bullet_FNP90_S</defName>
+    <label>FN P90 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -88,128 +54,79 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>8</damageAmountBase>
-      <speed>48</speed>
+      <speed>55</speed>
 	  <stoppingPower>0.5</stoppingPower>
-	  <armorPenetrationBase>0.15</armorPenetrationBase>
+	  <armorPenetrationBase>0.12</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
-  <!-- M3 Grease Gun -->
+  <!-- FN P90T -->
   <ThingDef ParentName="BaseBullet">
-    <defName>SLP_Bullet_M3Grease_S</defName>
-    <label>m3 grease bullet</label>
+    <defName>SLP_Bullet_FNP90T_S</defName>
+    <label>FN P90T bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>7</damageAmountBase>
-      <speed>50</speed>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>55</speed>
 	  <stoppingPower>0.5</stoppingPower>
 	  <armorPenetrationBase>0.12</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
-  <!-- ================================= MACHINE PISTOL ==================================== -->
-  <!-- CMR30-->
-  <ThingDef ParentName="SLPBaseGunWithQuality">
-    <defName>SLP_Gun_USA_CMR30_S</defName>
-    <label>CMR30</label>
-    <description>A ancient style machine pistol. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+  <!-- FN P90TS -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_FNP90TS_S</defName>
+    <label>FN P90TS bullet</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/SMG/SLP_USA_CMR30_S</texPath>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	
-
-	<equippedAngleOffset>-45</equippedAngleOffset>
-
-	
-    <soundInteract>SLP_SMG_GenericInter</soundInteract>
-	
-    <weaponClasses>
-      <li>ShortShots</li>
-      <li>RangedLight</li>
-    </weaponClasses>
-	<!--
-    <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-	-->
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <statBases>
-      <!-- <WorkToMake>26000</WorkToMake> -->
-	  <MarketValue>219</MarketValue>
-      <Mass>2.50</Mass>
-      <AccuracyTouch>0.85</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.15</AccuracyLong>
-      <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
-    </statBases>
-	
-    <costList>
-      <Steel>55</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-	
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_CMR30_S</defaultProjectile>
-        <warmupTime>0.30</warmupTime>
-        <range>21.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>7</ticksBetweenBurstShots> 
-		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
-		<soundCast>SLP_SMG_PP19Shot</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-	  <li>ShortShots</li>
-    </weaponTags>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- FN PS90 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_FNPS90_S</defName>
+    <label>FN PS90 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>0.5</stoppingPower>
+	  <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
   </ThingDef>
   
   <!-- ================================= SMG ==================================== -->
-  <!-- Thompson M1 -->
-  <ThingDef ParentName="BaseHumanMakeableGun">
-    <defName>SLP_Gun_USA_ThompsonM1_S</defName>
-    <label>Thompson M1</label>
+  <!-- FN P90 -->
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="SLP_Gun_BEL_FNP90_S">
+    <defName>SLP_Gun_BEL_FNP90_S</defName>
+    <label>FN P90</label>
     <description>A ancient style submachine gun. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SMG/SLP_USA_THOMPSONM1_S</texPath>
+      <texPath>Things/Item/Equipment/SMG/SLP_BEL_FNP90_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
+	<!--
 	<equippedAngleOffset>-45</equippedAngleOffset>
+	-->
 	
-    <soundInteract>SLP_SMG_ThompsonInter</soundInteract>
+    <soundInteract>SLP_P90Inter</soundInteract>
 	
     <weaponClasses>
       <li>ShortShots</li>
@@ -219,124 +136,38 @@
     <recipeMaker>
       <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
       <skillRequirements>
-        <Crafting>4</Crafting>
+        <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
 
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>26000</WorkToMake>
-	  <MarketValue>320</MarketValue>
-      <Mass>3.50</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.20</AccuracyLong>
-      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+	  <MarketValue>342</MarketValue>
+      <Mass>2.60</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.33</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
-	  <WoodLog>20</WoodLog>
-      <Steel>30</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
 	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_ThompsonM1_S</defaultProjectile>
-        <warmupTime>0.90</warmupTime>
-        <range>21.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots> 
-		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
-		<soundCast>SLP_ThompsonShot</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-	  <li>ShortShots</li>
-    </weaponTags>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  
-  <!-- Vector -->
-  <ThingDef ParentName="SLPBaseGunWithQuality" Name="SLP_Gun_USA_Vector_S">
-    <defName>SLP_Gun_USA_Vector_S</defName>
-    <label>Vector</label>
-    <description>A ancient style submachine gun. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/SMG/SLP_USA_VECTOR_S</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	
-	<equippedAngleOffset>-45</equippedAngleOffset>
-	
-    <soundInteract>SLP_SMG_GenericInter</soundInteract>
-	
-    <weaponClasses>
-      <li>ShortShots</li>
-      <li>RangedLight</li>
-    </weaponClasses>
-
-	<!--
-    <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-	-->
-
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-    <statBases>
-      <!-- <WorkToMake>26000</WorkToMake> -->
-	  <MarketValue>305</MarketValue>
-      <Mass>3.60</Mass>
-      <AccuracyTouch>0.85</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.20</AccuracyLong>
-      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
-    </statBases>
-	
-    <costList>
-      <Steel>55</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-	
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_Vector_S</defaultProjectile>
-        <warmupTime>1.00</warmupTime>
-        <range>20.9</range>
+        <defaultProjectile>SLP_Bullet_FNP90_S</defaultProjectile>
+        <warmupTime>0.80</warmupTime>
+        <range>22.9</range>
         <burstShotCount>4</burstShotCount>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots> 
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots> 
 		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
-		<soundCast>SLP_SLHSMG1</soundCast>
+		<soundCast>SLP_SMG_P90Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -366,13 +197,13 @@
     </tools>
   </ThingDef>
   
-  <!-- M3 Grease Gun -->
+  <!-- FN P90T -->
   <ThingDef ParentName="SLPBaseGunWithQuality">
-    <defName>SLP_Gun_USA_M3GreaseGun_S</defName>
-    <label>M3 Grease Gun</label>
+    <defName>SLP_Gun_BEL_FNP90T_S</defName>
+    <label>FN P90T</label>
     <description>A ancient style submachine gun. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SMG/SLP_USA_M3GREASEGUN_S</texPath>
+      <texPath>Things/Item/Equipment/SMG/SLP_BEL_FNP90T_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
@@ -380,7 +211,7 @@
 	<equippedAngleOffset>-45</equippedAngleOffset>
 	-->
 	
-    <soundInteract>SLP_SMG_GenericInter</soundInteract>
+    <soundInteract>SLP_P90Inter</soundInteract>
 	
     <weaponClasses>
       <li>ShortShots</li>
@@ -389,7 +220,7 @@
 
 	<!--
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
@@ -399,31 +230,198 @@
     <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
     <statBases>
       <!-- <WorkToMake>26000</WorkToMake> -->
-	  <MarketValue>285</MarketValue>
-      <Mass>3.20</Mass>
-      <AccuracyTouch>0.88</AccuracyTouch>
-      <AccuracyShort>0.62</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.15</AccuracyLong>
-      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+	  <MarketValue>320</MarketValue>
+      <Mass>2.60</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
     </statBases>
 	
     <costList>
-      <Steel>45</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
 	
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>SLP_Bullet_M3Grease_S</defaultProjectile>
-        <warmupTime>0.50</warmupTime>
-        <range>19.9</range>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>7</ticksBetweenBurstShots> 
+        <defaultProjectile>SLP_Bullet_FNP90T_S</defaultProjectile>
+        <warmupTime>0.78</warmupTime>
+        <range>21.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots> 
 		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
-		<soundCast>SLP_SMG_PP19Shot</soundCast>
+		<soundCast>SLP_SMG_P90Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+	  <li>ShortShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- FN P90TS -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_BEL_FNP90TS_S</defName>
+    <label>FN P90TS</label>
+    <description>A ancient style submachine gun. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SMG/SLP_BEL_FNP90TS_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_P90Inter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <!-- <WorkToMake>26000</WorkToMake> -->
+	  <MarketValue>335</MarketValue>
+      <Mass>2.80</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.34</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>1.67</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_FNP90TS_S</defaultProjectile>
+        <warmupTime>0.81</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots> 
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+		<soundCast>SLP_SLSMG2</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+	  <li>ShortShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- FN PS90 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_BEL_FNPS90_S</defName>
+    <label>FN PS90</label>
+    <description>A ancient style submachine gun. Handles exceptionally well, is robust and is somewhat accurate and quick in close quarter battles. Lacks the range, accuracy or firepower for long range combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SMG/SLP_BEL_FNPS90_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_P90Inter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <!-- <WorkToMake>26000</WorkToMake> -->
+	  <MarketValue>335</MarketValue>
+      <Mass>2.80</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.37</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>0.30</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_FNPS90_S</defaultProjectile>
+        <warmupTime>0.40</warmupTime>
+        <range>23.9</range>
+		<soundCast>SLP_SMG_P90Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

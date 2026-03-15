@@ -306,7 +306,7 @@
   </ThingDef>
   
   <!-- Desert Eagle -->
-  <ThingDef ParentName="SLPBaseGunWithQuality">
+  <ThingDef ParentName="SLPBaseGunWithQuality" Name="SLP_Gun_USA_DesertEagle_S">
     <defName>SLP_Gun_USA_DesertEagle_S</defName>
     <label>Desert Eagle</label>
     <description>A short recoil–operated, semi-automatic pistol. Handles exceptionally well, requires little maintenance and packs a heck of a punch. Lacks the range or accuracy for long range combat.</description>
