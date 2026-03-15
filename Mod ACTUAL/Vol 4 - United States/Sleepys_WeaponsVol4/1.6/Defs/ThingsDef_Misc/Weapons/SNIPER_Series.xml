@@ -38,6 +38,57 @@
     </projectile>
   </ThingDef>
   
+  <!-- M200 Intervention -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_M200Intervention_S</defName>
+    <label>M200 intervention bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>27</damageAmountBase>
+      <speed>100</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.40</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M99 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_M99_S</defName>
+    <label>M99 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>120</speed>
+	  <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- DT HTI -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_SLP_DTHTI_S</defName>
+    <label>DT HTI bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>120</speed>
+	  <stoppingPower>2.5</stoppingPower>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
   <!-- ================================= Weapons ==================================== -->
 
   <!-- M82A1 CQ 50BMG -->
@@ -77,7 +128,7 @@
     <statBases>
 	  <MarketValue>588</MarketValue>
       <WorkToMake>60000</WorkToMake>
-      <Mass>13.5</Mass>
+      <Mass>14.0</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.96</AccuracyMedium>
@@ -127,11 +178,11 @@
     <label>Anzio 20mm</label>
     <description>An ancient design of an anti-materiel sniper rifle. Bolt action and packs an terrifying punch. It has an exceptionally long range, great accuracy and object obliterating power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also significantly reduces the users movement speed.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_ANZIO20MM_S</texPath>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_ANZIO20MM_O2D0_S</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	
-	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	<equippedAngleOffset>-47.0</equippedAngleOffset>
 	
     <soundInteract>SLP_M82A1Inter</soundInteract>
     <weaponTags>
@@ -177,6 +228,244 @@
         <warmupTime>5.0</warmupTime>
         <range>54.9</range>
         <soundCast>SLP_MSRShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M200 Intervention -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_USA_M200Intervention_S</defName>
+    <label>M200 Intervention</label>
+    <description>An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_M200INTERVENTION_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_GenBoltInter02</soundInteract>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>543</MarketValue>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>14.0</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_M200Intervention_S</defaultProjectile>
+        <warmupTime>3.6</warmupTime>
+        <range>45.9</range>
+        <soundCast>SLP_SNIPER_M320LRShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+   <!-- M99 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M99_S</defName>
+    <label>M99</label>
+    <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also reduces the users movement speed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_BARRETTM99_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_M82A1Inter</soundInteract>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AMAdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>592</MarketValue>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>14.0</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.98</AccuracyMedium>
+      <AccuracyLong>0.96</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_M99_S</defaultProjectile>
+        <warmupTime>4.1</warmupTime>
+        <range>51.9</range>
+        <soundCast>SLP_BarrettShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- DT HTI -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_DTHTI_S</defName>
+    <label>DT HTI</label>
+    <description>An ancient design of an anti-materiel sniper rifle. Semi-automatic and packs an insane punch. It has an exceptionally long range, great accuracy and terrifying power. Because it's so unwieldy, other weapons outclass it at close range. Its weight forces the shooter to take time to sight targets and the recoil requires extra time to reacquire them. The weapon also reduces the users movement speed.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/SniperRifles/SLP_USA_DTHTI_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_SNIPER_BoltInter</soundInteract>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AMAdvSniper</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>592</MarketValue>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>14.0</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.97</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SLP_DTHTI_S</defaultProjectile>
+        <warmupTime>3.9</warmupTime>
+        <range>51.9</range>
+        <soundCast>SLP_SNIPER_HEAVYShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

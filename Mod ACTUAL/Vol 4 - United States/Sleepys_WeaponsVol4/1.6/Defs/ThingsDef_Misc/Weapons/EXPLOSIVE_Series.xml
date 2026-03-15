@@ -118,4 +118,196 @@
     </projectile>
   </ThingDef>
 
+  <!-- 40mm Tac 1440LL -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_40mmTac1440LL</defName>
+    <label>40mm kinetic shell</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_USA_LLGRENADE_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>SLP_RangedBlunt</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>75</speed>
+	  <stoppingPower>1.5</stoppingPower>
+	  <armorPenetrationBase>0.50</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>SLP_Gun_USA_40mmTac1440LL</defName>
+    <label>40mm Tac1440LL launcher</label>
+    <description>A wide-barrelled grenade launcher. It uses a kinetic shell to directly impact the target and packs quite the punch but it lacks any explosive charge.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Launchers/SLP_USA_40MMTAC1440_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_GLInter1</soundInteract>
+    <generateCommonality>0.01</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <!--<WorkToMake>30000</WorkToMake>-->
+      <Mass>4.0</Mass>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	<!--
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <displayPriority>460</displayPriority>
+    </recipeMaker>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_40mmTac1440LL</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>31.9</range>
+        <!--<forcedMissRadius>0.1</forcedMissRadius>-->
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SLP_GL04Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- L2D M203 -->
+  <DamageDef ParentName="Bomb">
+    <defName>SLP_BLAST_L2DM203_S</defName>
+    <defaultDamage>25</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+	<soundExplosion>SLP_GRENADELIGHT</soundExplosion>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_L2DM203_S</defName>
+    <label>L2D M203 shell</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Projectile/SLP_PROJ_UNGL_HE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<shaderType>TransparentPostLight</shaderType>-->
+      <!--<color>(68,150,215)</color>-->
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>45</speed>
+      <damageDef>SLP_BLAST_L2DM203_S</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.9</explosionRadius>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>SLP_Gun_USA_L2DM203_S</defName>
+    <label>L2D M203 launcher</label>
+    <description>A wide-barrelled grenade launcher. The shell packs a punch and can do serious damage against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Launchers/SLP_USA_L2DM203_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<!--
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	-->
+	
+    <soundInteract>SLP_GLInter1</soundInteract>
+    <generateCommonality>0.01</generateCommonality>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <!--<WorkToMake>30000</WorkToMake>-->
+      <Mass>2.0</Mass>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+	<!--
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+      <displayPriority>460</displayPriority>
+    </recipeMaker>
+	-->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_L2DM203_S</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>25.9</range>
+        <forcedMissRadius>1.5</forcedMissRadius>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>SLP_GL01Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
 </Defs>

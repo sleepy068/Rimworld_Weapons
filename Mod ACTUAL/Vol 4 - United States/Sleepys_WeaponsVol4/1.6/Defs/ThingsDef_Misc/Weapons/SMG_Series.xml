@@ -217,7 +217,7 @@
     </weaponClasses>
 
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>SLP_AdvSM</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>

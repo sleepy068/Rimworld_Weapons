@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =================================  ==================================== -->
+  
+  <!-- ================================= Projectiles ==================================== -->
+  <!-- M870 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_M870_S</defName>
+    <label>M870 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M870 Breacher -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_M870Breacher_S</defName>
+    <label>M870 Breacher bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.18</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- DP-12 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_DP12_S</defName>
+    <label>DP-12 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- KS7 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_KS7_S</defName>
+    <label>KS7 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.14</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- AA12 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>SLP_Bullet_AA12_S</defName>
+    <label>AA12 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <speed>55</speed>
+	  <stoppingPower>3</stoppingPower>
+	  <armorPenetrationBase>0.15</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- ================================= Weapons ==================================== -->
+  <!-- M870 -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SLP_Gun_USA_M870_S</defName>
+    <label>M870</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_USA_M870_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunPumpInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>263</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.74</AccuracyMedium>
+      <AccuracyLong>0.61</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <recipeMaker>
+	  <researchPrerequisite>SLP_AdvLR</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_M870_S</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>16.9</range>
+        <soundCast>SLP_SHOTGUN_M870Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M870 Breacher  -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M870Breacher_S</defName>
+    <label>M870 Breacher</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_USA_870BREACHER_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunPumpInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>273</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.78</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.59</AccuracyLong>
+      <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_M870Breacher_S</defaultProjectile>
+        <warmupTime>0.85</warmupTime>
+        <range>14.9</range>
+        <soundCast>SLP_SHOTGUN_M870Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- DP-12  -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_DP12_S</defName>
+    <label>DP-12</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_USA_DP12_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>255</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>4.1</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.79</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_DP12_S</defaultProjectile>
+        <warmupTime>0.70</warmupTime>
+        <range>15.9</range>
+        <soundCast>SLP_SHOTGUN_StrykerShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- KS7  -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_KS7_S</defName>
+    <label>KS7</label>
+    <description>An ancient design of shotgun that emits a tight-packed spray of pellets. Deadly, but short range.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_USA_KS7_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+	
+    <soundInteract>SLP_ShotgunInter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+    <statBases>
+	  <MarketValue>231</MarketValue>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.7</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
+      <RangedWeapon_Cooldown>1.20</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_KS7_S</defaultProjectile>
+        <warmupTime>0.80</warmupTime>
+        <range>14.9</range>
+        <soundCast>SLP_SHOTGUN_StrykerShot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- AA12  -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_AA12_S</defName>
+    <label>AA12</label>
+    <description>A magazine-fed fully automatic shotgun. It is even shorter-ranged than a typical shotgun, but is extraordinarily dangerous due to burst fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Shotguns/SLP_USA_AA12_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45.0</equippedAngleOffset>
+    <soundInteract>SLP_G36Inter</soundInteract>
+	
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+	
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_AdvLR</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>435</displayPriority>
+    </recipeMaker>
+	-->
+	
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+	  <MarketValue>375</MarketValue>
+      <WorkToMake>31000</WorkToMake>
+      <Mass>5.2</Mass>
+      <AccuracyTouch>0.52</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+    </statBases>
+	
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SLP_Bullet_AA12_S</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>12.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_SHOTGUN_AA12Shot</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>ShortShots</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

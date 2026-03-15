@@ -4,9 +4,10 @@
   <!-- ================================= LMGs ==================================== -->
   
   <!-- ================================= Projectiles ==================================== -->
+  <!-- M249 -->
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_M249_556MM</defName>
-    <label>5.56mm M249 bullet</label>
+    <label>M249 bullet</label>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -17,6 +18,57 @@
       <speed>50</speed>
 	  <stoppingPower>1.0</stoppingPower>
 	  <armorPenetrationBase>0.13</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M60E4 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M60E4_S</defName>
+    <label>M60E4 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>50</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M240B -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M240B_S</defName>
+    <label>M240B bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>50</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.20</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  
+  <!-- M250 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_M250_S</defName>
+    <label>M250 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>60</speed>
+	  <stoppingPower>1.0</stoppingPower>
+	  <armorPenetrationBase>0.16</armorPenetrationBase>
     </projectile>
   </ThingDef>
   
@@ -72,6 +124,240 @@
 		<burstShotCount>9</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>SLP_M249Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M60E6 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M60E6_S</defName>
+    <label>M60E6</label>
+    <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_USA_M60E6_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_M249Inter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_BeltLMG</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>510</MarketValue>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>9.17</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.34</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_M60E4_S</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>27.9</range>
+		<burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_M60E4Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M240B -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M240B_S</defName>
+    <label>M240B</label>
+    <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_USA_M240B_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_LMGChamberInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_BeltLMG</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>529</MarketValue>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>9.4</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.51</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.29</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_M240B_S</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>25.9</range>
+		<burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_LMG_M240Shot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- M250 -->
+  <ThingDef ParentName="SLPBaseGunWithQuality">
+    <defName>SLP_Gun_USA_M250_S</defName>
+    <label>M250</label>
+    <description>A gas-operated light machine gun. While it is somewhat unwieldy and inaccurate, its long bursts of fire are effective against groups of enemies.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/LMG/SLP_USA_M250_S</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<equippedAngleOffset>-45</equippedAngleOffset>
+	
+    <soundInteract>SLP_LMGChamberInter</soundInteract>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+	<!--
+    <recipeMaker>
+      <researchPrerequisite>SLP_BeltLMG</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+	-->
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+	  <MarketValue>529</MarketValue>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>6.6</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.37</AccuracyMedium>
+      <AccuracyLong>0.28</AccuracyLong>
+      <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_M250_S</defaultProjectile>
+        <warmupTime>1.75</warmupTime>
+        <range>26.9</range>
+		<burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<!-- 1200RPM=3, 900RPM=4, 720RPM=5, 600RPM=6, 512.29RPM=7, 450RPM=8, 400RPM=9, 360RPM=10, 327.27RPM=11, 300RPM=12, 240RPM=15-->
+        <soundCast>SLP_SL65Rifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
